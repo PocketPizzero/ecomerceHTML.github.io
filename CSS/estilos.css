@@ -3,17 +3,17 @@ Fucsia: #D63384
 Blanco: #F8F9FB
 Negro: #212429
 */
-.navbar-nav, .navbar-nav a{
+nav, .navbar-nav, .navbar-nav a{
     background-color: #212429;
     color: #F8F9FB;
-    align-items: center;
+}
+.navbar-nav {
     font-size: 1.2em;
-    
-    gap: 2em;
+    justify-content: center;
 }
 .navbar-nav a:hover{
     color: #D63384;
 }
 .navbar-nav img{
-    height: 4em;
+    height: 3em;
 }
