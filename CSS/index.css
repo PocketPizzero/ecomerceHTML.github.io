@@ -1,0 +1,22 @@
+h1{
+    padding: 1.5em 0em;
+    text-align: center;
+    font-size: 5em;
+}
+.titulo-principal{
+    color: #D63384;
+}
+.introduccion{
+    margin: 8em;
+    text-align: center;
+}
+.imagen-fondo{
+    
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 40%;
+}
+.carrusel{
+    padding: 5em;
+}
