@@ -4,6 +4,10 @@ Blanco: #F8F9FB
 Negro: #212429
 */
 
+/* Body */
+body{
+    background-color: #F8F9FB;
+}
 /* Header */
 
 nav, .navbar-nav, .navbar-nav a {
@@ -22,11 +26,11 @@ nav, .navbar-nav, .navbar-nav a {
     color: #D63384;
 }
 
-.container img {
+header .container img {
     height: 4em;
 }
 
-.container {
+header .container {
     display: flex;
     justify-content: center;
     align-items: center;
