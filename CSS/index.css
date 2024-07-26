@@ -7,16 +7,18 @@ h1{
     color: #D63384;
 }
 .introduccion{
-    margin: 8em;
+    color: #F8F9FB;
     text-align: center;
 }
-.imagen-fondo{
-    
+.introduccion .imagen-fondo{
     position: absolute;
+    top: 35%;
+    left: 0%;
     z-index: -1;
-    top: 50%;
-    left: 40%;
+}
+.imagen-fondo img{
+    width: 100%;
 }
 .carrusel{
-    padding: 5em;
+    margin-top: 50em;
 }
