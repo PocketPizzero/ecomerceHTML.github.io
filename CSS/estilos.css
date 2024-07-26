@@ -11,7 +11,6 @@ nav, .navbar-nav, .navbar-nav a {
 .navbar-nav {
     font-size: 1.2em;
     justify-content: center;
-    flex-direction: row;
 }
 
 .navbar-nav a:hover {
