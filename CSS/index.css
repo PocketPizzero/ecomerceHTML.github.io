@@ -21,6 +21,9 @@ h1{
     padding: 0em 25em;
 }
 
+#resumen-productos {
+    padding: 5em 10em;
+}
 #resumen-productos .container{
     background-color: #D63384;
     color: #F8F9FB;
@@ -33,3 +36,4 @@ h1{
     background-color: #212429;
     text-align: center;
 }
+/* TAREA ajuste de imagenes*/
