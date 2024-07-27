@@ -22,7 +22,6 @@ h1{
 }
 
 #resumen-productos {
-    padding: 5em 10em;
 }
 #resumen-productos .container{
     background-color: #D63384;
@@ -32,8 +31,7 @@ h1{
     padding: 2em;
     width: 50%;
 }
-#resumen-productos .list-group, #resumen-productos .list-group .list-group-item{
+#resumen-productos .card{
     background-color: #212429;
-    text-align: center;
 }
 /* TAREA ajuste de imagenes*/
