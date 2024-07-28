@@ -6,23 +6,13 @@ h1{
 .titulo-principal{
     color: #D63384;
 }
-#introduccion{
-    margin: 1em 4em;
-    margin-bottom: 2em;
-    font-size: 2.5em;
-    text-align: center;
-}
-#introduccion .imagen-fondo{
-    position: absolute;
-}
-.imagen-fondo img{
-    width: 100%;
-    position: fixed;
-}
+
 #carrusel .carousel-item{
     background-color: #212429;
 }
-
+#introduccion .informacion{
+    color: #F8F9FB;
+}
 
 #resumen-productos .container-titulo{
     background-color: #D63384;
