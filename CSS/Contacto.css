@@ -1,3 +1,24 @@
 .palabra-relevante{
     color: #D63384;
 }
+
+
+/* formulario  */
+
+#contacto {
+    padding: 2rem; 
+    background-color: #f8f9fa; 
+}
+
+#contacto h1 {
+    font-size: 2rem; 
+    font-weight: bold; 
+}
+
+.palabra-relevante {
+    font-weight: bold;  
+}
+
+.invalid-feedback {
+    display: block; /* Esto segun internet asegura que el mensaje de retroalimentación sea visible */
+}
