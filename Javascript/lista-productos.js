@@ -1,49 +1,61 @@
-mostrarProductos(productos)
 mostrarCategorias()
+mostrarProductos(productos)
+
 
 function mostrarProductos(data) {
-    document.getElementById("lista-productos").innerHTML = ''
 
+    const categorias = document.querySelectorAll(".categoria")
+
+    console.log(categorias)
     data.forEach((producto) => {
-        const colProducto = document.createElement("div")
-        colProducto.classList.add("col")
 
-        const cardProducto =
-        `
-            <div class="card">
-                    <img src="${producto.imagenes[0]}" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">${producto.nombre}</h5>
-                    <p class="card-text">${producto.precio}</p>
-                </div>
-            </div>
-        `
+        categorias.forEach( categoria => {
 
-        colProducto.innerHTML = cardProducto
-        document.getElementById("lista-productos").appendChild(colProducto)
+            const nombreCategoria = categoria.firstElementChild.textContent
+
+            if((nombreCategoria)===producto.categoria){
+                const colProducto = document.createElement("div")
+                colProducto.classList.add("col")
+
+                const cardProducto =
+                `<div class="col-md-10 mb-4">
+                    <div class="card fs-1">
+                        <img src="${producto.imagenes[0]}" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">${producto.nombre}</h5>
+                            <p class="card-text">${producto.precio}</p>
+                        </div>
+                    </div>
+                </div>`
+
+                colProducto.innerHTML = cardProducto
+                categoria.children[1].appendChild(colProducto)
+            }
+        })
+
 
     });
 }
 
 function mostrarCategorias(){
-    var categorias = []
+    const categorias = []
     productos.forEach((producto) => {
-        producto.forEach((categoria)=> {
-            if(categorias.includes(categoria)===false){
-            const divCategoria = document.createElement("div")
+            if(categorias.includes(producto.categoria)==false){
+                categorias.push(producto.categoria)
+                const divCategoria = document.createElement("div")
 
-            categorias.push(categoria)
-            const rowCategoria =
-            `
-            <div class="mb-5">
-                <h2 class="text-center">${producto.categoria}</h2>
-                <div class="row justify-content-center"></div>
-            </div>
-            `
-            divCategoria.innerHTML = rowCategoria
-            document.getElementById("lista-productos").appendChild = divCategoria
-            }
-        })
-        
+                const rowCategoria =
+                `
+                <div class="categoria mb-5">
+                    <h2 class="text-center">${producto.categoria}</h2>
+                    <div class="row justify-content-center">
+                    
+                    </div>
+                </div>
+                `
+                divCategoria.innerHTML = rowCategoria
+                document.getElementById("lista-productos").appendChild(divCategoria)
+                }
+           
     })
 }
