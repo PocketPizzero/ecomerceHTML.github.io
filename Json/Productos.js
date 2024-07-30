@@ -10,7 +10,11 @@ const productos =
 		"ancho": "76.5 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
-		"imagenes": ["", ""]
+		"imagenes":
+		 [
+			"../Images/Productos/Aywey_May_-_Black-removebg-preview.png",
+			"../Images/Productos/Aywey_May_-_White-removebg-preview.png"
+		]
 	},
     {
 		"id": 2,
@@ -22,7 +26,10 @@ const productos =
 		"ancho": "74.3 mm",
 		"RAM": "12 GB",
 		"almacenamiento": "256 GB",
-		"imagenes": ["", ""]
+		"imagenes": 
+		[
+			"../Images/Productos/Aywey_Tempura_-_Black-removebg-preview.png", ""
+		]
     },
     {
 		"id": 3,
@@ -34,7 +41,10 @@ const productos =
 		"ancho": "75.55 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "128 GB",
-		"imagenes": ["", ""]
+		"imagenes": 
+		[
+			"../Images/Productos/Aywey_Noa_-_Black-removebg-preview.png", ""
+		]
     },
     {
 		"id": 4,
@@ -45,7 +55,10 @@ const productos =
 		"ancho": "71.9 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
-		"imagenes": ["", ""]
+		"imagenes": 
+		[
+			"../Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_Cyan-removebg-preview.png", ""
+		]
     },
     {
 		"id": 5,
@@ -57,7 +70,10 @@ const productos =
 		"ancho": "129,9 mm",
 		"RAM": "12 GB",
 		"almacenamiento": "256 GB",
-			"imagenes": ["", ""]
+		"imagenes":
+		[
+			"../Images/Productos/UNIVERSE_XYZ_Fall_-_Blue-removebg-preview.png", ""
+		]
     },
     {
 		"id": 6,
@@ -69,7 +85,10 @@ const productos =
 		"ancho": "70.6 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
-		"imagenes": ["", ""]
+		"imagenes":
+		[
+			"../Images/Productos/UNIVERSE_F24_-_Gold-removebg-preview.png", ""
+		]
     },
     {
 		"id": 7,
@@ -81,7 +100,10 @@ const productos =
 		"ancho": "8.17mm",
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
-		"imagenes": ["", ""]
+		"imagenes":
+		[
+			"../Images/Productos/Shaomay_Remid_-_Blue-removebg-preview.png", ""
+		]
     },
     {	"id": 8,
 		"categoria": "Shaomay",
@@ -92,19 +114,25 @@ const productos =
 		"ancho": "76.3mm",
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
-		"imagenes": ["", ""]
+		"imagenes":
+		[
+			"../Images/Productos/Shaomay_XLR8_-_Black-removebg-preview.png", ""
+		]
     },
     {
 		"id": 9,
 		"categoria": "Shaomay",
-		"nombre": "Shaomay EnvyC",
+		"nombre": "Shaomay Envy",
 		"precio": 105.900,
 		"unidades": 4,
 		"alto": "168.76mm",
 		"ancho": "76.41mm",
 		"RAM": "3 GB",
 		"almacenamiento": "64 GB",
-		"imagenes": ["", ""]
+		"imagenes":
+		[
+			"../Images/Productos/Shaomay_Envy_-_Blue-removebg-preview.png", ""
+		]
     },
     {
 		"id": 10,
@@ -116,7 +144,10 @@ const productos =
 		"ancho": "71.5mm",
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
-		"imagenes": [" ", " "]
+		"imagenes":
+		[
+			"../Images/Productos/Peraphone_13_-_Black-removebg-preview.png", ""
+		]
     },
     {
 		"id": 11,
@@ -128,7 +159,10 @@ const productos =
 		"ancho": "71.5mm",
 		"RAM": " 4 GB",
 		"almacenamiento": "128 GB",
-		"imagenes": [" ", " "]
+		"imagenes":
+		[
+			"../Images/Productos/Peraphone_14_-_Black-removebg-preview.png", ""
+		]
     },
     {
 		"id": 12,
@@ -140,6 +174,9 @@ const productos =
 		"ancho": "77.8mm",
 		"RAM": "6 GB",
 		"almacenamiento": "128 GB",
-		"imagenes": [" ", " "]
+		"imagenes":
+		[
+			"../Images/Productos/Peraphone_15_-_Black-removebg-preview.png", ""
+		]
     }
 ]

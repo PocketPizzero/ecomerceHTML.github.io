@@ -3,7 +3,9 @@ Fucsia: #D63384
 Blanco: #F8F9FB
 Negro: #212429
 */
- 
+.palabra-relevante{
+    color: #D63384;
+}
 
 /* formulario  */
 .accordion-button {
@@ -23,7 +25,6 @@ Negro: #212429
     background-color: #D63384;
     color: #F8F9FB;
 }
-
 .accordion-body {
     background-color: #F8F9FB;
     color: #212429;
