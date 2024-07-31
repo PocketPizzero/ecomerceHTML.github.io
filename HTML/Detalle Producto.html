@@ -47,7 +47,82 @@
 
 
     <main>
-        <h1>Detalle Producto</h1>
+        <div class="row  mx-5 my-5">
+            <div class="col imagenes">
+                <img class="w-75" src="../Images/logo - icono.png" alt=""/>
+                <div class="galeria container">
+                    <img class="w-25" src="../Images/logo - icono.png" alt=""/>
+                    <img class="w-25" src="../Images/logo - icono.png" alt=""/>
+                    <img class="w-25" src="../Images/logo - icono.png" alt=""/>
+                    <img class="w-25" src="../Images/logo - icono.png" alt=""/>
+                </div>
+            </div>
+            <div class="col detalle">
+                <h1 class="mb-3">Nombre Producto</h1>
+                <h2 class="mb-5">Precio</h2>
+                <h3 class="mb-5">En stock/Agotado</h3>
+                <h3>Tipo de entrega</h3>
+                <div class="form-check fs-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Envio postal
+                    </label>
+                </div>
+                <div class="form-check fs-2 mb-5">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Recoger en tienda
+                    </label>
+                </div>
+                <button type="button" class="btn btn-primary p-5 fs-1">Añadir al carrito</button>
+                <div class="my-3">
+                    <a href="#" class="link fs-3">Devoluciones o cambios</a>
+                </div>
+                <div>
+                    <a href="#" class="link fs-3">Contacto y ayuda</a>
+                </div>
+                
+            </div>
+        </div>
+        <ul class="nav nav-underline ms-5 my-5 fs-1" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Descripción</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Envío</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Reseñas</button>
+            </li>
+          </ul>
+          <div class="tab-content ms-5" id="myTabContent">
+            <div class="tab-pane w-50 fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <table class="table table-bordered fs-1">
+                    <tr>
+                        <td class="encabezado p-4">Tamaño</td>
+                        <td class="p-4">Alto Ancho</td>
+                    </tr>
+                    <tr>
+                        <td class="encabezado p-4">Almacenamiento</td>
+                        <td class="p-4">GB</td>
+                    </tr>
+                    <tr>
+                        <td class="encabezado p-4">RAM</td>
+                        <td class="p-4">GB</td>
+                    </tr>
+                    <tr>
+                        <td class="encabezado p-4">Batería</td>
+                        <td class="p-4">mhz</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
+            </div>
+          </div>
     </main>
 
 
