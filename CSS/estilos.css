@@ -10,30 +10,13 @@ body{
 }
 
 /* Header */
-nav, .navbar-nav, .navbar-nav a {
+header, header .navbar-nav a {
     background-color: #212429;
     color: #F8F9FB;
-    padding: 1em;
-}
-
-.navbar-nav {
-    font-size: 1.2em;
-    justify-content: center;
-    gap: 3em;
 }
 
 .navbar-nav a:hover {
     color: #D63384;
-}
-
-header .container img {
-    height: 4em;
-}
-
-header .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer-line2 {
