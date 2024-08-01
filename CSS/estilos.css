@@ -4,6 +4,10 @@ Blanco: #F8F9FB
 Negro: #212429
 */
 
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /* Body */
 body{
     background-color: #F8F9FB;

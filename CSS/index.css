@@ -6,12 +6,12 @@ h1{
 .titulo-principal{
     color: #D63384;
 }
+#introduccion .card{
+    color: #F8F9FB;
+}
 
 #carrusel .carousel-item{
     background-color: #212429;
-}
-#introduccion .informacion{
-    color: #F8F9FB;
 }
 
 #resumen-productos .container-titulo{
