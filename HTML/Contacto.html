@@ -3,50 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap-->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="stylesheet" href="../CSS/Contacto.css">
-    
     <title>Contacto</title>
 </head>
 <body>
-           <!--Encabezado-->
-<header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid ps-5 pb-3">
-            <a class="navbar-brand" href="/index.html">
-                <img src="/Images/logo - icono.png" alt="Logo" width="100" height="100"/>
-            </a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center fs-3" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mb-2 mb-lg-0 column-gap-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Acerca De.html">Acerca de</a>
-                    </li>
-                </ul>
-                <button class="btn" type="button">
-                    <a href="Proceso de Compra.html"> <img src="/Images/Bolsa - Icono.png" alt="Logo" width="50" height="50"/> </a> 
+    <!-- Encabezado -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ps-5 pb-3">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/Images/logo - icono.png" alt="Logo" width="100" height="100"/>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse justify-content-center fs-3" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mb-2 mb-lg-0 column-gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Acerca De.html">Acerca de</a>
+                        </li>
+                    </ul>
+                    <button class="btn" type="button">
+                        <a href="Proceso de Compra.html"> <img src="/Images/Bolsa - Icono.png" alt="Logo" width="50" height="50"/> </a> 
+                    </button>
+                </div>
+                <div class="footer-line2"></div>
             </div>
-            <div class="footer-line2"></div>
-        </div>
-    </nav>
-  </header>
+        </nav>
+    </header>
 
     <main>
         <section id="contacto">
@@ -60,13 +61,14 @@
                     </div>
                     <div class="col">
                         <p><span class="palabra-relevante">Ubicación:</span></p>
-                        <p></p>
+                        <!-- Contenedor para el mapa -->
+                        <div id="map" style="height: 400px;"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--Formlario del contato-->
+        <!-- Formulario de contacto -->
         <section>
             <div class="container">
                 <form id="contactForm" class="row g-3 needs-validation" novalidate>
@@ -122,39 +124,38 @@
         </section>
     </main>
 
-    <!--Pie de la pagina -->
-    <footer>
-        <footer class="bg-dark text-light py-4">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <ul class="navbar-nav mx-auto mb-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Acerca De.html">Acerca de</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- ESto va a ser la linea  -->
-                <div class="footer-line"></div>
-            </div>
-        </footer>
+    <!-- Pie de página -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav mx-auto mb-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Acerca De.html">Acerca de</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-line"></div>
+        </div>
     </footer>
 
-    <!--Bootstrap javascript-->
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   
-    <!--Este es el JS para las validiaciones que nos piden en el formulario -->
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Script de inicializacion del mapa -->
     <script src="../Javascript/Contacto.js"></script>
 </body>
 </html>
+

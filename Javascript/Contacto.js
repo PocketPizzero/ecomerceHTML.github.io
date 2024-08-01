@@ -15,3 +15,27 @@ document.addEventListener('DOMContentLoaded', function() {
         form.classList.add('was-validated');
     }, false);
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    var location = [10.007074890715607, -84.21644628381505];
+
+//10.007074890715607, -84.21644628381505 // ggogle maps 
+
+
+    // Crear el mapa y establecer su centro y nivel de zoom
+    var map = L.map('map').setView(location, 15);
+
+    // Agregar una capa de mapa de OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Agregar un marcador en la ubicación de la Universidad
+    L.marker(location).addTo(map)
+        .bindPopup('<b>Universidad Técnica de Costa Rica</b><br>Sede Central de Alajuela en Villa Bonita.')
+        .openPopup();
+});
+
+
