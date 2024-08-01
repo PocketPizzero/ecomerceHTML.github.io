@@ -14,18 +14,17 @@ function mostrarProductos(data) {
 
             if((nombreCategoria)===producto.categoria){
                 const colProducto = document.createElement("div")
-                colProducto.classList.add("col")
+                colProducto.classList.add("col-md-4")
+                colProducto.classList.add("mb-4")
 
                 const cardProducto =
-                `<div class="col-md-10 mb-4">
-                    <div class="card fs-1">
+                `<div class="card fs-1">
                         <img src="${producto.imagenes[0]}" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">${producto.nombre}</h5>
                             <p class="card-text">${producto.precio}</p>
                         </div>
-                    </div>
-                </div>`
+                    </div>`
 
                 colProducto.innerHTML = cardProducto
                 categoria.children[1].appendChild(colProducto)
@@ -42,15 +41,15 @@ function mostrarCategorias(){
             if(categorias.includes(producto.categoria)==false){
                 categorias.push(producto.categoria)
                 const divCategoria = document.createElement("div")
+                divCategoria.classList.add("categoria")
+                divCategoria.classList.add("mb-5")
 
                 const rowCategoria =
                 `
-                <div class="categoria mb-5">
                     <h2 class="text-center">${producto.categoria}</h2>
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center mx-5">
                     
                     </div>
-                </div>
                 `
                 divCategoria.innerHTML = rowCategoria
                 document.getElementById("lista-productos").appendChild(divCategoria)
