@@ -13,6 +13,7 @@ body{
     background-color: #F8F9FB;
 }
 
+
 /* Header */
 header, header .navbar-nav a {
     background-color: #212429;
@@ -32,9 +33,21 @@ header, header .navbar-nav a {
     background-color: #D63384; 
 }
 
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.navbar-toggler.custom-toggler {
+    border-color: #F8F9FB(255, 255, 255, 0.1);
+}
+
+.navbar-toggler.custom-toggler .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+
 /* Fooder  */
-
-
 footer {
     position: relative;
     background-color: #212429; 
