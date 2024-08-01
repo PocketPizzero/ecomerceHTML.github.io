@@ -21,3 +21,9 @@
 .invalid-feedback {
     display: block; /* Esto segun internet asegura que el mensaje de retroalimentación sea visible */
 }
+
+/* Estilo del conteiner del map */
+#map {
+    height: 400px; 
+    width: 100%; 
+}
