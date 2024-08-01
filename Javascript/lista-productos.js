@@ -6,7 +6,6 @@ function mostrarProductos(data) {
 
     const categorias = document.querySelectorAll(".categoria")
 
-    console.log(categorias)
     data.forEach((producto) => {
 
         categorias.forEach( categoria => {
