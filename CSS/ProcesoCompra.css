@@ -49,4 +49,46 @@
 }
 
 
+/* Tbala de Subtotal y el env */
+.table {
+    border: 1px solid #D63384; 
+}
 
+.table th, .table td {
+    padding: 0.75rem; 
+}
+
+.table th {
+    background-color: #f8f9fa; 
+}
+
+.table td {
+    background-color: #f8f9fa;
+}
+
+/*  elementos alineados */
+.d-flex {
+    display: flex;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.me-4 {
+    margin-right: 2.5rem; /* Espacio colum envío y la tabla */
+}
+
+.ms-5 {
+    margin-left: 4rem; 
+}
+
+
+.mt-4 {
+    margin-top: 2rem; /* Ajusta según sea necesario */
+}
+
+
+.align-bottom {
+    margin-top: 2.3rem; /* Ajusta el valor según sea necesario */
+}
