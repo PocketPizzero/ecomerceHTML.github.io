@@ -1,0 +1,52 @@
+/*  boton X */
+
+.btn-fucsia {
+    color: #D63384;
+    border: 1px solid #D63384;
+}
+
+
+/* la cantidad  */
+
+.form-control-fucsia {
+    border-color: #D63384;
+}
+
+/*  carrito y tipo de envio  */
+.btn-fucsia-full {
+    background-color: #D63384;
+    color: #F8F9FB;
+    border: 2px solid #D63384;
+}
+
+.btn-fucsia-full:hover {
+    background-color: #D63384;
+    color:#F8F9FB;
+}
+
+.form-control-fucsia {
+    border-color: #D63384;
+}
+
+.form-control-fucsia:focus {
+    border-color: #D63384;
+}
+
+.btn-fucsia {
+    background-color: #D63384;
+    color: #F8F9FB;
+    border: 2px solid #D63384;
+}
+
+.btn-fucsia:hover {
+    background-color: #D63384;
+    color: #F8F9FB;
+}
+
+.custom-radio:checked {
+    background-color: #D63384;
+    border-color: #D63384;
+}
+
+
+
