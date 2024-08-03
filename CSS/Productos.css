@@ -6,8 +6,6 @@
     margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
-
 .btn-outline-custom {
     border-color: #D63384;
     color: #D63384;
@@ -15,7 +13,5 @@
 
 .btn-outline-custom:hover {
     background-color: #D63384;
-    color: #F8F9FB;
+    color: #fff;
 }
-=======
->>>>>>> 199e16e99475127a531915c5a266e89ff099ad9e
