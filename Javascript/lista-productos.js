@@ -20,9 +20,9 @@ function mostrarProductos(data) {
                 const cardProducto =
                 `<div class="card fs-1">
                         <img src="${producto.imagenes[0]}" class="card-img-top" alt="">
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <h5 class="card-title">${producto.nombre}</h5>
-                            <p class="card-text">${producto.precio}</p>
+                            <p class="card-text">&cent;${producto.precio}</p>
                             <button type="button" class="btn btn-outline-info">Más Información</button>
                         </div>
                     </div>`

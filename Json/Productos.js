@@ -4,7 +4,7 @@ const productos =
 		"id": 1,
 		"categoria": "Aywey",
 		"nombre": "Aywey May",
-		"precio": "738,000.00",
+		"precio": "738,000",
 		"unidades": 6,
 		"alto": "161.5 mm",
 		"ancho": "76.5 mm",
