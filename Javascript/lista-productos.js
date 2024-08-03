@@ -25,7 +25,7 @@ function mostrarProductos(data) {
                             <p class="card-text">${producto.precio}</p>
                                 
                             <button type="button" class="btn btn-outline-info">Más Información</button>
-                     <button type="button" class="btn btn-outline-info">Más Información</button>
+                    
 
                         </div>
                     </div>`
