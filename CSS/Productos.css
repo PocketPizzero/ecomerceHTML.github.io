@@ -6,10 +6,14 @@
     margin-bottom: 20px;
 }
 
-.btn-fucsia-full {
+.btn-fucsia-full{
     background-color: #D63384;
     color: #F8F9FB;
     border: 2px solid #D63384;
+}
+.btn-fucsia-full a{
+    color: #212429;
+    text-decoration: none;
 }
 
 .btn-fucsia-full:hover {
