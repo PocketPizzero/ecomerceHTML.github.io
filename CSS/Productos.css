@@ -6,12 +6,13 @@
     margin-bottom: 20px;
 }
 
-.btn-outline-custom {
-    border-color: #D63384;
-    color: #D63384;
-}
-
-.btn-outline-custom:hover {
+.btn-fucsia-full {
     background-color: #D63384;
     color: #F8F9FB;
+    border: 2px solid #D63384;
+}
+
+.btn-fucsia-full:hover {
+    background-color: #D63384;
+    color:#F8F9FB;
 }
