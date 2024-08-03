@@ -23,7 +23,6 @@ function mostrarProductos(data) {
                         <div class="card-body">
                             <h5 class="card-title">${producto.nombre}</h5>
                             <p class="card-text">${producto.precio}</p>
-                            
                         </div>
                     </div>`
 
