@@ -6,3 +6,12 @@
     margin-bottom: 20px;
 }
 
+.btn-outline-custom {
+    border-color: #D63384;
+    color: #D63384;
+}
+
+.btn-outline-custom:hover {
+    background-color: #D63384;
+    color: #F8F9FB;
+}

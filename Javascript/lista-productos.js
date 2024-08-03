@@ -22,8 +22,10 @@ function mostrarProductos(data) {
                         <img src="${producto.imagenes[0]}" class="card-img-top" alt="">
                         <div class="card-body text-center">
                             <h5 class="card-title">${producto.nombre}</h5>
-                            <p class="card-text">&cent;${producto.precio}</p>
+                            <p class="card-text">${producto.precio}</p>   
+                           <button type="button" class="btn btn-outline-info btn-outline-custom">Más Información</button>
                             <button type="button" class="btn btn-outline-info">Más Información</button>
+>>>>>>> 199e16e99475127a531915c5a266e89ff099ad9e
                         </div>
                     </div>`
 
