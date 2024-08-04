@@ -9,7 +9,7 @@ $(document).ready(function() {
 
         //Colocar Imagenes
         let contador = 0
-        $("#miniatura").attr("src", producto.imagenes[0])
+        $("#miniatura").attr("src", "."+producto.imagenes[0])
 
         producto.imagenes.forEach(i => {
             //Crea un <li>
@@ -26,7 +26,7 @@ $(document).ready(function() {
                 //Al <button> le añade la <img/> correspondiente
                 .append
                 (
-                    $('<img/>').attr('src', producto.imagenes[contador]).addClass
+                    $('<img/>').attr('src', "."+producto.imagenes[contador]).addClass
                     ('w-100')
                 )
             )

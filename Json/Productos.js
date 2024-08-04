@@ -16,8 +16,8 @@ const productos =
 		},
 		"imagenes":
 		 [
-			"../Images/Productos/Aywey_May_-_Black-removebg-preview.png",
-			"../Images/Productos/Aywey_May_-_White-removebg-preview.png"
+			"./Images/Productos/Aywey_May_-_Black-removebg-preview.png",
+			"./Images/Productos/Aywey_May_-_White-removebg-preview.png"
 		]
 	},
     {
@@ -36,9 +36,9 @@ const productos =
 		},
 		"imagenes": 
 		[
-			"../Images/Productos/Aywey_Tempura_-_Black-removebg-preview.png",
-			"../Images/Productos/Aywey_Tempura_-_Pink-removebg-preview.png",
-			"../Images/Productos/Aywey_Tempura_-_White-removebg-preview.png"
+			"./Images/Productos/Aywey_Tempura_-_Black-removebg-preview.png",
+			"./Images/Productos/Aywey_Tempura_-_Pink-removebg-preview.png",
+			"./Images/Productos/Aywey_Tempura_-_White-removebg-preview.png"
 		]
     },
     {
@@ -57,8 +57,8 @@ const productos =
 		},
 		"imagenes": 
 		[
-			"../Images/Productos/Aywey_Noa_-_Black-removebg-preview.png", 
-			"../Images/Productos/Aywey_Noa_-_Green-removebg-preview.png"
+			"./Images/Productos/Aywey_Noa_-_Black-removebg-preview.png", 
+			"./Images/Productos/Aywey_Noa_-_Green-removebg-preview.png"
 		]
     },
     {
@@ -77,10 +77,10 @@ const productos =
 		},
 		"imagenes": 
 		[
-			"../Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_Cyan-removebg-preview.png", 
-			"../Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_Silver-removebg-preview.png",
-			"../Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_Pink-removebg-preview.png",
-			"../Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_White-removebg-preview.png"
+			"./Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_Cyan-removebg-preview.png", 
+			"./Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_Silver-removebg-preview.png",
+			"./Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_Pink-removebg-preview.png",
+			"./Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_White-removebg-preview.png"
 		]
     },
     {
@@ -99,9 +99,9 @@ const productos =
 		},
 		"imagenes":
 		[
-			"../Images/Productos/UNIVERSE_XYZ_Fall_-_Blue-removebg-preview.png", 
-			"../Images/Productos/UNIVERSE_XYZ_Fall_-_Gold-removebg-preview.png",
-			"../Images/Productos/UNIVERSE_XYZ_Fall_-_SIlver-removebg-preview.png"
+			"./Images/Productos/UNIVERSE_XYZ_Fall_-_Blue-removebg-preview.png", 
+			"./Images/Productos/UNIVERSE_XYZ_Fall_-_Gold-removebg-preview.png",
+			"./Images/Productos/UNIVERSE_XYZ_Fall_-_SIlver-removebg-preview.png"
 		]
     },
     {
@@ -120,10 +120,10 @@ const productos =
 		},
 		"imagenes":
 		[
-			"../Images/Productos/UNIVERSE_F24_-_Gold-removebg-preview.png", 
-			"../Images/Productos/UNIVERSE_F24_-_Purple-removebg-preview.png",
-			"../Images/Productos/UNIVERSE_F24_-_Silver-removebg-preview.png",
-			"../Images/Productos/UNIVERSE_F24_-_White-removebg-preview.png"
+			"./Images/Productos/UNIVERSE_F24_-_Gold-removebg-preview.png", 
+			"./Images/Productos/UNIVERSE_F24_-_Purple-removebg-preview.png",
+			"./Images/Productos/UNIVERSE_F24_-_Silver-removebg-preview.png",
+			"./Images/Productos/UNIVERSE_F24_-_White-removebg-preview.png"
 		]
     },
     {
@@ -142,9 +142,9 @@ const productos =
 		},
 		"imagenes":
 		[
-			"../Images/Productos/Shaomay_Remid_-_Blue-removebg-preview.png", 
-			"../Images/Productos/Shaomay_Remid_-_Gray-removebg-preview.png",
-			"../Images/Productos/Shaomay_Remid_-_Ligth_Blue-removebg-preview.png"
+			"./Images/Productos/Shaomay_Remid_-_Blue-removebg-preview.png", 
+			"./Images/Productos/Shaomay_Remid_-_Gray-removebg-preview.png",
+			"./Images/Productos/Shaomay_Remid_-_Ligth_Blue-removebg-preview.png"
 		]
     },
     {	"id": 8,
@@ -162,9 +162,9 @@ const productos =
 		},
 		"imagenes":
 		[
-			"../Images/Productos/Shaomay_XLR8_-_Black-removebg-preview.png", 
-			"../Images/Productos/Shaomay_XLR8_-_Gray-removebg-preview.png",
-			"../Images/Productos/Shaomay_XLR8_-_Green-removebg-preview.png"
+			"./Images/Productos/Shaomay_XLR8_-_Black-removebg-preview.png", 
+			"./Images/Productos/Shaomay_XLR8_-_Gray-removebg-preview.png",
+			"./Images/Productos/Shaomay_XLR8_-_Green-removebg-preview.png"
 		]
     },
     {
@@ -183,9 +183,9 @@ const productos =
 		},
 		"imagenes":
 		[
-			"../Images/Productos/Shaomay_Envy_-_Blue-removebg-preview.png", 
-			"../Images/Productos/Shaomay_Envy_-_Gray-removebg-preview.png",
-			"../Images/Productos/Shaomay_Envy_-_White-removebg-preview.png"
+			"./Images/Productos/Shaomay_Envy_-_Blue-removebg-preview.png", 
+			"./Images/Productos/Shaomay_Envy_-_Gray-removebg-preview.png",
+			"./Images/Productos/Shaomay_Envy_-_White-removebg-preview.png"
 		]
     },
     {
@@ -204,9 +204,9 @@ const productos =
 		},
 		"imagenes":
 		[
-			"../Images/Productos/Peraphone_13_-_Black-removebg-preview.png",
-			 "../Images/Productos/Peraphone_13_-_Blue-removebg-preview.png",
-			 "../Images/Productos/Peraphone_13_-_Green-removebg-preview.png"
+			"./Images/Productos/Peraphone_13_-_Black-removebg-preview.png",
+			"./Images/Productos/Peraphone_13_-_Blue-removebg-preview.png",
+			"./Images/Productos/Peraphone_13_-_Green-removebg-preview.png"
 		]
     },
     {
@@ -225,9 +225,9 @@ const productos =
 		},
 		"imagenes":
 		[
-			"../Images/Productos/Peraphone_14_-_Black-removebg-preview.png", 
-			"../Images/Productos/Peraphone_14_-_Cyan-removebg-preview.png",
-			 "../Images/Productos/Peraphone_14_-_Red-removebg-preview.png"
+			"./Images/Productos/Peraphone_14_-_Black-removebg-preview.png", 
+			"./Images/Productos/Peraphone_14_-_Cyan-removebg-preview.png",
+			"./Images/Productos/Peraphone_14_-_Red-removebg-preview.png"
 		]
     },
     {
@@ -246,11 +246,11 @@ const productos =
 		},
 		"imagenes":
 		[
-			"../Images/Productos/Peraphone_15_-_Black-removebg-preview.png", 
-			"../Images/Productos/Peraphone_15_-_Gold-removebg-preview.png",
-			"../Images/Productos/Peraphone_15_-_Green-removebg-preview.png",
-			"../Images/Productos/Peraphone_15_-_Ligth_Blue-removebg-preview.png",
-			 "../Images/Productos/Peraphone_15_-_Pink-removebg-preview.png"
+			"./Images/Productos/Peraphone_15_-_Black-removebg-preview.png", 
+			"./Images/Productos/Peraphone_15_-_Gold-removebg-preview.png",
+			"./Images/Productos/Peraphone_15_-_Green-removebg-preview.png",
+			"./Images/Productos/Peraphone_15_-_Ligth_Blue-removebg-preview.png",
+			"./Images/Productos/Peraphone_15_-_Pink-removebg-preview.png"
 			 
 		]
     }
