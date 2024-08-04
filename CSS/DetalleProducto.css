@@ -4,18 +4,22 @@ Blanco: #F8F9FB
 Negro: #212429
 */
 /*Detalle*/
+#imagenes .galeria-imagen{
+    background-color: white;
+    border: none;
+}
 
-.btn {
+.btn.comprar{
     background-color: #D63384;
     border-color: #F8F9FB;
     color: #F8F9FB;
 }
-.btn:hover, :not(.btn-check)+.btn:active{
+.btn.comprar:hover, :not(.btn.comprar-check)+.btn.comprar:active{
     background-color: #D63384;
     border-color: #F8F9FB;
-    opacity: 0.90;
+    opacity: 0.80;
 }
-:not(.btn-check)+.btn:active{
+:not(.btn.comprar-check)+.btn.comprar:active{
     background-color: #212429;
     border-color: #D63384;
     color: #D63384;
