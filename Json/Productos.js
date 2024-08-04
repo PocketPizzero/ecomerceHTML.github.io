@@ -87,7 +87,7 @@ const productos =
     {
 		"id": 6,
 		"categoria": "UNIVERSE",
-		"nombre": "UNIVERSE_F24",
+		"nombre": "UNIVERSE F24",
 		"precio": "410,000",
 		"unidades": 5,
 		"alto": "147 mm",
