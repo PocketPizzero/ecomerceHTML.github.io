@@ -4,23 +4,62 @@
 
 /* formulario  */
 
-#contacto {
-    padding: 2rem; 
+#contactForm {
     background-color: #f8f9fa; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-#contacto h1 {
-    font-size: 2rem; 
+
+.btn-fucsia-full {
+    background-color: #D63384; 
+    border-color: #D63384; 
+    color: white; 
+    font-size: 1.25rem; 
     font-weight: bold; 
 }
 
-.palabra-relevante {
-    font-weight: bold;  
+.btn-fucsia-full:hover {
+    background-color: #c8236c; 
+    border-color: #bd2130; 
 }
 
-.invalid-feedback {
-    display: block; /* Esto segun internet asegura que el mensaje de retroalimentación sea visible */
+
+
+.form-control:invalid {
+    border-color: #dc3545; 
 }
+
+.form-control:valid {
+    border-color: #28a745; 
+}
+
+
+.invalid-feedback {
+    color: #dc3545; 
+}
+
+
+.valid-feedback {
+    color: #28a745; 
+}
+
+.row.g-3 {
+    margin-bottom: 15px; /* Espacio entre columnas */
+}
+
+
+.form-label {
+    font-weight: bold;
+}
+
+
+.form-check-input:checked {
+    background-color: #D63384;
+    border-color: #D63384;
+}
+
 
 /* Estilo del conteiner del map */
 #map {
