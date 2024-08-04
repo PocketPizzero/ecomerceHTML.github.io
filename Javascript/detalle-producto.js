@@ -52,6 +52,6 @@ $(document).ready(function() {
     
     function cambiarImagen(index){
         console.log(index)
-        $("#miniatura").attr("src", index)
+        $("#miniatura").attr("src", "."+index)
     }
 })
