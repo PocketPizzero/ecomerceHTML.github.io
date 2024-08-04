@@ -21,7 +21,7 @@ function mostrarProductos(data) {
                 colProducto.classList.add("mb-4")
 
                 const cardProducto =
-                `<div class="card fs-1">
+                `<div class="card mb-5 fs-1">
                         <img src=".${producto.imagenes[0]}" class="card-img-top" alt="">
                         <div class="card-body text-center">
                             <h5 class="card-title">${producto.nombre}</h5>
