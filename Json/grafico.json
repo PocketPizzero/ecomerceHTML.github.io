@@ -1,5 +1,5 @@
 {
-    "productos" [
+    "productos" : [
         {"nombre": "Aywey", "usuarios": 2000},
         {"nombre": "Peraphone", "usuarios": 4000},
         {"nombre": "Universe", "usuarios": 3500},
