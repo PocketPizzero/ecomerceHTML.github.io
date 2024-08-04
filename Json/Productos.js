@@ -116,7 +116,7 @@ const productos =
 		[
 			"../Images/Productos/Shaomay_Remid_-_Blue-removebg-preview.png", 
 			"../Images/Productos/Shaomay_Remid_-_Gray-removebg-preview.png",
-			"../Images/Productos/Shaomay_XLR8_-_Green-removebg-preview.png"
+			"../Images/Productos/Shaomay_Remid_-_Ligth_Blue-removebg-preview.png"
 		]
     },
     {	"id": 8,
