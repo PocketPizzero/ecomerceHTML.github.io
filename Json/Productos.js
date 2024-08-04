@@ -97,9 +97,9 @@ const productos =
 		"imagenes":
 		[
 			"../Images/Productos/UNIVERSE_F24_-_Gold-removebg-preview.png", 
-			"Images/Productos/UNIVERSE_F24_-_Purple-removebg-preview.png",
-			"Images/Productos/UNIVERSE_F24_-_Silver-removebg-preview.png",
-			"Images/Productos/UNIVERSE_F24_-_White-removebg-preview.png"
+			"../Images/Productos/UNIVERSE_F24_-_Purple-removebg-preview.png",
+			"../Images/Productos/UNIVERSE_F24_-_Silver-removebg-preview.png",
+			"../Images/Productos/UNIVERSE_F24_-_White-removebg-preview.png"
 		]
     },
     {
