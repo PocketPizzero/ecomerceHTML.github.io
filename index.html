@@ -113,15 +113,10 @@
         </section>
         
         <section id="grafico">
-            <h2>Marcas más populares</h2>
-            <ul>
-                <li>Peraphone</li>
-                <li>Aywer</li>
-                <li>Universe</li>
-            </ul>
             <div>
-                <img src="Images/logo - icono.png"/>
+                <canvas id="myChart"></canvas>
             </div>
+            
         </section>
     </main>
 
@@ -152,9 +147,19 @@
         </div>
     </footer>
     
+
+
      <!--Bootstrap javascript-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
+     <!--Chart.js-->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script>
+        const ctx = document.getElementById('myChart');
+      
+        
+      </script>
+
      <script src="Json/Productos.js"></script>
      <script src="Javascript/inicio.js"></script>
 </body>

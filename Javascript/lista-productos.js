@@ -1,6 +1,9 @@
 mostrarCategorias()
 mostrarProductos(productos)
 
+function detalleProducto(id) {
+    window.location.href = `Detalle Producto.html?id=${id}`;
+}
 
 function mostrarProductos(data) {
 
@@ -29,6 +32,7 @@ function mostrarProductos(data) {
                         </div>
                     </div>`
 
+                
                 colProducto.innerHTML = cardProducto
                 categoria.children[1].appendChild(colProducto)
             }
