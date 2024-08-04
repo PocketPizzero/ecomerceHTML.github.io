@@ -11,7 +11,7 @@ const productos =
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "4460 mAh",
-		"fecha de agregado": {
+		"fecha-agregado": {
 			"$date": "2024-08-03T00:00:00.000-0700"
 		},
 		"imagenes":
