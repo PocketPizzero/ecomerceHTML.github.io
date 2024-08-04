@@ -10,6 +10,10 @@ const productos =
 		"ancho": "76.5 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
+		"bateria": "4460 mAh",
+		"fecha de agregado": {
+			"$date": "2024-08-03T00:00:00.000-0700"
+		},
 		"imagenes":
 		 [
 			"../Images/Productos/Aywey_May_-_Black-removebg-preview.png",
