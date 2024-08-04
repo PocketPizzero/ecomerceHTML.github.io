@@ -1,19 +1,29 @@
-// Esto lo que hace es esperar a que el contenido del DOM esté completamente cargado
+// Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
-    // Aqui se obtiene el formulario de contacto
+    // Obtener el formulario
     const form = document.getElementById('contactForm');
 
-    // Este hace que maneje el evento de envío del formulario
+    // Agregar un evento de envío al formulario
     form.addEventListener('submit', function(event) {
-        //Y el if hace que se prevenga  el envío del formulario si no es valido
-        if (!form.checkValidity()) {
-            event.preventDefault(); // esto evita el el envío del formulario
-            event.stopPropagation(); // y esto detiene la propagación del evento
+        // Prevenir el comportamiento por defecto de envío del formulario
+        event.preventDefault();
+        
+        // Verifica si el formulario es válido
+        if (form.checkValidity() === false) {
+            // errores de validación
+            event.stopPropagation();
+        } else {
+            // datos del formulario
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            //  datos en la consola
+            console.log('Formulario enviado con éxito:', data);
         }
 
-        // y esto añade o quita las clases de validacion
+        // Agregar la clase de validación al formulario
         form.classList.add('was-validated');
-    }, false);
+    });
 });
 
 
