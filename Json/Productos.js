@@ -28,7 +28,9 @@ const productos =
 		"almacenamiento": "256 GB",
 		"imagenes": 
 		[
-			"../Images/Productos/Aywey_Tempura_-_Black-removebg-preview.png", ""
+			"../Images/Productos/Aywey_Tempura_-_Black-removebg-preview.png",
+			"../Images/Productos/Aywey_Tempura_-_Pink-removebg-preview.png",
+			"../Images/Productos/Aywey_Tempura_-_White-removebg-preview.png"
 		]
     },
     {
