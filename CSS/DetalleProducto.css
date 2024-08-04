@@ -8,6 +8,9 @@ Negro: #212429
     background-color: white;
     border: none;
 }
+#imagenes li{
+    list-style: none;
+}
 
 .btn.comprar{
     background-color: #D63384;
