@@ -30,6 +30,10 @@ const productos =
 		"ancho": "74.3 mm",
 		"RAM": "12 GB",
 		"almacenamiento": "256 GB",
+		"bateria": "4900 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-05T00:00:00.000-0700"
+		},
 		"imagenes": 
 		[
 			"../Images/Productos/Aywey_Tempura_-_Black-removebg-preview.png",
@@ -47,6 +51,10 @@ const productos =
 		"ancho": "75.55 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "128 GB",
+		"bateria": "5000 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-06T00:00:00.000-0700"
+		},
 		"imagenes": 
 		[
 			"../Images/Productos/Aywey_Noa_-_Black-removebg-preview.png", 
@@ -63,6 +71,10 @@ const productos =
 		"ancho": "71.9 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
+		"bateria": "4270 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-08T00:00:00.000-0700"
+		},
 		"imagenes": 
 		[
 			"../Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_Cyan-removebg-preview.png", 
@@ -81,6 +93,10 @@ const productos =
 		"ancho": "129,9 mm",
 		"RAM": "12 GB",
 		"almacenamiento": "256 GB",
+		"bateria": "4400 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-07T00:00:00.000-0700"
+		},
 		"imagenes":
 		[
 			"../Images/Productos/UNIVERSE_XYZ_Fall_-_Blue-removebg-preview.png", 
@@ -98,6 +114,10 @@ const productos =
 		"ancho": "70.6 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
+		"bateria": "5000 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-09T00:00:00.000-0700"
+		},
 		"imagenes":
 		[
 			"../Images/Productos/UNIVERSE_F24_-_Gold-removebg-preview.png", 
@@ -116,6 +136,10 @@ const productos =
 		"ancho": "8.17mm",
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
+		"bateria": "5000 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-03T00:00:00.000-0700"
+		},
 		"imagenes":
 		[
 			"../Images/Productos/Shaomay_Remid_-_Blue-removebg-preview.png", 
@@ -132,6 +156,10 @@ const productos =
 		"ancho": "76.3mm",
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
+		"bateria": "5000 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-06T00:00:00.000-0700"
+		},
 		"imagenes":
 		[
 			"../Images/Productos/Shaomay_XLR8_-_Black-removebg-preview.png", 
@@ -149,6 +177,10 @@ const productos =
 		"ancho": "76.41mm",
 		"RAM": "3 GB",
 		"almacenamiento": "64 GB",
+		"bateria": "5000 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-05T00:00:00.000-0700"
+		},
 		"imagenes":
 		[
 			"../Images/Productos/Shaomay_Envy_-_Blue-removebg-preview.png", 
@@ -166,6 +198,10 @@ const productos =
 		"ancho": "71.5mm",
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
+		"bateria": "3500 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-07T00:00:00.000-0700"
+		},
 		"imagenes":
 		[
 			"../Images/Productos/Peraphone_13_-_Black-removebg-preview.png",
@@ -183,6 +219,10 @@ const productos =
 		"ancho": "71.5mm",
 		"RAM": " 4 GB",
 		"almacenamiento": "128 GB",
+		"bateria": "3279 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-09T00:00:00.000-0700"
+		},
 		"imagenes":
 		[
 			"../Images/Productos/Peraphone_14_-_Black-removebg-preview.png", 
@@ -200,6 +240,10 @@ const productos =
 		"ancho": "77.8mm",
 		"RAM": "6 GB",
 		"almacenamiento": "128 GB",
+		"bateria": "4912 mAh",
+		"fecha-agregado": {
+			"$date": "2024-08-06T00:00:00.000-0700"
+		},
 		"imagenes":
 		[
 			"../Images/Productos/Peraphone_15_-_Black-removebg-preview.png", 
