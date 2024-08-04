@@ -27,3 +27,18 @@ h1{
     color: #F8F9FB;
 }
 /* TAREA ajuste de imagenes*/
+
+
+
+/* graf */
+#grafico {
+    text-align: center; 
+}
+
+.grafico-container {
+    display: inline-block; 
+    width: 60%; 
+    max-width: 40%; 
+    margin: 0 auto; 
+}
+
