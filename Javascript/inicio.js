@@ -1,4 +1,5 @@
 productosCarrusel(productos)
+productosRecientes(productos)
 function productosCarrusel(data){
     //Auxiliares
     const categorias = [];
@@ -32,8 +33,7 @@ function productosCarrusel(data){
             `
                 <img src="${producto.imagenes[0]}" class="d-block mx-auto pb-5" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>${producto.categoria}</h5>
-                    <p>${producto.nombre}</p>
+                    <h5 class="fs-2">${producto.nombre}</h5>
                 </div>
             `
             indicadoresCarrusel.appendChild(indicador)
@@ -41,15 +41,37 @@ function productosCarrusel(data){
         }
     });
 }
-$(document).ready(function(data){
-    const lista = document.getElementById("agregados-recientemente")
+
+function productosRecientes(data){
+    const agregados_recientemente = document.getElementById('agregados-recientemente')
+
+    const ordenados = data.sort((p1,p2) => {
+        const fecha1 = new Date(p1.fecha_agregado)
+        const fecha2 = new Date(p2.fecha_agregado)
+        return fecha2 - fecha1
+    }) 
     
-    
-    /*
-    <div class="col-3 m-3">
-        <div class="card">
-            <img src="Images/logo - icono.png" class="card-img-top" alt="Producto 1">
-        </div>
-    </div>
-    */
-   
+    ordenados.slice(0, 3).forEach( producto => {
+        const elemento = document.createElement('div')
+        elemento.classList.add('col-3')
+        elemento.classList.add('m-3')
+        elemento.innerHTML =
+        `<div class="card">
+            <img src="${producto.imagenes[0]}" class="card-img-top" alt="Producto">
+        </div>`
+
+        agregados_recientemente.appendChild(elemento)
+    })
+
+    const elemento = document.createElement('div')
+    elemento.classList.add('col-1')
+    elemento.classList.add('m-3')
+    elemento.innerHTML = 
+        `<div class="card">
+            <h5 class="card-title">
+                <a class="nav-link" href="HTML/Productos.html">Ver más</a>
+            </h5>
+        </div>`
+
+    agregados_recientemente.appendChild(elemento)
+}

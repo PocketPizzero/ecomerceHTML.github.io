@@ -8,6 +8,10 @@ Negro: #212429
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.palabra-relevante{
+    color: #D63384;
+}
+
 /* Body */
 body{
     background-color: #F8F9FB;
