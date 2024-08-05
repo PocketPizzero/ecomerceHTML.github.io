@@ -44,18 +44,6 @@ function productosCarrusel(data){
 $(document).ready(function(data){
     const lista = document.getElementById("agregados-recientemente")
     
-    data.forEach(producto => {
-        lista.appendChild
-        (
-            $('div').AddClass('row', 'justify-content-center', 'align-items-center').append
-            (
-                $('div').AddClass('col-3', 'm-3').append
-                (
-                    $('img').attr('src', producto.imagenes[0]).attr('alt', 'Producto').AddClass('card-img-top')
-                )
-            )
-        )
-    });
     
     /*
     <div class="col-3 m-3">
@@ -64,5 +52,4 @@ $(document).ready(function(data){
         </div>
     </div>
     */
-    
-})
+   
