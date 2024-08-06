@@ -13,6 +13,17 @@
     color:#F8F9FB;
 }
 
-#barra-lateral{
-    background-color: white;
+
+.btn-filter {
+    background-color: #D63384; 
+    color: #F8F9FB ; 
+    border: 1px solid #ced4da; 
+}
+
+
+.btn-filter:focus,
+.btn-filter:active {
+    background-color: #D63384; 
+    color: #F8F9FB; 
+    border-color: #212429; 
 }
