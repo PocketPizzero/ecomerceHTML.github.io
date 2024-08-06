@@ -27,12 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     var location = [10.007074890715607, -84.21644628381505];
 
 //10.007074890715607, -84.21644628381505 // ggogle maps 
-
 
     // Crear el mapa y establecer su centro y nivel de zoom
     var map = L.map('map').setView(location, 15);
