@@ -13,7 +13,7 @@
     color:#F8F9FB;
 }
 
-
+/* boton de fuiltrar por:  */
 .btn-filter {
     background-color: #D63384; 
     color: #F8F9FB ; 
@@ -26,5 +26,21 @@
     background-color: #D63384; 
     color: #F8F9FB; 
     border-color: #212429; 
+}
+
+/* las offcamvas  */
+.custom-offcanvas {
+    background-color: #212429; 
+    color: #FFF; 
+}
+
+
+.custom-offcanvas .offcanvas-header {
+    border-bottom: 1px solid #D63384; 
+}
+
+.custom-offcanvas .btn-close {
+    color: #FFF; /* LA X DE CERRAR   */
+    filter: invert(1); 
 }
 
