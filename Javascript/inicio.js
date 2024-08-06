@@ -66,6 +66,7 @@ function productosRecientes(data){
     const elemento = document.createElement('div')
     elemento.classList.add('col')
     elemento.classList.add('m-3')
+    elemento.classList.add('text-center')
     elemento.innerHTML = 
         `<div class="card">
             <h5 class="card-title">
