@@ -28,13 +28,13 @@
 
 /* graf */
 #grafico {
-    text-align: center; 
+    text-align: center;
+    justify-content: center;
 }
 
 .grafico-container {
     width: 80%; 
-    max-width: 40%; 
-    margin:auto; 
+    max-width: 40%;
 }
 
 /* agregados recientemenete */
