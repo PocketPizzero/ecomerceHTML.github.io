@@ -53,7 +53,7 @@ function productosRecientes(data){
     
     ordenados.slice(0, 3).forEach( producto => {
         const elemento = document.createElement('div')
-        elemento.classList.add('col-3')
+        elemento.classList.add('col')
         elemento.classList.add('m-3')
         elemento.innerHTML =
         `<div class="card">
@@ -62,9 +62,9 @@ function productosRecientes(data){
 
         agregados_recientemente.appendChild(elemento)
     })
-
+    
     const elemento = document.createElement('div')
-    elemento.classList.add('col-1')
+    elemento.classList.add('col')
     elemento.classList.add('m-3')
     elemento.innerHTML = 
         `<div class="card">
