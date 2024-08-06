@@ -31,7 +31,7 @@ function productosCarrusel(data){
 
             item.innerHTML =
             `
-                <img src="${producto.imagenes[0]}" class="d-block mx-auto pb-5 w-50" alt="...">
+                <img src="${producto.imagenes[0]}" class="d-block mx-auto pb-5 w-25" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="fs-2">${producto.nombre}</h5>
                 </div>

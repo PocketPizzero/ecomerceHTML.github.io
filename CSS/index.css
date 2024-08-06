@@ -26,17 +26,6 @@
     color: #F8F9FB;
 }
 
-/* graf */
-#grafico {
-    text-align: center;
-    justify-content: center;
-}
-
-.grafico-container {
-    width: 80%; 
-    max-width: 40%;
-}
-
 /* agregados recientemenete */
 .custom-container {
     margin-left: auto;
