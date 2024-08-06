@@ -37,3 +37,9 @@
     margin: 0 auto; 
 }
 
+/* agregados recientemenete */
+.custom-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%; /* Puedes ajustar este valor según sea necesario */
+}
