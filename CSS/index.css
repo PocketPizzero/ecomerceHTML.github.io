@@ -12,10 +12,6 @@
 #resumen-productos .container-titulo{
     background-color: #D63384;
     color: #F8F9FB;
-    margin-top: 5em;
-    margin-left: 5em;
-    padding: 2em;
-    width: 50%;
 }
 #resumen-productos .container-cuerpo{
     background-color: #212429;
