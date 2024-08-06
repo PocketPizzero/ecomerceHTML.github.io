@@ -184,8 +184,8 @@ const productos =
 		"fecha_agregado": "2024-08-07",
 		"imagenes":
 		[
-			"./Images/Productos/Peraphone_13_-_Black-removebg-preview.png",
 			"./Images/Productos/Peraphone_13_-_Blue-removebg-preview.png",
+			"./Images/Productos/Peraphone_13_-_Black-removebg-preview.png",
 			"./Images/Productos/Peraphone_13_-_Green-removebg-preview.png"
 		]
     },
@@ -203,9 +203,9 @@ const productos =
 		"fecha_agregado": "2024-08-09",
 		"imagenes":
 		[
+			"./Images/Productos/Peraphone_14_-_Red-removebg-preview.png",
 			"./Images/Productos/Peraphone_14_-_Black-removebg-preview.png", 
-			"./Images/Productos/Peraphone_14_-_Cyan-removebg-preview.png",
-			"./Images/Productos/Peraphone_14_-_Red-removebg-preview.png"
+			"./Images/Productos/Peraphone_14_-_Cyan-removebg-preview.png"
 		]
     },
     {
