@@ -50,29 +50,30 @@
   </nav>
 </header>
 
-    <main>
-        <div class="row">
-            <div id="lista-productos" class="productos-container mt-5">
-                <h1 class="text-center mb-5">Productos</h1>
-            </div>
+<main>
+    <div class="row">
+        <div id="lista-productos" class="productos-container mt-5 text-center">
+            <h1 class="mb-3">Productos</h1>
+            <!-- Botón para abrir el offcanvas -->
+            <button class="btn btn-primary mt-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                Filtrar por:
+            </button>
+        </div>
 
-            <!--Barra Laterla-->
-
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
-
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-              <div class="offcanvas-header">
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <p>Try scrolling the rest of the page to see this option in action.</p>
-              </div>
             </div>
-
-            
+            <div class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+            </div>
         </div>
-    </main>
+    </div>
+</main>
+
+
 
     <!--Pie de la pagina -->
     <footer class="bg-dark text-light py-4">
