@@ -14,50 +14,53 @@
 </head>
 <body>
 
-       <!--Encabezado-->
-<header>
-  <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid ps-5 pb-3">
-          <a class="navbar-brand" href="../index.html">
-              <img src="../Images/logo - icono.png" alt="Logo" width="80" height="80"/>
-          </a>
-          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center fs-4" id="navbarTogglerDemo02">
-              <ul class="navbar-nav mb-2 mb-lg-0 column-gap-5">
-                  <li class="nav-item">
-                      <a class="nav-link" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="Productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="Contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="Acerca De.html">Acerca de</a>
-                  </li>
-              </ul>
-              <button class="btn" type="button">
-                <a href="Proceso de Compra.html"> <img src="../Images/Bolsa - Icono.png" alt="Logo" width="50" height="50"/> </a> 
-              </button>
-          </div>
-          <div class="footer-line2"></div>
-      </div>
-  </nav>
-</header>
+    <!--Encabezado-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ps-5 pb-3">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Images/logo - icono.png" alt="Logo" width="80" height="80"/>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center fs-4" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mb-2 mb-lg-0 column-gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Acerca De.html">Acerca de</a>
+                        </li>
+                    </ul>
+                    <button class="btn" type="button">
+                        <a href="Proceso de Compra.html"> <img src="../Images/Bolsa - Icono.png" alt="Logo" width="50" height="50"/> </a> 
+                    </button>
+                </div>
+                <div class="footer-line2"></div>
+            </div>
+        </nav>
+    </header>
 
+    <!-- Contenido -->
     <main>
         <div class="row mx-5 my-5 justify-content-around">
             <div class="col ">
                 <div id="galeria" class="card w-75">
                   <img id="miniatura" src="" class="p-3" alt="...">
+
                   <div class="card-body p-0">
                     <ul id="imagenes" class="list-group list-group-flush d-flex flex-row">
+                    
                     </ul>
                   </div>
                 </div>
@@ -90,19 +93,22 @@
                 
             </div>
         </div>
+
         <ul class="nav nav-underline ms-5 my-5 fs-1" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Descripción</button>
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Descripción</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Envío</button>
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Envío</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Reseñas</button>
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Reseñas</button>
             </li>
-          </ul>
-          <!--Tab Descripción-->
-          <div class="tab-content ms-5" id="myTabContent">
+        </ul>
+
+        <!--Descripción-->
+        <div class="tab-content ms-5" id="myTabContent">
+            <!--Tab Descripción-->
             <div class="tab-pane w-50 fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                 <table class="table table-bordered fs-1">
                     <tr>
@@ -123,6 +129,7 @@
                     </tr>
                 </table>
             </div>
+
             <!--Tab Envío-->
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
 
@@ -131,11 +138,10 @@
             <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
 
             </div>
-          </div>
+        </div>
     </main>
 
-
-   <!--Pie de la pagina -->
+    <!--Pie de la pagina -->
     <footer class="bg-dark text-light py-4">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
@@ -157,12 +163,9 @@
                     </li>
                 </ul>
             </nav>
-            <!-- ESto va a ser la linea  -->
             <div class="footer-line"></div>
         </div>
     </footer>
-
-
 
      <!--Bootstrap javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

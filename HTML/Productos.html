@@ -14,88 +14,97 @@
 </head>
 <body>
     
-     <!--Encabezado-->
-<header>
-  <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid ps-5 pb-3">
-          <a class="navbar-brand" href="../index.html">
-              <img src="../Images/logo - icono.png" alt="Logo" width="80" height="80"/>
-          </a>
-          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center fs-4" id="navbarTogglerDemo02">
-              <ul class="navbar-nav mb-2 mb-lg-0 column-gap-5">
-                  <li class="nav-item">
-                      <a class="nav-link" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="Contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="Acerca De.html">Acerca de</a>
-                  </li>
-              </ul>
-              <button class="btn" type="button">
-                <a href="Proceso de Compra.html"> <img src="../Images/Bolsa - Icono.png" alt="Logo" width="50" height="50"/> </a> 
-              </button>
-          </div>
-          <div class="footer-line2"></div>
-      </div>
-  </nav>
-</header>
+     <!-- Encabezado -->
+    <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid ps-5 pb-3">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Images/logo - icono.png" alt="Logo" width="80" height="80"/>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center fs-4" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mb-2 mb-lg-0 column-gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Acerca De.html">Acerca de</a>
+                    </li>
+                </ul>
+                <button class="btn" type="button">
+                    <a href="Proceso de Compra.html"> <img src="../Images/Bolsa - Icono.png" alt="Logo" width="50" height="50"/> </a> 
+                </button>
+            </div>
+            <div class="footer-line2"></div>
+        </div>
+    </nav>
+    </header>
 
-<main>
-    <div class="row">
-        <div id="lista-productos" class="productos-container mt-5 text-center">
-            <h1 class="mb-3">Productos</h1>
-            <!-- Botón para abrir el offcanvas con una nueva clase -->
+    <!-- Contenido -->
+    <main>
+        <h1 class="text-center display-3 py-4"><span class="palabra-relevante">Productos</span></h1>
+        <!-- Botón para abrir el offcanvas con una nueva clase -->
+        <div class="text-center">
             <button class="btn btn-filter my-3 fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                 Filtrar por:
             </button>
         </div>
 
-        <!-- Offcanvas -->
-        <div class="offcanvas offcanvas-start custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filtrar productos por:</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                    <h3>Marca</h3>
-                    <select id="marca" class="form-select" name="marca" required>
-                        <option value="" selected>Todos</option>
-                        <option value="Aywey">Aywey</option>
-                        <option value="UNNIVERSE">UNIVERSE</option>
-                        <option value="Shaomay">Shaomay</option>
-                        <option value="Peraphone">Peraphone</option>
-                    </select>
-                    <h3>Almacenamiento</h3>
-                    <select id="almacenamiento" class="form-select" name="almacenamiento" required>
-                        <option value="" selected>Todos</option>
-                        <option value="64 GB">64 GB</option>
-                        <option value="128 GB">128 GB</option>
-                        <option value="256 GB">256 GB</option>
-                    </select>
-                    <h3>Memoria RAM</h3>
-                    <select id="marca" class="form-select" name="marca" required>
-                        <option value="" selected>Todos</option>
-                        <option value="3 GB">3 GB</option>
-                        <option value="4 GB">4 GB</option>
-                        <option value="6 GB">6 GB</option>
-                        <option value="8 GB">8 GB</option>
-                        <option value="12 GB">12 GB</option>
-                    </select>
+        <div id="productos">
+            <div class="row">
+                <div id="lista-productos" class="productos-container mt-5 text-center">
+                </div>
             </div>
         </div>
-    </div>
-</main>
+        
+        <!-- Offcanvas -->
+
+        <section id="filtros">
+            <div class="offcanvas offcanvas-start custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filtrar productos por:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                        <h3>Marca</h3>
+                        <select id="marca" class="form-select" name="marca" required>
+                            <option value="" selected>Todos</option>
+                            <option value="Aywey">Aywey</option>
+                            <option value="UNNIVERSE">UNIVERSE</option>
+                            <option value="Shaomay">Shaomay</option>
+                            <option value="Peraphone">Peraphone</option>
+                        </select>
+                        <h3>Almacenamiento</h3>
+                        <select id="almacenamiento" class="form-select" name="almacenamiento" required>
+                            <option value="" selected>Todos</option>
+                            <option value="64 GB">64 GB</option>
+                            <option value="128 GB">128 GB</option>
+                            <option value="256 GB">256 GB</option>
+                        </select>
+                        <h3>Memoria RAM</h3>
+                        <select id="marca" class="form-select" name="marca" required>
+                            <option value="" selected>Todos</option>
+                            <option value="3 GB">3 GB</option>
+                            <option value="4 GB">4 GB</option>
+                            <option value="6 GB">6 GB</option>
+                            <option value="8 GB">8 GB</option>
+                            <option value="12 GB">12 GB</option>
+                        </select>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 
