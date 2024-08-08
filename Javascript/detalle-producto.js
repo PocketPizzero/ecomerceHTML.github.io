@@ -39,7 +39,7 @@ $(document).ready(function() {
         })
 
         $("#nombre").text(producto.nombre)
-        $("#precio").text(producto.precio)
+        $("#precio").text("₡ " + producto.precio)
         $("#tamaño").text
         (
             "Alto: " + producto.alto +

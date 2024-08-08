@@ -69,7 +69,6 @@
         </div>
         
         <!-- Offcanvas -->
-
         <section id="filtros">
             <div class="offcanvas offcanvas-start custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div class="offcanvas-header">
@@ -78,10 +77,10 @@
                 </div>
                 <div class="offcanvas-body">
                         <h3>Marca</h3>
-                        <select id="marca" class="form-select" name="marca" required>
+                        <select id="marca" class="form-select" name="marca" required onchange="mostrarCategorias(value)">
                             <option value="" selected>Todos</option>
                             <option value="Aywey">Aywey</option>
-                            <option value="UNNIVERSE">UNIVERSE</option>
+                            <option value="UNIVERSE">UNIVERSE</option>
                             <option value="Shaomay">Shaomay</option>
                             <option value="Peraphone">Peraphone</option>
                         </select>
