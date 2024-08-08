@@ -62,10 +62,6 @@
 
 
 /* Estilo del conteiner del map */
-#map {
-    height: 400px; 
-    width: 100%; 
-}
 .btn-fucsia-full {
     background-color: #D63384;
     color: #F8F9FB;

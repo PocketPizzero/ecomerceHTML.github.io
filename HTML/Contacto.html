@@ -55,19 +55,21 @@
 
     <!-- Contenido -->
     <main>
+        <h1 class="my-5 text-center">¡Estamos para <span class="palabra-relevante">servirle</span>!</h1>
+
         <section id="contacto">
-            <h1 class="my-4 ms-5">¡Estamos para <span class="palabra-relevante">servirle</span>!</h1>
-            <div class="container fs-2">
-                <div class="row gap-5">
-                    <div class="col">
+            <div class="container fs-3">
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-md-3 row-cols-xl-3 row-cols-xxl-3 gap-5
+                d-flex justify-content-around mb-5">
+                    <div class="col mb-5">
                         <p><span class="palabra-relevante">Teléfono:</span> 7878-5454 </p>
                         <p><span class="palabra-relevante">Dirección:</span> Villa Bonita de Alajuela, 300 m suroeste de la Gasolinera Delta y 300 m sur (carretera a Villa Bonita), contiguo a Pastas Roma.</p>
                         <p><span class="palabra-relevante">Horarios:</span> De lunes a sábado de 10:00 am hasta las 5:00 pm</p>
                     </div>
-                    <div class="col">
+                    <div class="col mb-5">
                         <p><span class="palabra-relevante">Ubicación:</span></p>
                         <!-- Contenedor para el mapa -->
-                        <div id="map" style="height: 400px;"></div>
+                        <div id="map" style="height: 100%; width: 100%;"></div>
                     </div>
                 </div>
             </div>
@@ -75,7 +77,7 @@
 
         <!-- Formulario de contacto -->
         <section id="formulario">
-            <div class="container">
+            <div class="container my-5">
                 <form id="contactForm" class="row g-3 needs-validation" novalidate>
                     <div class="col-md-6">
                         <label for="email" class="form-label">Email</label>
@@ -90,8 +92,8 @@
                     </div>
 
                     <div class="col-md-6">
-                        <label for="dob" class="form-label">Fecha de Nacimiento</label>
-                        <input type="date" class="form-control" id="dob" name="dob" required>
+                        <label for="birthdate" class="form-label">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="birthdate" name="birthdate" required>
                         <div class="invalid-feedback">Por favor ingrese una fecha de nacimiento válida.</div>
                     </div>
 
@@ -108,7 +110,7 @@
 
                     <div class="col-md-6">
                         <label for="phone" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" required >
+                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required pattern="\d+">
                         <div class="invalid-feedback">Por favor ingrese un número de teléfono válido.</div>
                     </div>
 
