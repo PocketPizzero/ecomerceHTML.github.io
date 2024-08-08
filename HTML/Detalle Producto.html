@@ -106,39 +106,70 @@
             </li>
         </ul>
 
-        <!--Descripción-->
+                <!-- Aqui estan las tabs  -->
         <div class="tab-content ms-5" id="myTabContent">
             <!--Tab Descripción-->
-            <div class="tab-pane w-50 fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                <table class="table table-bordered fs-1">
-                    <tr>
-                        <td class="encabezado p-4">Tamaño</td>
-                        <td id="tamaño" class="p-4">Alto Ancho</td>
-                    </tr>
-                    <tr>
-                        <td class="encabezado p-4">Almacenamiento</td>
-                        <td id="almacenamiento" class="p-4">GB</td>
-                    </tr>
-                    <tr>
-                        <td class="encabezado p-4">RAM</td>
-                        <td id="ram" class="p-4">GB</td>
-                    </tr>
-                    <tr>
-                        <td class="encabezado p-4">Batería</td>
-                        <td id="bateria" class="p-4">mhz</td>
-                    </tr>
-                </table>
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="table-responsive" > 
+                    <table class="table table-bordered fs-1">
+                        <tr>
+                            <td class="encabezado p-4">Tamaño</td>
+                            <td id="tamaño" class="p-4">Alto Ancho</td>
+                        </tr>
+                        <tr>
+                            <td class="encabezado p-4">Almacenamiento</td>
+                            <td id="almacenamiento" class="p-4">GB</td>
+                        </tr>
+                        <tr>
+                            <td class="encabezado p-4">RAM</td>
+                            <td id="ram" class="p-4">GB</td>
+                        </tr>
+                        <tr>
+                            <td class="encabezado p-4">Batería</td>
+                            <td id="bateria" class="p-4">mhz</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-
+        
             <!--Tab Envío-->
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-
+                <div class="table-responsive mt-3"> 
+                    <table class="table table-bordered fs-1">
+                        <tr>
+                            <td class="encabezado p-4">Entrega</td>
+                            <td id="entrega" class="p-4">10 de Agosto</td>
+                        </tr>
+                        <tr>
+                            <td class="encabezado p-4">Costo</td>
+                            <td id="costo" class="p-4">230mil</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <!--Tab Reseñas-->
+        
+            <!--Tab de las reensas-->
             <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-
+                <div class="container mt-3">
+                    <!-- Resenana 1-->
+                    <div class="review mb-4 p-3 border rounded shadow-sm">
+                        <div class="d-flex flex-column flex-md-row align-items-start"> <!--  flex-column para pantallas pequenas -->
+                            <div class="me-3 mb-3 mb-md-0"> <!--  mb-3 para espacio en pantallas pequenas -->
+                                <img src="../Images/Placeholder.jpeg" alt="Foto del Usuario" class="rounded-circle" style="width: 50px; height: 50px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Nombre del Usuario</h5>
+                                <div class="stars mb-1">
+                                    ★★★★★ 
+                                </div>
+                                <p class="mb-0">"¡Me encanta esta tienda! La página es super fácil de usar y encontré justo lo que necesitaba sin complicaciones. Además, el equipo de soporte es genial, siempre están ahí para ayudarte si tienes alguna pregunta. ¡Definitivamente volveré a comprar aquí!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
     </main>
 
     <!--Pie de la pagina -->
