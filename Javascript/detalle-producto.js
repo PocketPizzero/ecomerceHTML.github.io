@@ -12,10 +12,10 @@ $(document).ready(function() {
         $("#miniatura").attr("src", "."+producto.imagenes[0])
 
         producto.imagenes.forEach(i => {
-            //Crea un <li>
+            // Crea un <li>
             var elemento = $('<li>').addClass("item-group-item").append
             (
-                //Al <li> le añade un <button> para cambiar la imagen
+                // Al <li> le añade un <button> para cambiar la imagen
                 $('<button>').on('click', function(){
                     cambiarImagen(i)}
                 ).attr
@@ -23,7 +23,7 @@ $(document).ready(function() {
                 ).addClass(
                     'galeria-imagen'
                 )
-                //Al <button> le añade la <img/> correspondiente
+                // Al <button> le añade la <img/> correspondiente
                 .append
                 (
                     $('<img/>').attr('src', "."+producto.imagenes[contador]).addClass
@@ -31,13 +31,14 @@ $(document).ready(function() {
                 )
             )
 
-            //Al <li> le añade un <button> para cambiar la imagen
+            // Al <li> le añade un <button> para cambiar la imagen
             $("#imagenes").append(elemento)
 
            contador++
            
         })
 
+        $("#id-producto").text(producto.id)
         $("#nombre").text(producto.nombre)
         $("#precio").text("₡ " + producto.precio)
         $("#tamaño").text
@@ -48,6 +49,7 @@ $(document).ready(function() {
         $("#almacenamiento").text(producto.almacenamiento)
         $("#ram").text(producto.RAM)
         $("#bateria").text(producto.bateria)
+        $("#añadir").attr('onclick', "añadirAlCarrito("+producto.id+")")
     })
     
     function cambiarImagen(index){
@@ -55,3 +57,33 @@ $(document).ready(function() {
         $("#miniatura").attr("src", "."+index)
     }
 })
+
+
+function añadirAlCarrito(id) {
+	const producto = productos.find((p) => p.id === id)
+
+    let imagen = producto.imagenes[0]
+    let nombre = producto.nombre
+    let precio = producto.precio
+    let cantidad = 1
+    let subtotal = producto.precio
+
+	//Elemento del carrito
+	//{}
+	let cartItem={
+		id,
+        imagen,
+		nombre,
+		precio,
+		cantidad,
+		subtotal
+	}
+
+	//Obtener carrito actual
+	let listaCarrito = new Array()
+    
+	if(localStorage.getItem('cardItem')){
+		listaCarrito,JSON.parse(localStorage)
+	}
+    listaCarrito.push(cartItem)
+}
