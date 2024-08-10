@@ -60,6 +60,8 @@ $(document).ready(function() {
 
 
 function añadirAlCarrito(id) {
+    localStorage.clear()
+
 	const producto = productos.find((p) => p.id === id)
 
     let imagen = producto.imagenes[0]
@@ -70,20 +72,26 @@ function añadirAlCarrito(id) {
 
 	//Elemento del carrito
 	//{}
-	let cartItem={
-		id,
-        imagen,
-		nombre,
-		precio,
-		cantidad,
-		subtotal
+	const cartItem={
+		imagen: imagen,
+        nombre: nombre,
+        precio: precio,
+        cantidad: cantidad,
+        subtotal: subtotal
 	}
 
 	//Obtener carrito actual
 	let listaCarrito = new Array()
     
-	if(localStorage.getItem('cardItem')){
-		listaCarrito,JSON.parse(localStorage)
+	if(localStorage.getItem('carrito')){
+		listaCarrito.push(JSON.parse(localStorage))
 	}
+
     listaCarrito.push(cartItem)
+    console.log(cartItem) 
+    
+    localStorage.setItem('carrito', JSON.stringify(listaCarrito))
+    console.log(JSON.parse(localStorage.getItem('carrito')))
+
+    console.log("Objeto agregado " + cartItem + "\nCarrito actual " + localStorage)
 }
