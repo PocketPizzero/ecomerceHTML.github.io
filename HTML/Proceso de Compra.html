@@ -58,89 +58,137 @@
     <!-- Tabla  -->
     <main>
 
-        <h1 class="text-center my-5"><span class="palabra-relevante">Carrito</span></h1>
-        <div class="container my-5">
-            <!-- Tabla -->
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col">Imagen</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Subtotal</th>
-                        <th scope="col">Eliminar</th>
-                    </tr>
-                </thead>
-                <tbody id="carrito">
-                    <tr>
-                        <td><img src="../Images/Placeholder.jpeg" alt="Producto 1" class="img-fluid" width="50"></td>
-                        <td>Producto 1</td>
-                        <td>$0.00</td>
-                        <td><input type="number" class="form-control form-control-fucsia" value="0" min="0"></td>
-                        <td>$0.00</td>
-                        <td><button type="button" class="btn btn-fucsia">X</button></td>
-                    </tr>
-                </tbody>
-            </table>
 
-            <!-- Btn Vaciar Carrito -->
-            <div class="d-flex justify-content-start mb-3">
-                <button type="button" class="btn btn-fucsia-full btn-lg">Vaciar carrito</button>
-            </div>
+        <ul class="nav nav-underline ms-5 my-5 fs-1" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">CARRITO DE COMPRA  </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">ENVIÓ</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">MEDIOS DE PAGO</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">FINALIZAR COMPRA</button>
+            </li>
+        </ul>
 
-        <!-- Envío -->
-        <div class="mt-5 d-flex align-items-start">
-            <div class="me-4">
-                <h4 class="text-start">Tipo de envío</h4>
-                <div class="d-flex flex-column">
-                    <div class="form-check">
-                        <input class="form-check-input custom-radio" type="radio" name="shippingOptions" id="shippingPostal" value="postal">
-                        <label class="form-check-label" for="shippingPostal">
-                            Envío Postal
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input custom-radio" type="radio" name="shippingOptions" id="shippingStore" value="store">
-                        <label class="form-check-label" for="shippingStore">
-                            Recoger en tienda
-                        </label>
-                    </div>
-                    <!-- Botón de calcular total -->
+
+           <!-- Aqui estan las tabs  -->
+    <div class="tab-content ms-5" id="myTabContent"> 
+
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                
+                <div class="container my-5">
+                    <!-- Tabla -->
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Subtotal</th>
+                                <th scope="col">Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="carrito">
+                            <tr>
+                                <td><img src="../Images/Placeholder.jpeg" alt="Producto 1" class="img-fluid" width="50"></td>
+                                <td>Producto 1</td>
+                                <td>$0.00</td>
+                                <td><input type="number" class="form-control form-control-fucsia" value="0" min="0"></td>
+                                <td>$0.00</td>
+                                <td><button type="button" class="btn btn-fucsia">X</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+        
+                    <!-- Btn Vaciar Carrito -->
                     <div class="d-flex justify-content-start mb-3">
-                        <button type="button" class="btn btn-fucsia-full btn-lg align-bottom">Calcular total</button>
+                        <button type="button" class="btn btn-fucsia-full btn-lg">Vaciar carrito</button>
+                    </div>
+        
+                <!-- Envío -->
+                <div class="mt-5 d-flex align-items-start">
+                    <div class="me-4">
+                        <h4 class="text-start">Tipo de envío</h4>
+                        <div class="d-flex flex-column">
+                            <div class="form-check">
+                                <input class="form-check-input custom-radio" type="radio" name="shippingOptions" id="shippingPostal" value="postal">
+                                <label class="form-check-label" for="shippingPostal">
+                                    Envío Postal
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input custom-radio" type="radio" name="shippingOptions" id="shippingStore" value="store">
+                                <label class="form-check-label" for="shippingStore">
+                                    Recoger en tienda
+                                </label>
+                            </div>
+                            <!-- Botón de calcular total -->
+                            <div class="d-flex justify-content-start mb-3">
+                                <button type="button" class="btn btn-fucsia-full btn-lg align-bottom">Calcular total</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Subtotal y Envío -->
+                    <div class="ms-5">
+                           <table class="table">
+                               <tbody>
+                        <tr>
+                            <th scope="row">Subtotal</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Envío</th>
+                            <td>$0.00</td>
+                        </tr>
+                            </tbody>
+                         </table>
+        
+                     <!-- Tabla total -->
+                         <div class="mt-4">
+                              <table class="table">
+                                 <tbody>
+                            <tr>
+                                <th scope="row">Total</th>
+                                <td>$0.00</td>
+                            </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-    <!-- Subtotal y Envío -->
-    <div class="ms-5">
-        <table class="table">
-            <tbody>
-                <tr>
-                    <th scope="row">Subtotal</th>
-                    <td>$0.00</td>
-                </tr>
-                <tr>
-                    <th scope="row">Envío</th>
-                    <td>$0.00</td>
-                </tr>
-            </tbody>
-        </table>
 
-        <!-- Tabla total -->
-        <div class="mt-4">
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <th scope="row">Total</th>
-                        <td>$0.00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
+            </div>
+
+         </div>
+
+
+
+            <!--Tab Envío-->
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                
+            </div>
+
+
+            <!--Tab de las reseñas-->
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                
+            </div>
+        
+
+            <!--Tab de las reseñas-->
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="#Finalizar-tab" tabindex="0">
+               
+            </div>
+   </div>
+              
+            
+    
  
 </main>
 
