@@ -1,24 +1,35 @@
 cargarCarrito()
+
 function cargarCarrito(){
     let listaCarrito = new Array()
 		
-    if(localStorage.getItem('cartItem')){
-        listaCarrito,JSON.parse(localStorage)
+    if(localStorage.getItem('carrito')){
+        listaCarrito.push(JSON.parse(localStorage.getItem('carrito')))
     }
 
-    listaCarrito.forEach(p => {
-        const elemento = document.createElement('tr')
-        elemento.innerHTML =
-        `<td>
-            <img src=".${p.imagen}" alt="Producto 1" class="img-fluid" width="50"></td>
-            <td>${p.nombre}</td>
-            <td>${p.nombre}</td>
-            <td><input type="number" class="form-control form-control-fucsia" value="${p.cantidad}" min="0"></td>
-            <td>${p.subtotal}</td>
-            <td><button type="button" class="btn btn-fucsia">X</button>
-        </td>`
+    console.log(listaCarrito)
+
+    listaCarrito.forEach( p => 
+        p.forEach(
+         objeto =>
+
+            {
+                console.log(objeto)
+            const elemento = document.createElement('tr')
+            elemento.innerHTML =
+            `<td>
+                <img src=".${objeto.imagen}" alt="Producto 1" class="img-fluid" width="50"></td>
+                <td>${objeto.nombre}</td>
+                <td>${objeto.precio}</td>
+                <td><input type="number" class="form-control form-control-fucsia" value="${objeto.cantidad}" min="0"></td>
+                <td>${objeto.subtotal}</td>
+                <td><button type="button" class="btn btn-fucsia">X</button>
+            </td>`
+        
+            const tbody = document.getElementById("carrito")
+            tbody.appendChild(elemento)
+            }
     
-        const tbody = document.getElementById("carrito")
-        tbody.appendChild(elemento)
-    });
+        )
+    );
 }
