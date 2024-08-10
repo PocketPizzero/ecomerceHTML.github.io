@@ -14,16 +14,17 @@ Negro: #212429
 }
 
 #garantias h1 {
-    color: #D63384; 
+    color: #F8F9FB; 
     text-transform: uppercase;
     margin-bottom: 1.875rem; 
     border-bottom: 2px solid #212429; 
     padding-bottom: 0.5rem;
+    background-color: #D63384;
 }
 
 
 #garantias h3 {
-    color: #212429; 
+    color: #D63384; 
     font-weight: 600;
 }
 
