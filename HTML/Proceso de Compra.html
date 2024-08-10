@@ -15,42 +15,42 @@
 <body>
    
     
-      <!--Encabezado-->
-<header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid ps-5 pb-3">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../Images/logo - icono.png" alt="Logo" width="80" height="80"/>
-            </a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center fs-4" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mb-2 mb-lg-0 column-gap-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Acerca De.html">Acerca de</a>
-                    </li>
-                </ul>
-                <button class="btn" type="button">
-                  <a href="#"> <img src="../Images/Bolsa - Icono.png" alt="Logo" width="50" height="50"/> </a> 
+    <!--Encabezado-->
+    <header class="slideDown">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ps-5 pb-3">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Images/logo - icono.png" alt="Logo" width="80" height="80"/>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse justify-content-center fs-4" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mb-2 mb-lg-0 column-gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Acerca De.html">Acerca de</a>
+                        </li>
+                    </ul>
+                    <button class="btn" type="button">
+                    <a href="#"> <img src="../Images/Bolsa - Icono.png" alt="Logo" width="50" height="50"/> </a> 
+                    </button>
+                </div>
+                <div class="footer-line2"></div>
             </div>
-            <div class="footer-line2"></div>
-        </div>
-    </nav>
-  </header>
+        </nav>
+    </header>
 
     <!-- Tabla  -->
     <main>
@@ -86,29 +86,29 @@
                 <button type="button" class="btn btn-fucsia-full btn-lg">Vaciar carrito</button>
             </div>
 
-           <!-- Envío -->
-<div class="mt-5 d-flex align-items-start">
-    <div class="me-4">
-        <h4 class="text-start">Tipo de envío</h4>
-        <div class="d-flex flex-column">
-            <div class="form-check">
-                <input class="form-check-input custom-radio" type="radio" name="shippingOptions" id="shippingPostal" value="postal">
-                <label class="form-check-label" for="shippingPostal">
-                    Envío Postal
-                </label>
+        <!-- Envío -->
+        <div class="mt-5 d-flex align-items-start">
+            <div class="me-4">
+                <h4 class="text-start">Tipo de envío</h4>
+                <div class="d-flex flex-column">
+                    <div class="form-check">
+                        <input class="form-check-input custom-radio" type="radio" name="shippingOptions" id="shippingPostal" value="postal">
+                        <label class="form-check-label" for="shippingPostal">
+                            Envío Postal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-radio" type="radio" name="shippingOptions" id="shippingStore" value="store">
+                        <label class="form-check-label" for="shippingStore">
+                            Recoger en tienda
+                        </label>
+                    </div>
+                    <!-- Botón de calcular total -->
+                    <div class="d-flex justify-content-start mb-3">
+                        <button type="button" class="btn btn-fucsia-full btn-lg align-bottom">Calcular total</button>
+                    </div>
+                </div>
             </div>
-            <div class="form-check">
-                <input class="form-check-input custom-radio" type="radio" name="shippingOptions" id="shippingStore" value="store">
-                <label class="form-check-label" for="shippingStore">
-                    Recoger en tienda
-                </label>
-            </div>
-            <!-- Botón de calcular total -->
-            <div class="d-flex justify-content-start mb-3">
-                <button type="button" class="btn btn-fucsia-full btn-lg align-bottom">Calcular total</button>
-            </div>
-        </div>
-    </div>
     
     <!-- Subtotal y Envío -->
     <div class="ms-5">
@@ -138,15 +138,11 @@
         </div>
     </div>
 </div>
-
-
-<!-- Fabi cuando veas esto es porque quiero decirte que ya estoy harto jaja quiero dormir ya son la 1:30 de la madrugada -->
-<!-- pero te prometi que yo me encargaba de esto ya que tu me has ayudado mucho  -->
  
 </main>
 
     <!--Pie de la página -->
-        <footer class="bg-dark text-light py-4">
+        <footer class="bg-dark text-light py-4 slideUp">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <ul class="navbar-nav mx-auto mb-3">
