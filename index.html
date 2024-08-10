@@ -11,11 +11,15 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/estilos.css">
 
+    <!-- Wicked CSS -->
+    <link rel="stylesheet" href="CSS/wickedcss.min.css">
+
+
 </head>
 <body>
    
     <!-- Encabezado -->
-    <header>
+    <header class="slideDown">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid ps-5 pb-3">
                 <a class="navbar-brand" href="#">
@@ -56,7 +60,7 @@
         <h1 class="text-center display-3 py-4"><span class="palabra-relevante">Pocket</span>Shop</h1>
 
         <!-- Introducción -->
-        <section id="introduccion">
+        <section id="introduccion" class="fadeIn">
                 <div class="card  mb-5">
                     <img src="Images/Introduccion - fondo.png" class="card-img" alt="Imagen de fondo">
                     <div class="card-img-overlay text-center d-flex flex-column align-items-center p-5">
@@ -74,7 +78,7 @@
         </section>
 
         <!-- Carrusel -->
-        <section id="carrusel">
+        <section id="carrusel" class="zoomer">
             <h1 class="text-center m-3"><span class="palabra-relevante">Adquiere</span> tu favorito</h1>
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div id="indicadoresCarrusel" class="carousel-indicators">
@@ -95,7 +99,7 @@
         </section>
 
         <!-- Agregados Recientemente -->
-        <section id="resumen-productos">
+        <section id="resumen-productos" class="slideRight">
             <div class="container-titulo rounded-2 w-50 py-3 mt-5 ms-5">
                 <h2 class="text-center">Agregados recientemente</h2>
             </div>
@@ -108,7 +112,7 @@
         </section>
 
         <!-- Gráfico -->
-        <section id="grafico">
+        <section id="grafico" class="slideLeft">
             <div class="container text-center w-50 mb-5">
                 <h2 class="my-5">Marcas más <span class="palabra-relevante">populares</span></h2>
                 <div class="grafico-container">
@@ -121,7 +125,7 @@
 
 
     <!--Pie de la pagina -->
-    <footer class="bg-dark text-light py-4">
+    <footer class="bg-dark text-light py-4 slideUp">
           <div class="container">
              <nav class="navbar navbar-expand-lg">
                  <ul class="navbar-nav mx-auto mb-3">
@@ -160,17 +164,5 @@
      <script src="Json/Productos.js"></script>
      <script src="Javascript/inicio.js"></script>
 
-
-     <!--JQUERY UI-->
-     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js" integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-            $( "header" ).show( "fold", 1000 );
-            $( "#introduccion" ).show( "fade", 1000 );
-            $( "#carrusel" ).show( "scale", 1000 );
-            $( "#resumen-productos" ).show( "drop", 1000 );
-            $( "#grafico" ).show( "drop", 1000 );
-        });
-    </script>
     </body>
 </html>
