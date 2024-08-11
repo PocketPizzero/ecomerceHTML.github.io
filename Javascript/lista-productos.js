@@ -24,8 +24,8 @@ function mostrarProductos(categoria){
 
                 const rowCategoria =
                 `
-                    <h2 class="text-center">${producto.categoria}</h2>
-                    <div class="row justify-content-center mx-5">
+                    <h2 class="text-center slideDown">${producto.categoria}</h2>
+                    <div class="row justify-content-center mx-5 slideDown">
                     
                     </div>
                 `
@@ -41,7 +41,7 @@ function mostrarProductos(categoria){
                     colProducto.classList.add("col-md-4")
                     colProducto.classList.add("mb-4")
                         const cardProducto =
-                        `<div class="card mb-5 fs-1">
+                        `<div class="card mb-5 fs-1 slideDown">
                             <img src=".${p.imagenes[0]}" class="card-img-top" alt="">
                             <div class="card-body text-center">
                                 <h5 class="card-title">${p.nombre}</h5>
@@ -85,7 +85,7 @@ function mostrarProductos(categoria){
             colProducto.classList.add("col-md-4")
             colProducto.classList.add("mb-4")
                 const cardProducto =
-                `<div class="card mb-5 fs-1">
+                `<div class="card mb-5 fs-1 slideDown">
                     <img src=".${producto.imagenes[0]}" class="card-img-top" alt="">
                     <div class="card-body text-center">
                         <h5 class="card-title">${producto.nombre}</h5>
