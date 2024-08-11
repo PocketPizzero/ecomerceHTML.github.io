@@ -92,3 +92,55 @@
 .align-bottom {
     margin-top: 2.3rem; /* Ajusta el valor según sea necesario */
 }
+
+
+/* metodo de pago formu  */
+
+
+form {
+    background-color: #F8F9FB; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  form h4 {
+    color: #D63384; 
+  }
+  
+  
+  form .form-label {
+    color: #212429; 
+  }
+  
+
+  form .form-control {
+    border-color: #D63384; 
+  }
+  
+  form .form-control:focus {
+    border-color: #D63384; 
+    box-shadow: 0 0 0 0.2rem rgba(214, 51, 132, 0.25); 
+  }
+  
+  
+  form .btn-primary {
+    background-color: #D63384; 
+    border-color: #D63384; 
+  }
+  
+  form .btn-primary:hover {
+    background-color: #c51e74; 
+    border-color: #c51e74; 
+  }
+  
+  form .invalid-feedback {
+    color: #d9534f; /*  mensajes de error */
+  }
+  
+  
+  #imagenTarjeta {
+    margin-left: 10px; 
+  }
+  
