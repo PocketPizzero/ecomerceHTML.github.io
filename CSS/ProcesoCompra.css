@@ -144,3 +144,19 @@ form {
     margin-left: 10px; 
   }
   
+
+
+  /* navs colores  */
+  
+.nav-underline .nav-link {
+    color: #212429; /* Color del texto de las tabs */
+}
+
+.nav-underline .nav-link.active {
+    color: #D63384; 
+    border-bottom-color: #D63384; /* Color de la línea debajo de la tab activa */
+}
+
+.nav-underline .nav-link:hover {
+    color: #D63384; /* Color del texto al pasar el ratón sobre la tab */
+}
