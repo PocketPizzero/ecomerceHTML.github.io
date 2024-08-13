@@ -16,6 +16,12 @@ const productos =
 		 [
 			"./Images/Productos/Aywey_May_-_Black-removebg-preview.png",
 			"./Images/Productos/Aywey_May_-_White-removebg-preview.png"
+		],
+		"reseñas":
+		 [
+			"",
+			"",
+			""
 		]
 	},
     {
