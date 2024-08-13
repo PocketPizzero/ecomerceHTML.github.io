@@ -45,9 +45,14 @@ function eliminarProducto(nombreProducto){
         listaCarrito.push(JSON.parse(localStorage.getItem('carrito')))
     }
 
-    listaCarrito.splice(listaCarrito.indexOf(nombreProducto), 1)
+    let posicion = null
+    listaCarrito.forEach(producto => {
+        posicion = producto.indexOf(producto.find(p => p.nombre == nombreProducto))
+    });
 
-    localStorage.setItem('carrito', JSON.stringify(listaCarrito))
+    /*listaCarrito.splice(listaCarrito.indexOf(producto), 1)
+
+    localStorage.setItem('carrito', JSON.stringify(listaCarrito))*/
     
     cargarCarrito()
 }
