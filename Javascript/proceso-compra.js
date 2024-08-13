@@ -7,14 +7,12 @@ function cargarCarrito(){
         listaCarrito.push(JSON.parse(localStorage.getItem('carrito')))
     }
 
-    console.log(listaCarrito)
 
     listaCarrito.forEach( p => 
         p.forEach(
          objeto =>
 
             {
-                console.log(objeto)
             const elemento = document.createElement('tr')
             elemento.innerHTML =
             `<td><img src=".${objeto.imagen}" alt="Producto" class="img-fluid" width="50"></td>
@@ -22,7 +20,7 @@ function cargarCarrito(){
             <td>${objeto.precio}</td>
             <td><input type="number" class="form-control form-control-fucsia" value="${objeto.cantidad}" min="0"></td>
             <td>${objeto.subtotal}</td>
-            <td><button type="button" class="btn btn-fucsia">X</button></td>`
+            <td><button value="${objeto.nombre}" type="button" class="btn btn-fucsia" onclick="eliminarProducto(this.value)">X</button></td>`
         
             const tbody = document.getElementById("carrito")
             tbody.appendChild(elemento)
@@ -38,4 +36,18 @@ function vaciarCarrito(){
     const carrito = document.getElementById('carrito')
     carrito.innerHTML = ``
     
+}
+
+function eliminarProducto(nombreProducto){
+    let listaCarrito = new Array()
+		
+    if(localStorage.getItem('carrito')){
+        listaCarrito.push(JSON.parse(localStorage.getItem('carrito')))
+    }
+
+    listaCarrito.splice(listaCarrito.indexOf(nombreProducto), 1)
+
+    localStorage.setItem('carrito', JSON.stringify(listaCarrito))
+    
+    cargarCarrito()
 }
