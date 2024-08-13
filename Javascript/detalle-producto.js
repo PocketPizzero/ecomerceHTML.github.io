@@ -41,6 +41,13 @@ $(document).ready(function() {
         $("#id-producto").text(producto.id)
         $("#nombre").text(producto.nombre)
         $("#precio").text("₡ " + producto.precio)
+
+        if(producto.unidades > 0){
+            $("#disponibilidad").text("Disponible")
+        }else{
+            $("#disponibilidad").text("Agotado")
+        }
+
         $("#tamaño").text
         (
             "Alto: " + producto.alto +

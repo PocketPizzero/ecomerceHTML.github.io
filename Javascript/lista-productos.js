@@ -45,15 +45,17 @@ function mostrarProductos(categoria){
                             <img src=".${p.imagenes[0]}" class="card-img-top" alt="">
                             <div class="card-body text-center">
                                 <h5 class="card-title">${p.nombre}</h5>
-                                <p class="card-text">&#8353; ${p.precio}</p>
+                                <p id="precio" class="card-text">&#8353; ${p.precio}</p>
                                 <button type="button" class="btn btn-fucsia-full btn-lg" onclick="detalleProducto(${p.id})">
                                     Más Información
                                 </button>             
                             </div>
                         </div>`
-                            
+
                     colProducto.innerHTML = cardProducto
                     divCategoria.children[1].appendChild(colProducto)
+
+                    
                 })
 
                 productosFiltrados = productosFiltrados.filter(p => !productosCategoria.includes(p))
