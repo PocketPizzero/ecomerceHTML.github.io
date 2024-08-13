@@ -59,15 +59,15 @@
     <main>
 
 
-        <ul class="nav nav-underline ms-5 my-5 fs-1" id="myTab" role="tablist">
+        <ul class="nav nav-underline ms-5 my-5 fs-1 justify-content-around" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">CARRITO DE COMPRA  </button>
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Carrito de compra  </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="medios-tab" data-bs-toggle="tab" data-bs-target="#medios-tab-pane" type="button" role="tab" aria-controls="medios-tab-pane" aria-selected="false">MEDIOS DE PAGO</button>
+                <button class="nav-link" id="medios-tab" data-bs-toggle="tab" data-bs-target="#medios-tab-pane" type="button" role="tab" aria-controls="medios-tab-pane" aria-selected="false">Medios de pago</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="finalizar-tab" data-bs-toggle="tab" data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="finalizar-tab-pane" aria-selected="false">FINALIZAR COMPRA</button>
+                <button class="nav-link" id="finalizar-tab" data-bs-toggle="tab" data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="finalizar-tab-pane" aria-selected="false">Finalizar compra</button>
             </li>
         </ul>
 
@@ -79,21 +79,23 @@
                 
                 <div class="container my-5">
                     <!-- Tabla -->
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">Imagen</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Precio</th>
-                                <th scope="col">Cantidad</th>
-                                <th scope="col">Subtotal</th>
-                                <th scope="col">Eliminar</th>
-                            </tr>
-                        </thead>
-                        <tbody id="carrito">
-                            
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Subtotal</th>
+                                    <th scope="col">Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody id="carrito">
+                        
+                            </tbody>
+                        </table>
+                    </div>
         
                     <!-- Btn Vaciar Carrito -->
                     <div class="d-flex justify-content-start mb-3">
