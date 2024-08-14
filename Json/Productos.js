@@ -6,11 +6,14 @@ const productos =
 		"nombre": "Aywey May",
 		"precio": "738,000",
 		"unidades": 6,
+		"Envio Postal": false,
+		"Recoger en tienda": true,
 		"alto": "161.5 mm",
 		"ancho": "76.5 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "4460 mAh",
+		"llegada aproximada": "2 días",
 		"fecha_agregado": "2024-08-03",
 		"imagenes":
 		 [
@@ -30,11 +33,14 @@ const productos =
 		"nombre": "Aywey Tempura",
 		"precio": "500,000",
 		"unidades": 2,
+		"Envio Postal": false,
+		"Recoger en tienda": true,
 		"alto": "157.6 mm",
 		"ancho": "74.3 mm",
 		"RAM": "12 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "4900 mAh",
+		"llegada aproximada": "2 días",
 		"fecha_agregado": "2024-08-05",
 		"imagenes": 
 		[
@@ -55,11 +61,14 @@ const productos =
 		"nombre": "Aywey Noa",
 		"precio": "98,000",
 		"unidades": 5,
+		"Envio Postal": true,
+		"Recoger en tienda": true,
 		"alto": "164.6 mm",
 		"ancho": "75.55 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "5000 mAh",
+		"llegada aproximada": "2 días",
 		"fecha_agregado": "2024-08-06",
 		"imagenes": 
 		[
@@ -79,11 +88,14 @@ const productos =
 		"nombre": "UNIVERSE XYZ Flip Colors",
 		"precio": "399,900",
 		"unidades": 1,
+		"Envio Postal": false,
+		"Recoger en tienda": true,
 		"alto": "165.1 mm",
 		"ancho": "71.9 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "4270 mAh",
+		"llegada aproximada": "3 días",
 		"fecha_agregado": "2024-08-08",
 		"imagenes": 
 		[
@@ -105,11 +117,14 @@ const productos =
 		"nombre": "UNIVERSE XYZ Fall",
 		"precio": "106,9900",
 		"unidades": 0,
+		"Envio Postal": false,
+		"Recoger en tienda": true,
 		"alto": "154,9 mm",
 		"ancho": "129,9 mm",
 		"RAM": "12 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "4400 mAh",
+		"llegada aproximada": "3 días",
 		"fecha_agregado": "2024-08-07",
 		"imagenes":
 		[
@@ -130,11 +145,14 @@ const productos =
 		"nombre": "UNIVERSE F24",
 		"precio": "410,000",
 		"unidades": 5,
+		"Envio Postal": true,
+		"Recoger en tienda": true,
 		"alto": "147 mm",
 		"ancho": "70.6 mm",
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "5000 mAh",
+		"llegada aproximada": "3 días",
 		"fecha_agregado": "2024-08-09",
 		"imagenes":
 		[
@@ -147,7 +165,7 @@ const productos =
 		 [
 			"Aunque la página es fácil de navegar, tuve problemas con el carrito de compras, que se reiniciaba cada vez que intentaba agregar un producto nuevo. Al final, compré el Universe F24, pero me decepcionó un poco su rendimiento en aplicaciones pesadas. - Ricardo M. ",
 			"La experiencia de compra fue fluida, y la entrega fue rápida. Adquirí un UniverseF24, y aunque es un buen dispositivo en general, noté que se calienta un poco durante las videollamadas prolongadas. A pesar de eso, estoy contenta con la compra. -Nathalie P. ",
-			"Tuve problemas al intentar pagar en Pocketshop; la página se congeló varias veces. Finalmente, logré comprar un Universe F24, pero me decepcionó la calidad del sonido durante las llamadas. La página necesita mejoras en su rendimiento. - Monkey D. Luffy."
+			"Tuve problemas al intentar pagar en Pocketshop, la página se congeló varias veces. Finalmente, logré comprar un Universe F24, pero me decepcionó la calidad del sonido durante las llamadas. La página necesita mejoras en su rendimiento. - Monkey D. Luffy."
 		]
     },
     {
@@ -156,11 +174,14 @@ const productos =
 		"nombre": "Shaomay Remid ",
 		"precio": "99,900", 
 		"unidades": 6,
+		"Envio Postal": true,
+		"Recoger en tienda": true,
 		"alto": "168.60mm",
 		"ancho": "8.17mm",
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "5000 mAh",
+		"llegada aproximada": "1 días",
 		"fecha_agregado": "2024-08-03",
 		"imagenes":
 		[
@@ -180,11 +201,14 @@ const productos =
 		"nombre": "Shaomay XLR8",
 		"precio": "69,900",
 		"unidades": 8,
+		"Envio Postal": true,
+		"Recoger en tienda": true,
 		"alto": "168.4mm",
 		"ancho": "76.3mm",
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "5000 mAh",
+		"llegada aproximada": "1 días",
 		"fecha_agregado": "2024-08-06",
 		"imagenes":
 		[
@@ -205,11 +229,14 @@ const productos =
 		"nombre": "Shaomay Envy",
 		"precio": "105,900",
 		"unidades": 4,
+		"Envio Postal": true,
+		"Recoger en tienda": true,
 		"alto": "168.76mm",
 		"ancho": "76.41mm",
 		"RAM": "3 GB",
 		"almacenamiento": "64 GB",
 		"bateria": "5000 mAh",
+		"llegada aproximada": "1 días",
 		"fecha_agregado": "2024-08-05",
 		"imagenes":
 		[
@@ -230,11 +257,14 @@ const productos =
 		"nombre": "Peraphone 13",
 		"precio": "358,500",
 		"unidades": 9,
+		"Envio Postal": false,
+		"Recoger en tienda": true,
 		"alto": "146.7mm",
 		"ancho": "71.5mm",
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "3500 mAh",
+		"llegada aproximada": "5 días",
 		"fecha_agregado": "2024-08-07",
 		"imagenes":
 		[
@@ -255,11 +285,14 @@ const productos =
 		"nombre": "Peraphone 14",
 		"precio": "405,900",
 		"unidades": 8,
+		"Envio Postal": false,
+		"Recoger en tienda": true,
 		"alto": "146.7mm",
 		"ancho": "71.5mm",
 		"RAM": " 4 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "3279 mAh",
+		"llegada aproximada": "5 días",
 		"fecha_agregado": "2024-08-09",
 		"imagenes":
 		[
@@ -279,12 +312,15 @@ const productos =
 		"categoria": "Peraphone",
 		"nombre": "Peraphone 15",
 		"precio": "501,900",
-		"unidades": 10 ,
+		"unidades": 10,
+		"Envio Postal": false,
+		"Recoger en tienda": true,
 		"alto": "160.9mm",
 		"ancho": "77.8mm",
 		"RAM": "6 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "4912 mAh",
+		"llegada aproximada": "5 días",
 		"fecha_agregado": "2024-08-06",
 		"imagenes":
 		[

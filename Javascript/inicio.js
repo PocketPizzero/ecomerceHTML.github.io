@@ -99,16 +99,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         label: 'Número de Usuarios',
                         data: usuarios, 
                         backgroundColor: [
-                            'rgba(214, 51, 132, 0.5)', // Color para Aywey
-                            'rgba(51, 122, 255, 0.5)', // Color para Peraphone
-                            'rgba(255, 193, 7, 0.5)', // Color para Universe
-                            'rgba(40, 167, 69, 0.5)'  // Color para Shaomay
-                        ],
-                        borderColor: [
-                            '#D63384', // Borde para Aywey
-                            '#337AB7', // Borde para Peraphone
-                            '#FFC107', // Borde para Universe
-                            '#28A745'  // Borde para Shaomay
+                            'rgba(214, 51, 132)', // Color para Aywey
+                            'rgba(230, 112, 171)', // Color para Shaomay
+                            'rgba(148, 3, 75)', // Color para Peraphone
+                            'rgba(168, 61, 114)' // Color para Universe
+                             
                         ],
                         borderWidth: 2 // Grosor del borde
                     }]
