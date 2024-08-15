@@ -36,6 +36,7 @@ $(document).ready(function() {
            contador++
         })
 
+
         //Info producto
         $("#id-producto").text(producto.id)
         $("#nombre").text(producto.nombre)
@@ -63,20 +64,20 @@ $(document).ready(function() {
 
         //Evento botón
         $("#añadir").attr('onclick', "añadirAlCarrito("+producto.id+")")
-      
+        
         producto.reseñas.forEach(i => {
             const usuario = i[0]
             const estrellas = i[1]
             const texto = i[2]
             console.log(i)
-
+    
             // Crea un <li>
             var reseña = $('<li>').append
             (
                 // Al <li> le añade un <button> para cambiar la imagen
                 $('<div>').addClass('container mt-3').append
                 (
-                    $('<div>').addClass('review mb-4 p-3 border rounded shadow-sm').append
+                    $('<div>').addClass('mb-4 p-3 border rounded shadow-sm').append
                     (
                         $('<div>').addClass('d-flex flex-column flex-md-row align-items-start').append
                         (
@@ -96,7 +97,7 @@ $(document).ready(function() {
                                 $('<h5>').addClass('mb-1').text(usuario)
                             ).append
                             (
-                                $('<div>').addClass('stars mb-1').text(estrellas)
+                                $('<div>').addClass('stars fs-3 mb-1').text(estrellas)
                             ).append
                             (
                                 $('<p>').addClass('mb-0').text(texto)
@@ -113,28 +114,12 @@ $(document).ready(function() {
 
     })
 
-        /*
-        <li>
-            <div class="container mt-3">
-                <div class="review mb-4 p-3 border rounded shadow-sm">
-                    <div class="d-flex flex-column flex-md-row align-items-start">
-                        <!--  flex-column para pantallas pequenas -->
-                        <div class="me-3 mb-3 mb-md-0"> <!--  mb-3 para espacio en pantallas pequenas -->
-                            <img id="profile-picture" src="../Images/Placeholder.jpeg" alt="Foto del Usuario" class="rounded-circle" style="width: 50px; height: 50px;">
-                        </div>
-                    <div>
-                        <h5 class="mb-1">Nombre del Usuario</h5>
-                        <div class="stars mb-1">
-                            ★★★★★
-                        </div>
-                        <p class="mb-0">"¡Me encanta esta tienda! La página es super fácil de usar y encontré justo lo que necesitaba sin complicaciones. Además, el equipo de soporte es genial, siempre están ahí para ayudarte si tienes alguna pregunta. ¡Definitivamente volveré a comprar aquí!"</p>
-                    </div>
-            </div>
-            </div>
-            </div>
-            </li>
-        */
+    
 })
+function cambiarImagen(index){
+        console.log(index)
+        $("#miniatura").attr("src", "."+index)
+}
 
 
 function añadirAlCarrito(id) {

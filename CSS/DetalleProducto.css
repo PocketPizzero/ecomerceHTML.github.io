@@ -8,7 +8,7 @@ Negro: #212429
     background-color: white;
     border: none;
 }
-#imagenes li{
+#imagenes li, #reseñas li{
     list-style: none;
 }
 
