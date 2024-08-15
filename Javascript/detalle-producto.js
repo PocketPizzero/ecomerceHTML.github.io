@@ -63,56 +63,72 @@ $(document).ready(function() {
 
         //Evento botón
         $("#añadir").attr('onclick', "añadirAlCarrito("+producto.id+")")
-        
-    })
-
-    let contador = 0
-        $("#miniatura").attr("src", "."+producto.imagenes[0])
-
+      
         producto.reseñas.forEach(i => {
+            const usuario = i[0]
+            const estrellas = i[1]
+            const texto = i[2]
+            console.log(i)
+
             // Crea un <li>
-            var elemento = $('<li>').addClass("item-group-item").append
+            var reseña = $('<li>').append
             (
                 // Al <li> le añade un <button> para cambiar la imagen
-                $('<button>').on('click', function(){
-                    cambiarImagen(i)}
-                ).attr
-                ('type', 'button'
-                ).addClass(
-                    'galeria-imagen'
-                )
-                // Al <button> le añade la <img/> correspondiente
-                .append
+                $('<div>').addClass('container mt-3').append
                 (
-                    $('<img/>').attr('src', "."+producto.imagenes[contador]).addClass
-                    ('w-100')
+                    $('<div>').addClass('review mb-4 p-3 border rounded shadow-sm').append
+                    (
+                        $('<div>').addClass('d-flex flex-column flex-md-row align-items-start').append
+                        (
+                            $('<div>').addClass('"me-3 mb-3 mb-md-0').append
+                            (
+                                $('<img>').attr
+                                ({
+                                    'id': 'profile-picture',
+                                    'src': '../Images/logo - icono general.png',
+                                    'alt': 'Foto de perfil',
+                                    'style': "width: 50px; height: 50px;"
+                                }).addClass('rounded-circle')
+                            )
+                        )
+                    )
                 )
+            ).append
+            (
+                $('<h1>').addClass('mb-1').text(usuario)
+            ).append
+            (
+                $('<div>').addClass('stars mb-1').text(estrellas)
+            ).append
+            (
+                $('<p>').text(texto)
             )
-            // Al <li> le añade un <button> para cambiar la imagen
-            $("#imagenes").append(elemento)
 
-           contador++
+            $('#reseñas').append(reseña)
         })
+
+    })
 
         /*
         <li>
             <div class="container mt-3">
                 <div class="review mb-4 p-3 border rounded shadow-sm">
-                    <div class="d-flex flex-column flex-md-row align-items-start"> <!--  flex-column para pantallas pequenas -->
+                    <div class="d-flex flex-column flex-md-row align-items-start">
+                        <!--  flex-column para pantallas pequenas -->
                         <div class="me-3 mb-3 mb-md-0"> <!--  mb-3 para espacio en pantallas pequenas -->
-                            <img src="../Images/Placeholder.jpeg" alt="Foto del Usuario" class="rounded-circle" style="width: 50px; height: 50px;">
-                    </div>
-                <div>
-            <h5 class="mb-1">Nombre del Usuario</h5>
-            <div class="stars mb-1">
-                ★★★★★
-            </div>
-                                        <p class="mb-0">"¡Me encanta esta tienda! La página es super fácil de usar y encontré justo lo que necesitaba sin complicaciones. Además, el equipo de soporte es genial, siempre están ahí para ayudarte si tienes alguna pregunta. ¡Definitivamente volveré a comprar aquí!"</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <img id="profile-picture" src="../Images/Placeholder.jpeg" alt="Foto del Usuario" class="rounded-circle" style="width: 50px; height: 50px;">
                         </div>
-                    </li>
+                    <div>
+                    <h5 class="mb-1">Nombre del Usuario</h5>
+                    <div class="stars mb-1">
+                        ★★★★★
+                    </div>
+                    <p class="mb-0">"¡Me encanta esta tienda! La página es super fácil de usar y encontré justo lo que necesitaba sin complicaciones. Además, el equipo de soporte es genial, siempre están ahí para ayudarte si tienes alguna pregunta. ¡Definitivamente volveré a comprar aquí!"</p>
+                </div>
+            </div>
+            </div>
+            </div>
+            </li>
         */
 })
 
