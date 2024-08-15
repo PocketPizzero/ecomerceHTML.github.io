@@ -13,7 +13,8 @@ const productos =
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "4460 mAh",
-		"llegada aproximada": "2 días",
+		"entrega_aproximada": "2 días",
+		"costo_envio": "10,000",
 		"fecha_agregado": "2024-08-03",
 		"imagenes":
 		 [
@@ -21,10 +22,10 @@ const productos =
 			"./Images/Productos/Aywey_May_-_White-removebg-preview.png"
 		],
 		"reseñas":
-		 [
-			"La experiencia de compra en Pocketshop fue excelente desde el principio hasta el final. La página es fácil de navegar y tiene un diseño limpio. Compré un Aywey May y ha sido perfecto para el uso diario. Además, el soporte fue muy útil cuando tuve una pregunta sobre el envío. - Stefan J.",
-			"La página tiene un buen diseño, pero la carga de los productos fue lenta en mi navegador. Compré un Aywey May, y aunque es un teléfono decente para su precio, esperaba un rendimiento un poco mejor. No sé si volveré a comprar aquí. - Levi Ackerman. ",
-			"Me gustó mucho cómo Pocketshop organiza los productos. La información es clara y detallada, lo que me facilitó la decisión de comprar el Aywey May. El teléfono es rápido, y la batería dura todo el día. La página también es bastante intuitiva, lo cual es un plus. - Yuji Itadori. "
+		[
+			["Stefan J", "★★★★★", "La experiencia de compra en Pocketshop fue excelente desde el principio hasta el final. La página es fácil de navegar y tiene un diseño limpio. Compré un Aywey May y ha sido perfecto para el uso diario. Además, el soporte fue muy útil cuando tuve una pregunta sobre el envío."],
+			["Levi Ackerman", "★★★★★", "La página tiene un buen diseño, pero la carga de los productos fue lenta en mi navegador. Compré un Aywey May, y aunque es un teléfono decente para su precio, esperaba un rendimiento un poco mejor. No sé si volveré a comprar aquí."],
+			["Yuji Itadori", "★★★★★", "Me gustó mucho cómo Pocketshop organiza los productos. La información es clara y detallada, lo que me facilitó la decisión de comprar el Aywey May. El teléfono es rápido, y la batería dura todo el día. La página también es bastante intuitiva, lo cual es un plus."]
 		]
 	},
     {
@@ -40,7 +41,8 @@ const productos =
 		"RAM": "12 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "4900 mAh",
-		"llegada aproximada": "2 días",
+		"entrega_aproximada": "2 días",
+		"costo_envio": "7,500",
 		"fecha_agregado": "2024-08-05",
 		"imagenes": 
 		[
@@ -68,7 +70,8 @@ const productos =
 		"RAM": "8 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "5000 mAh",
-		"llegada aproximada": "2 días",
+		"entrega_aproximada": "2 días",
+		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-06",
 		"imagenes": 
 		[
@@ -95,7 +98,8 @@ const productos =
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "4270 mAh",
-		"llegada aproximada": "3 días",
+		"entrega_aproximada": "3 días",
+		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-08",
 		"imagenes": 
 		[
@@ -124,7 +128,8 @@ const productos =
 		"RAM": "12 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "4400 mAh",
-		"llegada aproximada": "3 días",
+		"entrega_aproximada": "3 días",
+		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-07",
 		"imagenes":
 		[
@@ -152,7 +157,8 @@ const productos =
 		"RAM": "8 GB",
 		"almacenamiento": "256 GB",
 		"bateria": "5000 mAh",
-		"llegada aproximada": "3 días",
+		"entrega_aproximada": "3 días",
+		"costo_envio": "6,000",
 		"fecha_agregado": "2024-08-09",
 		"imagenes":
 		[
@@ -181,7 +187,8 @@ const productos =
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "5000 mAh",
-		"llegada aproximada": "1 días",
+		"entrega_aproximada": "1 días",
+		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-03",
 		"imagenes":
 		[
@@ -208,7 +215,8 @@ const productos =
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "5000 mAh",
-		"llegada aproximada": "1 días",
+		"entrega_aproximada": "1 días",
+		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-06",
 		"imagenes":
 		[
@@ -236,7 +244,8 @@ const productos =
 		"RAM": "3 GB",
 		"almacenamiento": "64 GB",
 		"bateria": "5000 mAh",
-		"llegada aproximada": "1 días",
+		"entrega_aproximada": "1 días",
+		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-05",
 		"imagenes":
 		[
@@ -264,7 +273,8 @@ const productos =
 		"RAM": "4 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "3500 mAh",
-		"llegada aproximada": "5 días",
+		"entrega_aproximada": "5 días",
+		"costo_envio": "6,000",
 		"fecha_agregado": "2024-08-07",
 		"imagenes":
 		[
@@ -292,7 +302,8 @@ const productos =
 		"RAM": " 4 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "3279 mAh",
-		"llegada aproximada": "5 días",
+		"entrega_aproximada": "5 días",
+		"costo_envio": "6,000",
 		"fecha_agregado": "2024-08-09",
 		"imagenes":
 		[
@@ -320,7 +331,8 @@ const productos =
 		"RAM": "6 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "4912 mAh",
-		"llegada aproximada": "5 días",
+		"entrega_aproximadaa": "5 días",
+		"costo_envio": "7,000",
 		"fecha_agregado": "2024-08-06",
 		"imagenes":
 		[
