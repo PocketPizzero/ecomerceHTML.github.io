@@ -44,7 +44,7 @@ function addToCart(id) {
 	/////$.notify("Libro agregado: "+name,"sucess")
 }
 
-function removeCartItem(idLibro) {
+function removeCartItem(id) {
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
 	if (cartArray) {
 		let index = cartArray.findIndex((obj) => obj.id == idLibro);
