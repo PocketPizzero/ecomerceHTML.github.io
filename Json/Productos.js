@@ -4,7 +4,7 @@ const productos =
 		"id": 1,
 		"categoria": "Aywey",
 		"nombre": "Aywey May",
-		"precio": "738,000",
+		"precio": 738000,
 		"unidades": 6,
 		"Envio Postal": false,
 		"Recoger en tienda": true,
@@ -14,7 +14,7 @@ const productos =
 		"almacenamiento": "256 GB",
 		"bateria": "4460 mAh",
 		"entrega_aproximada": "2 días",
-		"costo_envio": "10,000",
+		"costo_envio": "10000",
 		"fecha_agregado": "2024-08-03",
 		"imagenes":
 		 [

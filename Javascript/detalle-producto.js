@@ -63,13 +63,12 @@ $(document).ready(function() {
         $('#costo').text(producto.costo_envio)
 
         //Evento botón
-        $("#añadir").attr('onclick', "añadirAlCarrito("+producto.id+")")
+        $("#añadir").attr('onclick', "addToCart("+producto.id+")")
         
         producto.reseñas.forEach(i => {
             const usuario = i[0]
             const estrellas = i[1]
             const texto = i[2]
-            console.log(i)
     
             // Crea un <li>
             var reseña = $('<li>').append
@@ -122,7 +121,7 @@ function cambiarImagen(index){
 }
 
 
-function añadirAlCarrito(id) {
+function añadirAlCarritoOLD(id) {
 
 	const producto = productos.find((p) => p.id === id)
 
@@ -134,7 +133,7 @@ function añadirAlCarrito(id) {
 
 	//Elemento del carrito
 	//{}
-	const cartItem={
+	let cartItem={
 		imagen: imagen,
         nombre: nombre,
         precio: precio,
@@ -154,3 +153,4 @@ function añadirAlCarrito(id) {
     localStorage.setItem('carrito', JSON.stringify(listaCarrito))
 
 }
+
