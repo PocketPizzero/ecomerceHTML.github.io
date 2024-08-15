@@ -80,7 +80,7 @@ $(document).ready(function() {
                     (
                         $('<div>').addClass('d-flex flex-column flex-md-row align-items-start').append
                         (
-                            $('<div>').addClass('"me-3 mb-3 mb-md-0').append
+                            $('<div>').addClass('me-3 mb-3 mb-md-0').append
                             (
                                 $('<img>').attr
                                 ({
@@ -90,20 +90,24 @@ $(document).ready(function() {
                                     'style': "width: 50px; height: 50px;"
                                 }).addClass('rounded-circle')
                             )
+                        ).append
+                        (
+                            $('<div>').append(
+                                $('<h5>').addClass('mb-1').text(usuario)
+                            ).append
+                            (
+                                $('<div>').addClass('stars mb-1').text(estrellas)
+                            ).append
+                            (
+                                $('<p>').addClass('mb-0').text(texto)
+                            )   
                         )
                     )
+                
+                    
                 )
-            ).append
-            (
-                $('<h1>').addClass('mb-1').text(usuario)
-            ).append
-            (
-                $('<div>').addClass('stars mb-1').text(estrellas)
-            ).append
-            (
-                $('<p>').text(texto)
+    
             )
-
             $('#reseñas').append(reseña)
         })
 
@@ -119,12 +123,12 @@ $(document).ready(function() {
                             <img id="profile-picture" src="../Images/Placeholder.jpeg" alt="Foto del Usuario" class="rounded-circle" style="width: 50px; height: 50px;">
                         </div>
                     <div>
-                    <h5 class="mb-1">Nombre del Usuario</h5>
-                    <div class="stars mb-1">
-                        ★★★★★
+                        <h5 class="mb-1">Nombre del Usuario</h5>
+                        <div class="stars mb-1">
+                            ★★★★★
+                        </div>
+                        <p class="mb-0">"¡Me encanta esta tienda! La página es super fácil de usar y encontré justo lo que necesitaba sin complicaciones. Además, el equipo de soporte es genial, siempre están ahí para ayudarte si tienes alguna pregunta. ¡Definitivamente volveré a comprar aquí!"</p>
                     </div>
-                    <p class="mb-0">"¡Me encanta esta tienda! La página es super fácil de usar y encontré justo lo que necesitaba sin complicaciones. Además, el equipo de soporte es genial, siempre están ahí para ayudarte si tienes alguna pregunta. ¡Definitivamente volveré a comprar aquí!"</p>
-                </div>
             </div>
             </div>
             </div>
