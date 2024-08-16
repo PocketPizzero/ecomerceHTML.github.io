@@ -59,8 +59,7 @@ function removeCartItem(id) {
 } 
 
 function updateCartItemQty(articulo) {
-	
-	var id = articulo.dataset.id
+	var id = parseInt(articulo.dataset.id)
 	var cantidad = articulo.value
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
 	if(cantidad==0 && cantidad.trim()!=''){
@@ -109,7 +108,7 @@ function showDetailShop() {
             `<td><img src=".${producto.imagen}" alt="Producto" class="img-fluid" width="50"></td>
             <td>${producto.nombre}</td>
             <td>${producto.precio}</td>
-            <td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" min="0" onChange="updateCartItemQty(this)"></td>
+            <td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="updateCartItemQty(this)"></td>
             <td>${subtotal}</td>
             <td><button value="${producto.id}" type="button" class="btn btn-fucsia" onclick="removeCartItem(this.value)">X</button></td>`
         
