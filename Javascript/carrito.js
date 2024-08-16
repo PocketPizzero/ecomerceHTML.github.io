@@ -84,7 +84,6 @@ function updateCartItemQty(articulo) {
 	}
 }
 function showDetailShop() {
-	console.log('1')
 	let listaCarrito = new Array()
 
 	var numeroArticulos = 0
