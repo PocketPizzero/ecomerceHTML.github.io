@@ -2,7 +2,7 @@ cargarCarrito()
 
 function cargarCarrito(){
     let listaCarrito = new Array()
-    
+
     var total = 0;
     var precio = 0;
 	var cantidad = 0;
@@ -15,6 +15,7 @@ function cargarCarrito(){
 
     listaCarrito.forEach( p => 
         p.forEach(
+            
          objeto =>
 
             {
