@@ -1,5 +1,6 @@
 productosCarrusel(productos)
 productosRecientes(productos)
+
 function productosCarrusel(data){
     //Auxiliares
     const categorias = [];
@@ -42,6 +43,11 @@ function productosCarrusel(data){
     });
 }
 
+/*Agregados Recientemente*/
+function detalleProducto(id) {
+    window.location.href = `/HTML/Detalle Producto.html?id=${id}`;
+}
+
 function productosRecientes(data){
     const agregados_recientemente = document.getElementById('agregados-recientemente')
 
@@ -57,7 +63,11 @@ function productosRecientes(data){
         elemento.classList.add('m-3')
         elemento.innerHTML =
         `<div class="card">
-            <img src="${producto.imagenes[0]}" class="card-img-top" alt="Producto">
+            <button type="button" onclick="detalleProducto(${producto.id})">
+                <img src="${producto.imagenes[0]}" class="card-img-top" alt="Producto">
+                <h5>${producto.nombre}</h5>
+            </button>
+            
         </div>`
 
         agregados_recientemente.appendChild(elemento)

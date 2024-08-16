@@ -14,13 +14,10 @@
     background-color: #D63384;
     color: #F8F9FB;
 }
-#resumen-productos .container-cuerpo{
+#resumen-productos .container-cuerpo, #resumen-productos #agregados-recientemente .card, #resumen-productos #agregados-recientemente button{
     background-color: #212429;
     color: #F8F9FB;
-}
-#resumen-productos #agregados-recientemente .card{
-    background-color: #212429;
-    color: #F8F9FB;
+    border: none;
 }
 
 /* agregados recientemenete */
