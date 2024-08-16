@@ -47,13 +47,13 @@ function addToCart(id) {
 function removeCartItem(id) {
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
 	if (cartArray) {
-		let index = cartArray.findIndex((obj) => obj.id == idLibro);
+		let index = cartArray.findIndex((producto) => producto.id == id);
 		cartArray.splice(index,1)
 	}
 	//Guardar
 	localStorage.setItem('compra',  JSON.stringify(cartArray))
-	$.notify("Libro Eliminado de la Compra", "warn");
-	showDetailShop()
+	//////$.notify("Libro Eliminado de la Compra", "warn");
+	//////showDetailShop()
 } 
 
 function updateCartItemQty(element) {

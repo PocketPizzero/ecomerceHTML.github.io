@@ -2,6 +2,11 @@ cargarCarrito()
 
 function cargarCarrito(){
     let listaCarrito = new Array()
+    
+    var total = 0;
+    var precio = 0;
+	var cantidad = 0;
+	var subTotal = 0;
 		
     if(localStorage.getItem('carrito')){
         listaCarrito.push(JSON.parse(localStorage.getItem('carrito')))
