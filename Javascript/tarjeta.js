@@ -3,7 +3,7 @@ document.getElementById('numeroTarjeta').addEventListener('input', function() {
     const bin = numeroTarjeta.slice(0, 6); 
   
     if (numeroTarjeta.length >= 6) {
-      // Consulta a la API de HandyAPI con el BIN
+   
       fetch('https://data.handyapi.com/bin/535316') //fetch(`https://data.handyapi.com/bin/${bin}`)
         .then(respuesta => respuesta.json())
         .then(datos => {
