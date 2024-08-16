@@ -1,3 +1,5 @@
+showDetailShop();
+
 function addToCart(id) {
     //Obtener Elemento
     const producto = productos.find((p) => p.id === id)
@@ -56,25 +58,25 @@ function removeCartItem(id) {
 	//////showDetailShop()
 } 
 
-function updateCartItemQty(element) {
-	
-	var idLibro = element.dataset.id
-	var quantity=element.value
+function updateCartItemQty(articulo) {
+	var id = parseInt(articulo.dataset.id)
+	var cantidad = articulo.value
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
-	if(quantity==0 && quantity.trim()!=''){
+	if(cantidad==0 && cantidad.trim()!=''){
 		//removeZero()
 		return
 	}
 	if (cartArray) {
-		let itemIndex = cartArray.findIndex((obj) => obj.id == idLibro);
-		cartArray[itemIndex].cantidad=quantity
+		let index = cartArray.findIndex((p) => p.id === id);
+		cartArray[index].cantidad=cantidad
 		//Subtotal
 		
 	}
 	//Guardar
 	localStorage.setItem('compra',  JSON.stringify(cartArray))
 	showDetailShop()
-} 
+}
+
  function emptyCart() {
 	if (localStorage.getItem('compra')) {
 		localStorage.removeItem('compra');
@@ -82,51 +84,41 @@ function updateCartItemQty(element) {
 	}
 }
 function showDetailShop() {
-	var cartRowHTML = "";
-	var itemCount = 0;
-	var total = 0;
+	console.log('1')
+	let listaCarrito = new Array()
 
-	var price = 0;
-	var quantity = 0;
+	var numeroArticulos = 0
+    var total = 0;
+    var precio = 0;
+	var cantidad = 0;
 	var subTotal = 0;
+		
 	var cart = JSON.parse(localStorage.getItem('compra'))
 	if (cart) {
-		itemCount = cart.length;
+		numeroArticulos = cart.length;
 
-		cart.forEach(function(item) {
+		cart.forEach(function(producto) {
 		
-			price = parseFloat(item.price) | 0;
-			quantity = parseInt(item.cantidad) | 0;
-			subTotal = price * quantity
+			precio = parseFloat(producto.precio) | 0;
+			cantidad = parseInt(producto.cantidad) | 0;
+			subtotal = precio * cantidad
 
-			cartRowHTML += `<div class="row mb-4 d-flex justify-content-between align-items-center">
-                        <div class="col-md-3 col-lg-3 col-xl-3">
-                          <h6 class="text-muted name-libro">${item.name}</h6>
-                        </div>
-                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-
-                          <input min="0" name="quantity" value="${item.cantidad}" type="number" onChange="updateCartItemQty(this)"
-                            class="form-control form-control-sm quantity-libro" data-id="${item.id}" />
-
-                        </div>
-                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                          <h6 class="mb-0 price-libro">&dollar; ${item.price}</h6>
-                        </div>
-                        
-						<div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                          <h6 class="mb-0 subtotal-libro">&dollar;${subTotal.toFixed(2)}</h6>
-                        </div>
-						<div class="col-md-1 col-lg-1 col-xl-1 ">
-                          <button type="button" class="btn btn-secondary"><i class="bi bi-trash" onclick="removeCartItem(${item.id})"></i></button>
-                        </div>
-                      </div>
-                      <hr class="my-4">`;
+			const elemento = document.createElement('tr')
+            elemento.innerHTML =
+            `<td><img src=".${producto.imagen}" alt="Producto" class="img-fluid" width="50"></td>
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="updateCartItemQty(this)"></td>
+            <td>${subtotal}</td>
+            <td><button value="${producto.id}" type="button" class="btn btn-fucsia" onclick="removeCartItem(this.value)">X</button></td>`
+        
+            const tbody = document.getElementById("carrito")
+            tbody.appendChild(elemento)
 
 			total += subTotal;
 		});
 	}
 
-	$('#detail').html(cartRowHTML);
-	$('#total-items').text(itemCount);
-	$('#total-compra').text("$" + total.toFixed(2));
+	//$('#total-items').text(itemCount);
+	//$('#total-compra').text("$" + total.toFixed(2));
 }

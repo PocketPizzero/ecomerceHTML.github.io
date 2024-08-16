@@ -2,7 +2,7 @@ cargarCarrito()
 
 function cargarCarrito(){
     let listaCarrito = new Array()
-    
+
     var total = 0;
     var precio = 0;
 	var cantidad = 0;
@@ -15,6 +15,7 @@ function cargarCarrito(){
 
     listaCarrito.forEach( p => 
         p.forEach(
+            
          objeto =>
 
             {
@@ -23,7 +24,7 @@ function cargarCarrito(){
             `<td><img src=".${objeto.imagen}" alt="Producto" class="img-fluid" width="50"></td>
             <td>${objeto.nombre}</td>
             <td>${objeto.precio}</td>
-            <td><input type="number" class="form-control form-control-fucsia" value="${objeto.cantidad}" min="0"></td>
+            <td><input type="number" class="form-control form-control-fucsia" value="${objeto.cantidad}" data-id="${objeto.id}" min="0"></td>
             <td>${objeto.subtotal}</td>
             <td><button value="${objeto.nombre}" type="button" class="btn btn-fucsia" onclick="eliminarProducto(this.value)">X</button></td>`
         
