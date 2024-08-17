@@ -173,4 +173,31 @@ function actualizarSubtotal() {
 	total = subtotal + costoEnvio
 	$('#total').text("₡ "+ total)
 
+
+//Esta parte es la que obtiene la informacion del carrito en consola 
+
+
+document.getElementById('pagar').addEventListener('click', () => {
+
+	
+	//tipo del envio
+	let tipoEnvio= document.querySelector('input[name="shippingOptions"]:checked').value;
+
+	//total y el subtotal 
+	let subtotal = parseFloat((document.getElementById('subtotal').textContent).substring(2)) ;
+	let costoEnvio= parseFloat((document.getElementById('costoEnvio').textContent).substring(2));
+	let total= parseFloat((document.getElementById('total').textContent).substring(2)) ;
+
+	//consola
+	var objeto = 
+	{
+		subtotal: subtotal, 
+		costoEnvio: costoEnvio, 
+		total : total
+	}
+	localStorage.setItem('objeto', JSON.stringify(objeto))
+
+}) 
+
+
 }
