@@ -53,6 +53,21 @@ $(document).ready(function() {
             $("#disponibilidad").text("Agotado")
         }
 
+        
+        if(producto.Envio_Postal === true){
+            
+            $("#opciones-entrega").append
+            (
+                $('<li>').addClass("fs-3").text("Envío Postal")
+            )
+        }
+        if(producto.Recoger_Tienda === true){
+            $("#opciones-entrega").append
+            (
+                $('<li>').addClass("fs-3").text("Recoger en tienda")
+            )
+        }
+
         //Tabla Descripción
         $("#tamaño").text
         (
@@ -121,7 +136,6 @@ $(document).ready(function() {
     
 })
 function cambiarImagen(index){
-        console.log(index)
         $("#miniatura").attr("src", "."+index)
 }
 
