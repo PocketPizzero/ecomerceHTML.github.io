@@ -165,3 +165,79 @@ form {
 
 /* finalizarcompra */
 
+.container {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #D63384;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F8F9FB; 
+}
+
+.table-hover tbody tr:hover {
+    background-color: #D63384;
+    color: white; 
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table td img {
+    border-radius: 5px;
+}
+
+.table-responsive {
+    margin-bottom: 20px;
+}
+
+.table td:first-child {
+    width: 80px;
+    border-right: 2px solid #212429; /* Línea  entre la imagen y la info*/
+}
+
+.table td:nth-child(2) {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.table td:nth-child(2) {
+    font-weight: bold;
+}
+
+.table td:last-child {
+    font-weight: bold;
+}
+
+
+.table td, .table th {
+    padding: 10px;
+}
+
+/* Alinear a la derecha los valores específicos */
+.table td.right-align {
+    text-align: right;
+}
+
+/* Aplicar el alineamiento a las celdas específicas */
+.table td:nth-child(2),
+.table td:nth-of-type(4),
+.table td:nth-of-type(6),
+.table td:nth-of-type(8) {
+    text-align: right;
+}
+
+/* mlia que separa*/
+.table td:nth-child(2) br {
+    content: "";
+    display: block;
+    margin: 5px 0;
+}
+
