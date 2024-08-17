@@ -1,6 +1,6 @@
 showDetailShop();
 
-function addToCart(id) {
+function añadirArtículo(id) {
     //Obtener Elemento
     const producto = productos.find((p) => p.id === id)
 
@@ -46,7 +46,7 @@ function addToCart(id) {
 	/////$.notify("Libro agregado: "+name,"sucess")
 }
 
-function removeCartItem(id) {
+function eliminarArticulo(id) {
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
 	if (cartArray) {
 		let index = cartArray.findIndex((producto) => producto.id == parseInt(id));
@@ -55,11 +55,13 @@ function removeCartItem(id) {
 	console.log(cartArray)
 	//Guardar
 	localStorage.setItem('compra',  JSON.stringify(cartArray))
-	//////$.notify("Libro Eliminado de la Compra", "warn");
 	showDetailShop()
+
+	//////$.notify("Libro Eliminado de la Compra", "warn");
+	
 } 
 
-function updateCartItemQty(articulo) {
+function actualizarCantidadArticulo(articulo) {
 	var id = articulo.dataset.id
 	var cantidad = articulo.value
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
@@ -78,14 +80,14 @@ function updateCartItemQty(articulo) {
 	showDetailShop()
 }
 
- function emptyCart() {
+ function vaciarCarrito() {
 	if (localStorage.getItem('compra')) {
 		localStorage.removeItem('compra');
 		showDetailShop()
 	}
 }
 
-function showDetailShop() {
+function mostrarCarrito() {
 	const tbody = document.getElementById("carrito")
 	tbody.innerHTML = ``
 
