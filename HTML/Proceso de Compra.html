@@ -121,7 +121,7 @@
                             </div>
                             <!-- Botón de calcular total -->
                             <div class="d-flex justify-content-start mb-3">
-                                <button type="button" class="btn btn-fucsia-full btn-lg align-bottom">Calcular total</button>
+                                <button type="button" class="btn btn-fucsia-full btn-lg align-bottom">Ir a pagar</button>
                             </div>
                         </div>
                     </div>
@@ -132,11 +132,11 @@
                                <tbody>
                         <tr>
                             <th scope="row">Subtotal</th>
-                            <td id="subtotal"></td>
+                            <td id="subtotal">₡ 0.00</td>
                         </tr>
                         <tr>
                             <th scope="row">Envío</th>
-                            <td id="costoEnvio"></td>
+                            <td id="costoEnvio">₡ 0.00</td>
                         </tr>
                             </tbody>
                          </table>
@@ -147,7 +147,7 @@
                                  <tbody>
                             <tr>
                                 <th scope="row">Total</th>
-                                <td>$0.00</td>
+                                <td id="total">₡ 0.00</td>
                             </tr>
                                 </tbody>
                             </table>
@@ -163,11 +163,11 @@
             <div class="tab-pane fade" id="medios-tab-pane" role="tabpanel" aria-labelledby="medios-tab" tabindex="0">
                 
 
-                <form class="row g-3 needs-validation" novalidate>
+                <form class="row m-5 g-3 needs-validation" novalidate>
                    
                     <div class="col-12 mb-4 d-flex align-items-center">
                       <h4 class="mb-0 me-3">Información de la tarjeta</h4> 
-                      <img id="imagenTarjeta" src="../Images/Placeholder.jpeg" alt="Imagen de la tarjeta" width="100"> 
+                      <img id="imagenTarjeta" src="../Images/logo - icono pestaña.png" alt="Imagen de la tarjeta" width="100"> 
                     </div>
                   
                     
@@ -257,10 +257,10 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous">
     </script>
-
-<script src="../Javascript/tarjeta.js"></script>
     <!--Main Javascript-->
     <script src="../Javascript/carrito.js">
+    </script>
+    <script src="../Javascript/tarjeta.js">
     </script>
 </body>
 

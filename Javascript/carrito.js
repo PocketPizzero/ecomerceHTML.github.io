@@ -75,8 +75,7 @@ function actualizarCantidadArticulo(articulo) {
 	}
 	if (cartArray) {
 		let index = cartArray.findIndex((p) => p.id === parseInt(id));
-		cartArray[index].cantidad=cantidad
-		//Subtotal
+		cartArray[index].cantidad=parseInt(cantidad)
 		
 	}
 	//Guardar
@@ -118,10 +117,10 @@ function mostrarCarrito() {
 				elemento.innerHTML =
 				`<td><img src=".${producto.imagen}" alt="Producto" class="img-fluid" width="50"></td>
 				<td>${producto.nombre}</td>
-				<td>${producto.precio}</td>
+				<td>₡ ${producto.precio}</td>
 				<td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="actualizarCantidadArticulo(this)"></td>
-				<td class="subtotal">${subtotal}</td>
-				<td><button value="${producto.id}" type="button" class="btn btn-fucsia" onclick="eliminarArticulo(this.value)">X</button></td>`
+				<td class="subtotal">₡ ${subtotal}</td>
+				<td><button value=${producto.id}" type="button" class="btn btn-fucsia" onclick="eliminarArticulo(this.value)">X</button></td>`
 			
 				tbody.appendChild(elemento)
 
@@ -129,8 +128,6 @@ function mostrarCarrito() {
 			});
 		}
 		actualizarSubtotal()
-		//$('#total-items').text(itemCount);
-		//$('#total-compra').text("$" + total.toFixed(2));
 	}
 	else
 	{
@@ -139,22 +136,39 @@ function mostrarCarrito() {
 	
 }
 
+document.querySelectorAll('input[name="shippingOptions"]').forEach(radio => {
+	radio.addEventListener('change', () => {
+		let costoEnvio = 0
+		switch (radio.id) {
+		case "shippingPostal":
+			costoEnvio = 5000;
+			break;
+		case "shippingStore":
+			costoEnvio = 0;
+			break;
+		}
+		$('#costoEnvio').text("₡ "+costoEnvio)
+
+		actualizarSubtotal()
+	});
+
+	
+});
+
 function actualizarSubtotal() {
-	let costoEnvio = 0
+	
 	let subtotal = 0
-	if(shippingPostal){
-
-	}else if(shippingStore){
-
-	}
+	let costoEnvio = parseFloat((document.getElementById('costoEnvio').textContent).substring(2))
+	console.log(costoEnvio)
+	let total = 0
 
 	let subtotales = document.querySelectorAll('.subtotal')
-	console.log(subtotales)
-	
 	subtotales.forEach(subtotalArticulo => {
-		subtotal += parseFloat(subtotalArticulo.textContent)
+		subtotal += parseFloat(subtotalArticulo.textContent.substring(2))
 	})
-	console.log(subtotal)
-	$('#subtotal').text(subtotal)
-	$('#costoEnvio').text(costoEnvio)
+
+	$('#subtotal').text("₡ "+subtotal)
+	total = subtotal + costoEnvio
+	$('#total').text("₡ "+ total)
+
 }
