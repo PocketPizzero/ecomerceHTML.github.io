@@ -1,4 +1,4 @@
-fetch(`https://data.handyapi.com/bin/535316`)
+/*fetch(`https://data.handyapi.com/bin/535316`)
   .then(response => {
     console.log(response); // Muestra el objeto Response en la consola
     return response.json(); // Convertir el Response a JSON
@@ -25,7 +25,7 @@ fetch(`https://data.handyapi.com/bin/535316`)
   .catch(error => {
     console.error('Error:', error);
     document.getElementById('imagenTarjeta').src = ''; // Limpia la imagen en caso de error
-  });
+  });*/
 
   
 

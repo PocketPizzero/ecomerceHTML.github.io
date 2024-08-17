@@ -5,6 +5,11 @@ $(document).ready(function() {
         const urlParams = new URLSearchParams(window.location.search);
         const productoId = urlParams.get("id");
 
+         //Validacion para Index
+         if(!productoId){
+            return
+        }
+
         const producto= productos.find((p)=>p.id==productoId)
 
         //Colocar Imagenes

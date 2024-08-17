@@ -24,9 +24,9 @@ function cargarCarrito(){
             `<td><img src=".${objeto.imagen}" alt="Producto" class="img-fluid" width="50"></td>
             <td>${objeto.nombre}</td>
             <td>${objeto.precio}</td>
-            <td><input type="number" class="form-control form-control-fucsia" value="${objeto.cantidad}" data-id="${objeto.id}" min="0"></td>
+            <td><input type="number" class="form-control form-control-fucsia" value="${objeto.cantidad}" data-id="${objeto.id}" min="0" change="updateCartItemQty(this.id)"></td>
             <td>${objeto.subtotal}</td>
-            <td><button value="${objeto.nombre}" type="button" class="btn btn-fucsia" onclick="eliminarProducto(this.value)">X</button></td>`
+            <td><button value="${objeto.id}" type="button" class="btn btn-fucsia" onclick="removeCartItem(this.value)">X</button></td>`
         
             const tbody = document.getElementById("carrito")
             tbody.appendChild(elemento)

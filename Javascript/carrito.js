@@ -49,25 +49,26 @@ function addToCart(id) {
 function removeCartItem(id) {
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
 	if (cartArray) {
-		let index = cartArray.findIndex((producto) => producto.id == id);
+		let index = cartArray.findIndex((producto) => producto.id == parseInt(id));
 		cartArray.splice(index,1)
 	}
+	console.log(cartArray)
 	//Guardar
 	localStorage.setItem('compra',  JSON.stringify(cartArray))
 	//////$.notify("Libro Eliminado de la Compra", "warn");
-	//////showDetailShop()
+	showDetailShop()
 } 
 
 function updateCartItemQty(articulo) {
-	var id = parseInt(articulo.dataset.id)
+	var id = articulo.dataset.id
 	var cantidad = articulo.value
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
-	if(cantidad==0 && cantidad.trim()!=''){
-		//removeZero()
-		return
+	if(cantidad==='0' && cantidad.trim()!=''){
+		removeCartItem(id)
+		return;
 	}
 	if (cartArray) {
-		let index = cartArray.findIndex((p) => p.id === id);
+		let index = cartArray.findIndex((p) => p.id === parseInt(id));
 		cartArray[index].cantidad=cantidad
 		//Subtotal
 		
@@ -83,7 +84,11 @@ function updateCartItemQty(articulo) {
 		showDetailShop()
 	}
 }
+
 function showDetailShop() {
+	const tbody = document.getElementById("carrito")
+	tbody.innerHTML = ``
+
 	let listaCarrito = new Array()
 
 	var numeroArticulos = 0
@@ -111,13 +116,11 @@ function showDetailShop() {
             <td>${subtotal}</td>
             <td><button value="${producto.id}" type="button" class="btn btn-fucsia" onclick="removeCartItem(this.value)">X</button></td>`
         
-            const tbody = document.getElementById("carrito")
             tbody.appendChild(elemento)
 
 			total += subTotal;
 		});
 	}
-
 	//$('#total-items').text(itemCount);
 	//$('#total-compra').text("$" + total.toFixed(2));
 }
