@@ -164,3 +164,65 @@ form {
 
 
 /* finalizarcompra */
+/* Estilos personalizados para la tabla de Finalizar compra */
+.container {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #D63384; /* Color fucsia para el título */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F8F9FB; /* Color blanco personalizado */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #D63384; /* Color fucsia para el hover */
+    color: white; /* Texto blanco en hover */
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table td img {
+    border-radius: 5px;
+}
+
+.table-responsive {
+    margin-bottom: 20px;
+}
+
+.table td:first-child {
+    width: 80px;
+    border-right: 2px solid #212429; /* Línea divisoria entre la imagen y la información */
+}
+
+.table td:nth-child(2) {
+    text-align: left;
+    padding-left: 10px; /* Espaciado adicional a la derecha de la línea divisoria */
+}
+
+.table td:nth-child(2) {
+    font-weight: bold;
+}
+
+.table td:last-child {
+    font-weight: bold;
+}
+
+/* Ajustes de la fuente y espaciado */
+.table td, .table th {
+    padding: 10px;
+}
+
+.table td:nth-child(2) br {
+    content: "";
+    display: block;
+    margin: 5px 0;
+}
