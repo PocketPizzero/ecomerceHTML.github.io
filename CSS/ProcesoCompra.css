@@ -1,46 +1,43 @@
-/*  boton X */
+/* Tabs colores  */
+.nav-underline .nav-link {
+    color: #212429; /* Color del texto de las tabs */
+}
+.nav-underline .nav-link.active {
+    color: #D63384; 
+    border-bottom-color: #D63384; /* Color de la línea debajo de la tab activa */
+}
+.nav-underline .nav-link:hover {
+    color: #212429; /* Color del texto al pasar el ratón sobre la tab */
+}
 
-.btn-fucsia {
+
+/* Bóton Eliminar y Vaciar Carrito */
+.btn-outline-primary{
+    border-color: #D63384;
     color: #D63384;
-    border: 1px solid #D63384;
+}
+.btn-outline-primary:hover{
+    background-color: #D63384;
+    border-color: #D63384;
+    
 }
 
+.btn-primary{
+    background-color: #D63384;
+    border-color: #D63384;
+}
+/*PRUEBAAA*/
+.btn-primary:hover{
+    background-color: #751c48;
+    border-color: #751c48;
+}
 
-/* la cantidad  */
-
+/* Cantidad */
 .form-control-fucsia {
     border-color: #D63384;
 }
-
-/*  carrito y tipo de envio  */
-.btn-fucsia-full {
-    background-color: #D63384;
-    color: #F8F9FB;
-    border: 2px solid #D63384;
-}
-
-.btn-fucsia-full:hover {
-    background-color: #D63384;
-    color:#F8F9FB;
-}
-
-.form-control-fucsia {
-    border-color: #D63384;
-}
-
 .form-control-fucsia:focus {
     border-color: #D63384;
-}
-
-.btn-fucsia {
-    background-color: #D63384;
-    color: #F8F9FB;
-    border: 2px solid #D63384;
-}
-
-.btn-fucsia:hover {
-    background-color: #D63384;
-    color: #F8F9FB;
 }
 
 .custom-radio:checked {
@@ -49,54 +46,12 @@
 }
 
 
-/* Tbala de Subtotal y el env */
+/* Tablas */
 .table {
-    border: 1px solid #D63384; 
+    border-color: #D63384; 
 }
-
-.table th, .table td {
-    padding: 0.75rem; 
-}
-
-.table th {
-    background-color: #f8f9fa; 
-}
-
-.table td {
-    background-color: #f8f9fa;
-}
-
-/*  elementos alineados */
-.d-flex {
-    display: flex;
-}
-
-.align-items-start {
-    align-items: flex-start;
-}
-
-.me-4 {
-    margin-right: 2.5rem; /* Espacio colum envío y la tabla */
-}
-
-.ms-5 {
-    margin-left: 4rem; 
-}
-
-
-.mt-4 {
-    margin-top: 2rem; /* Ajusta según sea necesario */
-}
-
-
-.align-bottom {
-    margin-top: 2.3rem; /* Ajusta el valor según sea necesario */
-}
-
 
 /* metodo de pago formu  */
-
-
 form {
     background-color: #F8F9FB; 
     padding: 20px;
@@ -108,12 +63,6 @@ form {
   form h4 {
     color: #D63384; 
   }
-  
-  
-  form .form-label {
-    color: #212429; 
-  }
-  
 
   form .form-control {
     border-color: #D63384; 
@@ -138,100 +87,33 @@ form {
   form .invalid-feedback {
     color: #d9534f; /*  mensajes de error */
   }
-  
-  
-  #imagenTarjeta {
-    margin-left: 10px; 
-  }
-  
 
 
-  /* navs colores  */
-  
-.nav-underline .nav-link {
-    color: #212429; /* Color del texto de las tabs */
-}
-
-.nav-underline .nav-link.active {
-    color: #D63384; 
-    border-bottom-color: #D63384; /* Color de la línea debajo de la tab activa */
-}
-
-.nav-underline .nav-link:hover {
-    color: #D63384; /* Color del texto al pasar el ratón sobre la tab */
-}
-
-
-
-/* finalizarcompra */
-
-.container {
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #F8F9FB; 
-}
-
-.table-hover tbody tr:hover {
+/* Finalizar Compra */
+/*REVISAR*/
+.table-hover tr:hover {
     background-color: #D63384;
     color: white; 
 }
 
+/*HTML*/
 .table td, .table th {
     vertical-align: middle;
     text-align: center;
 }
 
-.table td img {
-    border-radius: 5px;
-}
-
-.table-responsive {
-    margin-bottom: 20px;
-}
-
+/*HTML*/
 .table td:first-child {
     width: 80px;
-    border-right: 2px solid #212429; /* Línea  entre la imagen y la info*/
+    border-right: 2px/* Línea  entre la imagen y la info*/
 }
 
-.table td:nth-child(2) {
-    text-align: left;
-    padding-left: 10px;
-}
-
-.table td:nth-child(2) {
-    font-weight: bold;
-}
-
-.table td:last-child {
-    font-weight: bold;
-}
-
-
-.table td, .table th {
-    padding: 10px;
-}
-
-/* Alinear a la derecha los valores específicos */
-.table td.right-align {
-    text-align: right;
-}
-
+/*HTML*/
 /* Aplicar el alineamiento a las celdas específicas */
 .table td:nth-child(2),
 .table td:nth-of-type(4),
 .table td:nth-of-type(6),
 .table td:nth-of-type(8) {
     text-align: right;
-}
-
-/* mlia que separa*/
-.table td:nth-child(2) br {
-    content: "";
-    display: block;
-    margin: 5px 0;
 }
 

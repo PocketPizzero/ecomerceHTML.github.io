@@ -123,7 +123,7 @@ function mostrarCarrito() {
 				<td>₡ ${producto.precio}</td>
 				<td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="actualizarCantidadArticulo(this)"></td>
 				<td class="subtotal">₡ ${subtotal}</td>
-				<td><button value="${producto.id}" type="button" class="btn btn-fucsia" onclick="eliminarArticulo(this.value)">X</button></td>`
+				<td><button value="${producto.id}" type="button" class="btn btn-outline-primary" onclick="eliminarArticulo(this.value)">X</button></td>`
 			
 				tbody.appendChild(elemento)
 
