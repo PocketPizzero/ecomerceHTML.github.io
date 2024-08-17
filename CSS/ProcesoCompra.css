@@ -170,12 +170,6 @@ form {
     font-family: Arial, sans-serif;
 }
 
-h2 {
-    color: #D63384;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: #F8F9FB; 
 }
