@@ -93,40 +93,68 @@ function actualizarCantidadArticulo(articulo) {
 
 function mostrarCarrito() {
 	const tbody = document.getElementById("carrito")
-	tbody.innerHTML = ``
+	if(tbody){
+		tbody.innerHTML = ``
 
-	let listaCarrito = new Array()
+		let listaCarrito = new Array()
 
-	var numeroArticulos = 0
-    var total = 0;
-    var precio = 0;
-	var cantidad = 0;
-	var subTotal = 0;
-		
-	var cart = JSON.parse(localStorage.getItem('compra'))
-	if (cart) {
-		numeroArticulos = cart.length;
+		var numeroArticulos = 0
+		var total = 0;
+		var precio = 0;
+		var cantidad = 0;
+		var subTotal = 0;
+			
+		var cart = JSON.parse(localStorage.getItem('compra'))
+		if (cart) {
+			numeroArticulos = cart.length;
 
-		cart.forEach(function(producto) {
-		
-			precio = parseFloat(producto.precio) | 0;
-			cantidad = parseInt(producto.cantidad) | 0;
-			subtotal = precio * cantidad
+			cart.forEach(function(producto) {
+			
+				precio = parseFloat(producto.precio) | 0;
+				cantidad = parseInt(producto.cantidad) | 0;
+				subtotal = precio * cantidad
 
-			const elemento = document.createElement('tr')
-            elemento.innerHTML =
-            `<td><img src=".${producto.imagen}" alt="Producto" class="img-fluid" width="50"></td>
-            <td>${producto.nombre}</td>
-            <td>${producto.precio}</td>
-            <td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="actualizarCantidadArticulo(this)"></td>
-            <td>${subtotal}</td>
-            <td><button value="${producto.id}" type="button" class="btn btn-fucsia" onclick="eliminarArticulo(this.value)">X</button></td>`
-        
-            tbody.appendChild(elemento)
+				const elemento = document.createElement('tr')
+				elemento.innerHTML =
+				`<td><img src=".${producto.imagen}" alt="Producto" class="img-fluid" width="50"></td>
+				<td>${producto.nombre}</td>
+				<td>${producto.precio}</td>
+				<td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="actualizarCantidadArticulo(this)"></td>
+				<td class="subtotal">${subtotal}</td>
+				<td><button value="${producto.id}" type="button" class="btn btn-fucsia" onclick="eliminarArticulo(this.value)">X</button></td>`
+			
+				tbody.appendChild(elemento)
 
-			total += subTotal;
-		});
+				total += subTotal;
+			});
+		}
+		actualizarSubtotal()
+		//$('#total-items').text(itemCount);
+		//$('#total-compra').text("$" + total.toFixed(2));
 	}
-	//$('#total-items').text(itemCount);
-	//$('#total-compra').text("$" + total.toFixed(2));
+	else
+	{
+		return
+	}
+	
+}
+
+function actualizarSubtotal() {
+	let costoEnvio = 0
+	let subtotal = 0
+	if(shippingPostal){
+
+	}else if(shippingStore){
+
+	}
+
+	let subtotales = document.querySelectorAll('.subtotal')
+	console.log(subtotales)
+	
+	subtotales.forEach(subtotalArticulo => {
+		subtotal += parseFloat(subtotalArticulo.textContent)
+	})
+	console.log(subtotal)
+	$('#subtotal').text(subtotal)
+	$('#costoEnvio').text(costoEnvio)
 }

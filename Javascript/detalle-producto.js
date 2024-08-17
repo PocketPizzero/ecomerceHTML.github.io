@@ -125,37 +125,3 @@ function cambiarImagen(index){
         $("#miniatura").attr("src", "."+index)
 }
 
-
-function añadirAlCarritoOLD(id) {
-
-	const producto = productos.find((p) => p.id === id)
-
-    let imagen = producto.imagenes[0]
-    let nombre = producto.nombre
-    let precio = producto.precio
-    let cantidad = 1
-    let subtotal = producto.precio
-
-	//Elemento del carrito
-	//{}
-	let cartItem={
-		imagen: imagen,
-        nombre: nombre,
-        precio: precio,
-        cantidad: cantidad,
-        subtotal: subtotal
-	}
-
-	//Obtener carrito actual
-	let listaCarrito = new Array()
-
-	if(localStorage.getItem('carrito')){
-		listaCarrito = JSON.parse(localStorage.getItem('carrito'))
-	}
-
-    listaCarrito.push(cartItem)
-    
-    localStorage.setItem('carrito', JSON.stringify(listaCarrito))
-
-}
-
