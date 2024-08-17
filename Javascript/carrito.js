@@ -1,5 +1,6 @@
 mostrarCarrito();
 
+
 function añadirArticulo(id) {
     //Obtener Elemento
     const producto = productos.find((p) => p.id === id)
@@ -50,6 +51,7 @@ function eliminarArticulo(id) {
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
 	if (cartArray) {
 		let index = cartArray.findIndex((producto) => producto.id == parseInt(id));
+
 		cartArray.splice(index,1)
 	}
 	//Guardar
@@ -91,6 +93,7 @@ function actualizarCantidadArticulo(articulo) {
 }
 
 function mostrarCarrito() {
+
 	const tbody = document.getElementById("carrito")
 	if(tbody){
 		tbody.innerHTML = ``
@@ -120,7 +123,7 @@ function mostrarCarrito() {
 				<td>₡ ${producto.precio}</td>
 				<td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="actualizarCantidadArticulo(this)"></td>
 				<td class="subtotal">₡ ${subtotal}</td>
-				<td><button value=${producto.id}" type="button" class="btn btn-fucsia" onclick="eliminarArticulo(this.value)">X</button></td>`
+				<td><button value="${producto.id}" type="button" class="btn btn-fucsia" onclick="eliminarArticulo(this.value)">X</button></td>`
 			
 				tbody.appendChild(elemento)
 
@@ -159,7 +162,6 @@ function actualizarSubtotal() {
 	
 	let subtotal = 0
 	let costoEnvio = parseFloat((document.getElementById('costoEnvio').textContent).substring(2))
-	console.log(costoEnvio)
 	let total = 0
 
 	let subtotales = document.querySelectorAll('.subtotal')
