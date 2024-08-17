@@ -1,6 +1,6 @@
-showDetailShop();
+mostrarCarrito();
 
-function añadirArtículo(id) {
+function añadirArticulo(id) {
     //Obtener Elemento
     const producto = productos.find((p) => p.id === id)
 
@@ -52,10 +52,14 @@ function eliminarArticulo(id) {
 		let index = cartArray.findIndex((producto) => producto.id == parseInt(id));
 		cartArray.splice(index,1)
 	}
-	console.log(cartArray)
 	//Guardar
-	localStorage.setItem('compra',  JSON.stringify(cartArray))
-	showDetailShop()
+	if(cartArray.length===0){
+		localStorage.removeItem('compra');
+		mostrarCarrito()
+	}else{
+		localStorage.setItem('compra',  JSON.stringify(cartArray))
+		mostrarCarrito()
+	}
 
 	//////$.notify("Libro Eliminado de la Compra", "warn");
 	
@@ -66,7 +70,7 @@ function actualizarCantidadArticulo(articulo) {
 	var cantidad = articulo.value
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
 	if(cantidad==='0' && cantidad.trim()!=''){
-		removeCartItem(id)
+		eliminarArticulo(id)
 		return;
 	}
 	if (cartArray) {
@@ -77,13 +81,13 @@ function actualizarCantidadArticulo(articulo) {
 	}
 	//Guardar
 	localStorage.setItem('compra',  JSON.stringify(cartArray))
-	showDetailShop()
+	mostrarCarrito()
 }
 
  function vaciarCarrito() {
 	if (localStorage.getItem('compra')) {
 		localStorage.removeItem('compra');
-		showDetailShop()
+		mostrarCarrito()
 	}
 }
 
@@ -114,9 +118,9 @@ function mostrarCarrito() {
             `<td><img src=".${producto.imagen}" alt="Producto" class="img-fluid" width="50"></td>
             <td>${producto.nombre}</td>
             <td>${producto.precio}</td>
-            <td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="updateCartItemQty(this)"></td>
+            <td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="actualizarCantidadArticulo(this)"></td>
             <td>${subtotal}</td>
-            <td><button value="${producto.id}" type="button" class="btn btn-fucsia" onclick="removeCartItem(this.value)">X</button></td>`
+            <td><button value="${producto.id}" type="button" class="btn btn-fucsia" onclick="eliminarArticulo(this.value)">X</button></td>`
         
             tbody.appendChild(elemento)
 

@@ -68,7 +68,7 @@ $(document).ready(function() {
         $('#costo').text(producto.costo_envio)
 
         //Evento botón
-        $("#añadir").attr('onclick', "addToCart("+producto.id+")")
+        $("#añadir").attr('onclick', "añadirArticulo("+producto.id+")")
         
         producto.reseñas.forEach(i => {
             const usuario = i[0]
