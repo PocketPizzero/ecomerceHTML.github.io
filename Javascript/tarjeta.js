@@ -13,7 +13,7 @@ document.getElementById('numeroTarjeta').addEventListener('input', function() {
     })
     .then(datos => {
       console.log(datos); // Muestra el JSON en la consola
-      let imagenTarjeta = '../Images/Placeholder.jpeg';
+      let imagenTarjeta = '../Images/logo - icono pestaña.jpeg';
 
       if (datos.Scheme === 'VISA') { 
         imagenTarjeta = '../Images/Proceso - Visa.png';
@@ -40,6 +40,7 @@ document.getElementById('numeroTarjeta').addEventListener('input', function() {
   
 })
   
+
 
 //   
 //     const numeroTarjeta = this.value.replace(/\s+/g, ''); // Eliminamos espacios del número de tarjeta
