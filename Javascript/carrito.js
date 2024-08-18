@@ -179,7 +179,13 @@ document.getElementById('pagar').addEventListener('click', () => {
 
 	
 	//tipo del envio
-	let tipoEnvio= document.querySelector('input[name="shippingOptions"]:checked').value;
+if (!document.querySelector('input[name="shippingOptions"]:checked').value){
+
+return 
+
+}
+let tipoEnvio= document.querySelector('input[name="shippingOptions"]:checked').value;
+
 
 	//total y el subtotal 
 	let subtotal = parseFloat((document.getElementById('subtotal').textContent).substring(2)) ;
