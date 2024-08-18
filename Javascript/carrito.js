@@ -93,7 +93,6 @@ function actualizarCantidadArticulo(articulo) {
 }
 
 function mostrarCarrito() {
-
 	const tbody = document.getElementById("carrito")
 	if(tbody){
 		tbody.innerHTML = ``
@@ -108,6 +107,7 @@ function mostrarCarrito() {
 			
 		var cart = JSON.parse(localStorage.getItem('compra'))
 		if (cart) {
+
 			numeroArticulos = cart.length;
 
 			cart.forEach(function(producto) {
@@ -131,6 +131,7 @@ function mostrarCarrito() {
 			});
 		}
 		actualizarSubtotal()
+		validar()
 	}
 	else
 	{
@@ -153,13 +154,11 @@ document.querySelectorAll('input[name="shippingOptions"]').forEach(radio => {
 		$('#costoEnvio').text("₡ "+costoEnvio)
 
 		actualizarSubtotal()
-	});
 
-	
+	});
 });
 
 function actualizarSubtotal() {
-	
 	let subtotal = 0
 	let costoEnvio = parseFloat((document.getElementById('costoEnvio').textContent).substring(2))
 	let total = 0
@@ -173,6 +172,30 @@ function actualizarSubtotal() {
 	total = subtotal + costoEnvio
 	$('#total').text("₡ "+ total)
 
+	validar()
+
+}
+
+function validar(){
+	var cart = JSON.parse(localStorage.getItem('compra'))
+	var postal = document.getElementById('shippingPostal')
+	var tienda = document.getElementById('shippingStore')
+		if (cart) {
+			postal.disabled = false
+			tienda.disabled = false
+			if(postal.checked || tienda.checked){
+				document.getElementById('pagar').disabled = false
+			}else{
+				document.getElementById('pagar').disabled = true
+			}
+		}else{
+			postal.disabled = true
+			tienda.disabled = true
+			postal.checked = false
+			tienda.checked = false
+			document.getElementById('pagar').disabled = true
+		}
+}
 
 //Esta parte es la que obtiene la informacion del carrito en consola 
 document.getElementById('pagar').addEventListener('click', () => {
@@ -204,10 +227,10 @@ let tipoEnvio= document.querySelector('input[name="shippingOptions"]:checked').v
 }) 
 
 
-//TAB de la tarjeta puta 
+//tab de la tarjeta
 document.querySelector('button[type="button"]').addEventListener('click',() => {
 
-//valores de la tarjeta puta
+//valores de la tarjeta
 let numeroTarjeta = document.getElementById('numeroTarjeta').value;
 let fechaExpiracion = document.getElementById('fechaExpiracion').value;
 let cvv = document.getElementById('cvv').value;
@@ -220,13 +243,6 @@ var medioPago =
 	cvv : cvv
 }
 localStorage.setItem('medioPago', JSON.stringify(medioPago))
-
  
 })
 
-
-
-
-
-
-}
