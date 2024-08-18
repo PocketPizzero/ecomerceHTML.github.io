@@ -61,18 +61,19 @@
         <h1 class="my-5 text-center">¡Estamos para <span class="palabra-relevante">servirle</span>!</h1>
 
         <section id="contacto">
-            <div class="container fs-3">
-                <div class="row row-cols-1 row-cols-lg-3 row-cols-md-3 row-cols-xl-3 row-cols-xxl-3 gap-5
-                d-flex justify-content-around mb-5">
-                    <div class="col mb-5">
+            <div class="container fs-3 ">
+                <div class="row mb-5 justify-content-between">
+                    <div class="col-12 col-lg-6 mb-5">
                         <p><span class="palabra-relevante">Teléfono:</span> 7878-5454 </p>
                         <p><span class="palabra-relevante">Dirección:</span> Villa Bonita de Alajuela, 300 m suroeste de la Gasolinera Delta y 300 m sur (carretera a Villa Bonita), contiguo a Pastas Roma.</p>
                         <p><span class="palabra-relevante">Horarios:</span> De lunes a sábado de 10:00 am hasta las 5:00 pm</p>
                     </div>
-                    <div class="col mb-5">
-                        <p><span class="palabra-relevante">Ubicación:</span></p>
-                        <!-- Contenedor para el mapa -->
-                        <div id="map" style="height: 100%; width: 100%;"></div>
+                    <div class="col-12 col-lg-6">
+                        <div>
+                            <p><span class="palabra-relevante">Ubicación:</span></p>
+                            <!-- Contenedor para el mapa -->
+                            <div id="map" style="height: 100%; width: 100%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,7 +82,7 @@
         <!-- Formulario de contacto -->
         <section id="formulario">
             <div class="container my-5">
-                <form id="contactForm" class="row g-3 needs-validation" novalidate>
+                <form id="contactForm" class="row rounded-4 g-3 p-3 needs-validation" novalidate>
                     <div class="col-md-6">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" name="email" required>
