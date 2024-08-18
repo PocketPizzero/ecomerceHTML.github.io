@@ -175,8 +175,6 @@ function actualizarSubtotal() {
 
 
 //Esta parte es la que obtiene la informacion del carrito en consola 
-
-
 document.getElementById('pagar').addEventListener('click', () => {
 
 	
@@ -198,6 +196,31 @@ document.getElementById('pagar').addEventListener('click', () => {
 	localStorage.setItem('objeto', JSON.stringify(objeto))
 
 }) 
+
+
+//TAB de la tarjeta puta 
+document.querySelector('button[type="button"]').addEventListener('click',() => {
+
+//valores de la tarjeta puta
+let numeroTarjeta = document.getElementById('numeroTarjeta').value;
+let fechaExpiracion = document.getElementById('fechaExpiracion').value;
+let cvv = document.getElementById('cvv').value;
+
+//consola
+var medioPago = 
+{
+	numeroTarjeta: numeroTarjeta, 
+	fechaExpiracion: fechaExpiracion, 
+	cvv : cvv
+}
+localStorage.setItem('medioPago', JSON.stringify(medioPago))
+
+ 
+})
+
+
+
+
 
 
 }

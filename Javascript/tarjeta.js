@@ -36,7 +36,8 @@ document.getElementById('numeroTarjeta').addEventListener('input', function() {
     });
   } else {
   document.getElementById('imagenTarjeta').src = '../Images/logo - icono pestaña.png'; // Limpia la imagen si el número de tarjeta es demasiado corto
-  }
+    
+}
   
 })
   
