@@ -2,14 +2,13 @@ document.getElementById('numeroTarjeta').addEventListener('input', function() {
   let numeroTarjeta = document.getElementById('numeroTarjeta').value
   let fechaExpiracion = document.getElementById('fechaExpiracion').value
   let cvv = document.getElementById('cvv').value
-
 //Página de BIN de bancos en Costa Rica https://bincheck.org/costa-rica?page=1
 //BIN MASTERCARD BANCO DE COSTA RICA: 510209
 //BIN VISA BANCO DE COSTA RICA: 410372
 
 // Identificar tipo de tarjeta
   if (numeroTarjeta.length >= 6) {
-     fetch(`https://data.handyapi.com/bin/${numeroTarjeta}`)
+     fetch(`https://data.handyapi.com/bin/${ }`)
     .then(response => {
       return response.json(); // Convertir el Response a JSON
     })
