@@ -1,5 +1,6 @@
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
+    
     // Obtener el formulario
     const form = document.getElementById('contactForm');
 
