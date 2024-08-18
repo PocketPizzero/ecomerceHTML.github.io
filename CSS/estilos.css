@@ -51,11 +51,12 @@ header, header .navbar-nav a {
 
 
 
-/* Fooder  */
+/* Footer */
 footer {
     position: relative;
     background-color: #212429; 
     color: #F8F9FB;
+    margin-top: auto; /* Esto asegura que el footer se mantenga al final */
 }
 
 footer .navbar-nav {
@@ -68,7 +69,6 @@ footer .navbar-nav .nav-item {
 
 footer .navbar-nav .nav-link {
     color: #F8F9FB;
-
 }
 
 footer .navbar-nav .nav-link:hover {
@@ -83,4 +83,23 @@ footer .navbar-nav .nav-link:hover {
     height: 3px; 
     background-color: #D63384; 
 }
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    flex: 1;
+}
+
+/* Hacer que el body sea un contenedor flex */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 
