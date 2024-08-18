@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pocketshop - Comprar</title>
-    <link rel="shortcut icon" href="../Images/logo - icono pestaña.png"/>
+    <link rel="shortcut icon" href="../Images/logo - icono pestaña.png" />
 
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/ProcesoCompra.css">
-    <link rel="stylesheet" href="../CSS/estilos.css">  
+    <link rel="stylesheet" href="../CSS/estilos.css">
 
-     <!-- Wicked CSS -->
-     <link rel="stylesheet" href="../CSS/wickedcss.min.css">
+    <!-- Wicked CSS -->
+    <link rel="stylesheet" href="../CSS/wickedcss.min.css">
 
 </head>
+
 <body>
     <!--Encabezado-->
     <header class="slideDown">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid ps-5 pb-3">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../Images/logo - icono general.png" alt="Logo" width="80" height="80"/>
+                    <img src="../Images/logo - icono general.png" alt="Logo" width="80" height="80" />
                 </a>
-                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center fs-4" id="navbarTogglerDemo02">
@@ -45,7 +50,7 @@
                         </li>
                     </ul>
                     <button class="btn" type="button">
-                        <a href="#"> <img src="../Images/Bolsa - Icono.png" alt="Logo" width="50" height="50"/> </a>
+                        <a href="#"> <img src="../Images/Bolsa - Icono.png" alt="Logo" width="50" height="50" /> </a>
                     </button>
                 </div>
                 <div class="footer-line2"></div>
@@ -61,21 +66,28 @@
         <!-- Tabla  -->
         <ul class="nav nav-underline  my-5 fs-1 justify-content-around" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Carrito de compra  </button>
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Carrito de compra
+                </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link disabled" id="medios-tab" data-bs-toggle="tab" data-bs-target="#medios-tab-pane" type="button" role="tab" aria-controls="medios-tab-pane" aria-selected="false">Medios de pago</button>
+                <button class="nav-link disabled" id="medios-tab" data-bs-toggle="tab" data-bs-target="#medios-tab-pane"
+                    type="button" role="tab" aria-controls="medios-tab-pane" aria-selected="false">Medios de
+                    pago</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link disabled" id="finalizar-tab" data-bs-toggle="tab" data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="finalizar-tab-pane" aria-selected="false">Finalizar compra</button>
+                <button class="nav-link disabled" id="finalizar-tab" data-bs-toggle="tab"
+                    data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="finalizar-tab-pane"
+                    aria-selected="false">Finalizar compra</button>
             </li>
         </ul>
 
 
         <!-- Aqui estan las tabs  -->
-        <div class="tab-content mx-2" id="myTabContent"> 
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                
+        <div class="tab-content mx-2" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+
                 <div class="container my-5">
                     <!-- Tabla -->
                     <div class="table-responsive">
@@ -94,209 +106,215 @@
                             </tbody>
                         </table>
                     </div>
-            
+
                     <!-- Btn Vaciar Carrito -->
-                    <button type="button" class="btn btn-outline-primary btn-lg my-3"
-                            data-bs-toggle="modal" data-bs-target="#confirmarVaciar">
-                                Vaciar carrito
+                    <button type="button" class="btn btn-outline-primary btn-lg my-3" data-bs-toggle="modal"
+                        data-bs-target="#confirmarVaciar">
+                        Vaciar carrito
                     </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="confirmarVaciar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!-- Modal -->
+                    <div class="modal fade" id="confirmarVaciar" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Está seguro de vaciar el carrito?</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="vaciarCarrito()">Confirmar</button>
-                            </div>
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Está seguro de vaciar el
+                                        carrito?</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        onclick="vaciarCarrito()">Confirmar</button>
+                                </div>
 
                             </div>
                         </div>
-                        </div>
-            
+                    </div>
+
                     <!-- Envío -->
                     <div class="container my-5">
-                            <div class="row g-5">
-                                <!-- Tipo de envío -->
-                                <div class="col-md-2 text-start">
-                                    <h4>Tipo de envío</h4>
-                                    <div class="form-check">
-                                        <input class="form-check-input custom-radio" type="radio" name="shippingOptions" id="shippingPostal" value="postal" disabled>
-                                        <label class="form-check-label" for="shippingPostal">
-                                            Envío Postal
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input custom-radio" type="radio" name="shippingOptions" id="shippingStore" value="store" disabled>
-                                        <label class="form-check-label" for="shippingStore">
-                                            Recoger en tienda
-                                        </label>
-                                    </div>
+                        <div class="row g-5">
+                            <!-- Tipo de envío -->
+                            <div class="col-md-2 text-start">
+                                <h4>Tipo de envío</h4>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-radio" type="radio" name="shippingOptions"
+                                        id="shippingPostal" value="postal" disabled>
+                                    <label class="form-check-label" for="shippingPostal">
+                                        Envío Postal
+                                    </label>
                                 </div>
-                                <!-- Subtotal y Envío -->
-                                <div class="col-md-4 text-center">
-                                    <table class="table table-bordered">
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">Subtotal</th>
-                                                <td id="subtotal">₡ 0.00</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Envío</th>
-                                                <td id="costoEnvio">₡ 0.00</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Total</th>
-                                                <td id="total">₡ 0.00</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <!-- Botón Ir a pagar -->
-                                <div class="col-md-6 text-center ">
-                                    <button id="continuar" type="button" class="btn btn-primary fs-1 px-5"
-                                    disabled>Continuar</button>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-radio" type="radio" name="shippingOptions"
+                                        id="shippingStore" value="store" disabled>
+                                    <label class="form-check-label" for="shippingStore">
+                                        Recoger en tienda
+                                    </label>
                                 </div>
                             </div>
+                            <!-- Subtotal y Envío -->
+                            <div class="col-md-4 text-center">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Subtotal</th>
+                                            <td id="subtotal">₡ 0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Envío</th>
+                                            <td id="costoEnvio">₡ 0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Total</th>
+                                            <td id="total">₡ 0.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Botón Ir a pagar -->
+                            <div class="col-md-6 text-center ">
+                                <button id="continuar" type="button" class="btn btn-primary fs-1 px-5"
+                                    disabled>Continuar</button>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
 
-                <!--Tab de los medios de pago-->
-                <div class="tab-pane fade" id="medios-tab-pane" role="tabpanel" aria-labelledby="medios-tab" tabindex="0">
+            <!--Tab de los medios de pago-->
+            <div class="tab-pane fade" id="medios-tab-pane" role="tabpanel" aria-labelledby="medios-tab" tabindex="0">
 
-                    <form id="cardForm" class="row m-5 g-3 needs-validation" novalidate>
-                        <div class="mb-5 d-flex justify-content-around">
-                            <h3>Información de la tarjeta</h3> 
-                            <img id="imagenTarjeta" src="../Images/logo - icono pestaña.png" alt="Imagen de la tarjeta" width="100"> 
-                        </div>
-                        
-                        <div class="col-md-12">
-                            <label for="numeroTarjeta" class="form-label">Número de tarjeta</label>
-                            <input type="text" class="form-control" id="numeroTarjeta" placeholder="1234 5678 9012 3456" required>
-                            <div class="invalid-feedback">
-                                Por favor, ingrese un número de tarjeta válido.
-                            </div>
-                        </div>
-                    
-                        <div class="col-md-6">
-                            <label for="fechaExpiracion" class="form-label">Fecha de expiración</label>
-                            <input type="text" class="form-control" id="fechaExpiracion" placeholder="MM/AA" required>
-                            <div class="invalid-feedback">
-                                Por favor, ingrese una fecha de expiración válida.
-                            </div>
-                        </div>
-                    
-                        <div class="col-md-6">
-                            <label for="cvv" class="form-label">Codigo de seguridad</label>
-                            <input type="text" class="form-control" id="cvv" placeholder="123" required>
-                            <div class="invalid-feedback">
-                                Por favor, ingrese un CVV válido.
-                            </div>
-                        </div>
-                    
-                        <div class="col-12">
-                            <button id="pago" class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#confirmacionPago">Procesar pago</button>
-                        </div>
+                <form id="cardForm" class="row m-5 g-3 needs-validation" novalidate>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>Información de la tarjeta</h3>
+                        <img id="imagenTarjeta" src="../Images/logo - icono pestaña.png" alt="Imagen de la tarjeta"
+                            width="100">
+                    </div>
 
-                        <div class="modal fade" id="confirmacionPago" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content text-center fs-2 p-4">
-                                    <div class="modal-body">
-                                        <img src="../Images/Proceso - confirmacion.png" alt="Placeholder" class="w-75 h-75"/>
-                                        <p>Pago realizado con éxito</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button id="aceptar" type="button" class="btn btn-primary fs-3" data-bs-dismiss="modal">Aceptar</button>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                    </form>
-                    
-                </div>
-            
-
-        <!--Tab de finalizar compra -->
-        <div class="tab-pane fade" id="Finalizar-tab-pane" role="tabpanel" aria-labelledby="Finalizar-tab" tabindex="0">        
-            <div class="container">
-                <h2 class="text-center"><span class="palabra-relevante">Pocket</span>Shop</h2>
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped table-hover">
-                        <tbody id="factura-carrito">
-                        </tbody>
-                    </table>
-                </div>
-                    
-                <div class="table-responsive">
-                            <table class="table table-bordered table-striped table-hover">
-                                <tbody id="factura-cobro">
-                                    
-                                </tbody>
-                            </table>
-                </div>
-                    
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped table-hover">
-                                <tbody id="factura-pago">
-                                    <tr>
-                                        <td>Medio de Pago</td>
-                                        <td class="td-tarjeta right-align">Tarjeta VISA/MASTERCARD</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tipo Envío</td>
-                                        <td class="td-tipo-envio right-align">Envío Postal</td>
-                                    </tr>
-                                </tbody>
-                    </table>
+                    <div class="col-md-12">
+                        <label for="numeroTarjeta" class="form-label">Número de tarjeta</label>
+                        <input type="text" class="form-control" id="numeroTarjeta" placeholder="1234 5678 9012 3456"
+                            required>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese un número de tarjeta válido.
                         </div>
                     </div>
-                    
+
+                    <div class="col-md-6">
+                        <label for="fechaExpiracion" class="form-label">Fecha de expiración</label>
+                        <input type="text" class="form-control" id="fechaExpiracion" placeholder="MM/AA" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese una fecha de expiración válida.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="cvv" class="form-label">Codigo de seguridad</label>
+                        <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese un CVV válido.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button id="pago" class="btn btn-primary" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#confirmacionPago">Procesar pago</button>
+                    </div>
+
+                    <div class="modal fade" id="confirmacionPago" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content text-center fs-2 p-4">
+                                <div class="modal-body">
+                                    <img src="../Images/Proceso - confirmacion.png" alt="Placeholder"
+                                        class="w-75 h-75" />
+                                    <p>Pago realizado con éxito</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="aceptar" type="button" class="btn btn-primary fs-3"
+                                        data-bs-dismiss="modal">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+            <!--Tab de finalizar compra -->
+            <div class="tab-pane fade" id="Finalizar-tab-pane" role="tabpanel" aria-labelledby="Finalizar-tab"
+                tabindex="0">
+                <div class="container">
+                    <h2 class="text-center"><span class="palabra-relevante">Pocket</span>Shop</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <tbody id="factura-carrito">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <tbody id="factura-cobro">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <tbody id="factura-pago">
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-    </div>
- 
-</main>
+
+            </div>
+        </div>
+
+    </main>
 
     <!--Pie de la página -->
-        <footer class="bg-dark text-light py-4 slideUp">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <ul class="navbar-nav mx-auto mb-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Acerca De.html">Acerca de</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="footer-line"></div>
-            </div>
-        </footer>
+    <footer class="bg-dark text-light py-4 slideUp">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav mx-auto mb-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Preguntas Frecuentes.html">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Acerca De.html">Acerca de</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-line"></div>
+        </div>
+    </footer>
 
     <!--Bootstrap javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script
-        src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-        crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+        </script>
     <!--Main Javascript-->
     <script src="../Javascript/alert.js">
     </script>
@@ -307,4 +325,3 @@
 </body>
 
 </html>
-            

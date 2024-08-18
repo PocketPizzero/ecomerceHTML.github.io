@@ -1,8 +1,10 @@
-
+/* API BIN TARJETA */
+let tipoTajeta
 document.getElementById('numeroTarjeta').addEventListener('input', function () {
 	//Página de BIN de bancos en Costa Rica https://bincheck.org/costa-rica?page=1
 	//BIN MASTERCARD BANCO DE COSTA RICA: 510209
 	//BIN VISA BANCO DE COSTA RICA: 410372
+	//TARJETA DE PRUEBA: 5102091234567890
 	const numeroTarjeta = document.getElementById('numeroTarjeta').value
 
 	// Identificar tipo de tarjeta
@@ -14,6 +16,7 @@ document.getElementById('numeroTarjeta').addEventListener('input', function () {
 			.then(datos => {
 				//console.log(datos); // Muestra el JSON en la consola
 				let imagenTarjeta = '../Images/logo - icono pestaña.jpeg';
+				tipoTajeta = datos.Scheme
 
 				if (datos.Scheme === 'VISA') {
 					imagenTarjeta = '../Images/Proceso - Visa.png';
@@ -40,7 +43,6 @@ document.getElementById('numeroTarjeta').addEventListener('input', function () {
 	}
 
 })
-
 
 
 /* VALIDAR FORMULARIO TARJETA */
@@ -80,6 +82,8 @@ form.addEventListener('submit', function (event) {
 	form.classList.add('was-validated');
 });
 
+
+/* EVENTOS DE TAB */
 document.getElementById('continuar').addEventListener('click', function () {
 	// Simula un clic en la pestaña de medios de pago
 	document.getElementById('medios-tab').classList.remove('disabled')
@@ -87,7 +91,6 @@ document.getElementById('continuar').addEventListener('click', function () {
 });
 
 document.getElementById('aceptar').addEventListener('click', function () {
-	//TARJETA DE PRUEBA: 5102091234567890
 	if (document.getElementById('cardForm').classList.contains('was-validated')) {
 		// Simula un clic en la pestaña de medios de pago
 		document.getElementById('pago').classList.add('disabled');
@@ -98,7 +101,8 @@ document.getElementById('aceptar').addEventListener('click', function () {
 
 });
 
-//Esta parte es la que obtiene la informacion del carrito en consola 
+
+/* OBTENER COBRO */
 document.getElementById('continuar').addEventListener('click', () => {
 
 	//tipo del envio
@@ -106,16 +110,15 @@ document.getElementById('continuar').addEventListener('click', () => {
 		return
 
 	}
+	
 	let tipoEnvio = document.querySelector('input[name="shippingOptions"]:checked').value;
-
-	//total y el subtotal 
 	let subtotal = parseFloat((document.getElementById('subtotal').textContent).substring(2));
 	let costoEnvio = parseFloat((document.getElementById('costoEnvio').textContent).substring(2));
 	let total = parseFloat((document.getElementById('total').textContent).substring(2));
 
-	//consola
 	var cobro =
 	{
+		tipoEnvio: tipoEnvio,
 		subtotal: subtotal,
 		costoEnvio: costoEnvio,
 		total: total
@@ -125,17 +128,16 @@ document.getElementById('continuar').addEventListener('click', () => {
 })
 
 
-//tab de la tarjeta
+/* OBTENER MEDIO PAGO */
 document.getElementById('pago').addEventListener('click', () => {
-
 	//valores de la tarjeta
 	let numeroTarjeta = document.getElementById('numeroTarjeta').value;
 	let fechaExpiracion = document.getElementById('fechaExpiracion').value;
 	let cvv = document.getElementById('cvv').value;
 
-	//consola
 	var medioPago =
 	{
+		tipoTajeta: tipoTajeta,
 		numeroTarjeta: numeroTarjeta,
 		fechaExpiracion: fechaExpiracion,
 		cvv: cvv
@@ -144,6 +146,8 @@ document.getElementById('pago').addEventListener('click', () => {
 
 })
 
+
+/* MOSTRAR FACTURA */
 function mostrarFactura() {
 	const facturaCarrito = document.getElementById("factura-carrito")
 	const facturaCobro = document.getElementById("factura-cobro")
@@ -170,15 +174,23 @@ function mostrarFactura() {
 		facturaCarrito.appendChild(row)
 	});
 
-
+	tipoEnvio = infoCobro.tipoEnvio
 	subtotal = parseFloat(infoCobro.subtotal) | 0;
 	costoEnvio = parseInt(infoCobro.costoEnvio) | 0;
 	total = parseFloat(infoCobro.total) | 0;
 
-	const rowEnvio = document.createElement('tr')
-	rowEnvio.innerHTML =
+	const rowTipoEnvio = document.createElement('tr')
+	rowTipoEnvio.innerHTML =
 		`<td>
-				Envío
+				Tipo de envío
+			</td>
+            <td class="td-costo-envio right-align">
+				${tipoEnvio}
+			</td>`
+	const rowCostoEnvio = document.createElement('tr')
+	rowCostoEnvio.innerHTML =
+		`<td>
+				Costo de envío
 			</td>
             <td class="td-costo-envio right-align">
 				${costoEnvio}
@@ -202,7 +214,8 @@ function mostrarFactura() {
 				${total}
 			</td>`
 
-	facturaCobro.appendChild(rowEnvio)
+	facturaCobro.appendChild(rowTipoEnvio)
+	facturaCobro.appendChild(rowCostoEnvio)
 	facturaCobro.appendChild(rowSubtotal)
 	facturaCobro.appendChild(rowTotal)
 
@@ -213,22 +226,13 @@ function mostrarFactura() {
 	const rowTarjeta = document.createElement('tr')
 	rowTarjeta.innerHTML =
 		`<td>
-				Tarjeta
+				Medio de pago
 			</td>
 			<td class="td-total right-align">
-				${pago}
-			</td>`
-	const rowTipoEnvio = document.createElement('tr')
-	rowTipoEnvio.innerHTML =
-		`<td>
-				Tipo de envío
-			</td>
-			<td class="td-total right-align">
-				${pago}
+				${tipoTajeta}
 			</td>`
 
 	facturaPago.appendChild(rowTarjeta)
-	facturaPago.appendChild(rowTipoEnvio)
 
 }
 
