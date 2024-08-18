@@ -33,10 +33,20 @@ document.getElementById('numeroTarjeta').addEventListener('input', function() {
     .catch(error => {
       console.error('Error:', error);
       document.getElementById('imagenTarjeta').src = '../Images/logo - icono pestaña.png'; // Limpia la imagen en caso de error
+    
+      //agregue esto de aqui abaajpo nuevo
+      document.querySelector('#numeroTarjeta').classList.add('is-invalid'); 
+      document.querySelector('.invalidad-feedback').textContent= 'Numero de tarjeta invalido'; 
+    
     });
   } else {
   document.getElementById('imagenTarjeta').src = '../Images/logo - icono pestaña.png'; // Limpia la imagen si el número de tarjeta es demasiado corto
-  }
+   
+  //esto tambien es nuevo 
+  document.querySelector('#numeroTarjeta').classList.add('is-invalid'); 
+  document.querySelector('.invalidad-feedback').textContent= 'Numero de tarjeta es muy corto '; 
+
+}
   
 })
   

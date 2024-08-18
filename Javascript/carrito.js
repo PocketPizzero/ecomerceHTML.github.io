@@ -173,4 +173,60 @@ function actualizarSubtotal() {
 	total = subtotal + costoEnvio
 	$('#total').text("₡ "+ total)
 
+
+//Esta parte es la que obtiene la informacion del carrito en consola 
+document.getElementById('pagar').addEventListener('click', () => {
+
+	
+	//tipo del envio
+if (!document.querySelector('input[name="shippingOptions"]:checked').value){
+
+return 
+
+}
+let tipoEnvio= document.querySelector('input[name="shippingOptions"]:checked').value;
+
+
+	//total y el subtotal 
+	let subtotal = parseFloat((document.getElementById('subtotal').textContent).substring(2)) ;
+	let costoEnvio= parseFloat((document.getElementById('costoEnvio').textContent).substring(2));
+	let total= parseFloat((document.getElementById('total').textContent).substring(2)) ;
+
+	//consola
+	var objeto = 
+	{
+		subtotal: subtotal, 
+		costoEnvio: costoEnvio, 
+		total : total
+	}
+	localStorage.setItem('objeto', JSON.stringify(objeto))
+
+}) 
+
+
+//TAB de la tarjeta puta 
+document.querySelector('button[type="button"]').addEventListener('click',() => {
+
+//valores de la tarjeta puta
+let numeroTarjeta = document.getElementById('numeroTarjeta').value;
+let fechaExpiracion = document.getElementById('fechaExpiracion').value;
+let cvv = document.getElementById('cvv').value;
+
+//consola
+var medioPago = 
+{
+	numeroTarjeta: numeroTarjeta, 
+	fechaExpiracion: fechaExpiracion, 
+	cvv : cvv
+}
+localStorage.setItem('medioPago', JSON.stringify(medioPago))
+
+ 
+})
+
+
+
+
+
+
 }
