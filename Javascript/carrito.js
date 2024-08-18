@@ -116,7 +116,7 @@ function mostrarCarrito() {
 				`<td><img src=".${producto.imagen}" alt="Producto" class="img-fluid" width="50"></td>
 				<td>${producto.nombre}</td>
 				<td>₡ ${producto.precio}</td>
-				<td><input type="number" class="form-control form-control-fucsia" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="actualizarCantidadArticulo(this)"></td>
+				<td><input type="number" class="form-control" value="${producto.cantidad}" data-id="${producto.id}" min="0" onChange="actualizarCantidadArticulo(this)"></td>
 				<td class="subtotal">₡ ${subtotal}</td>
 				<td><button value="${producto.id}" type="button" class="btn btn-outline-primary" onclick="eliminarArticulo(this.value)">X</button></td>`
 			

@@ -46,7 +46,7 @@ function mostrarProductos(categoria){
                             <div class="card-body text-center">
                                 <h5 class="card-title">${p.nombre}</h5>
                                 <p id="precio" class="card-text">&#8353; ${p.precio}</p>
-                                <button type="button" class="btn btn-fucsia-full btn-lg" onclick="detalleProducto(${p.id})">
+                                <button type="button" class="btn btn-primary btn-lg" onclick="detalleProducto(${p.id})">
                                     Más Información
                                 </button>             
                             </div>

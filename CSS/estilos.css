@@ -1,4 +1,4 @@
-/* HEADER BODY FOOTER 
+/*
 Fucsia: #D63384
 Blanco: #F8F9FB
 Negro: #212429
@@ -12,11 +12,67 @@ Negro: #212429
     color: #D63384;
 }
 
+/* Colores de Botones  */
+.btn-primary{
+    background-color: #D63384;
+    border-color: #D63384;
+}
+.btn-primary:hover, .btn-primary:focus{
+    background-color: #8f2359;
+    border-color: #8f2359;
+}
+.btn:first-child:active, :not(.btn-primary-check)+.btn-primary:active,
+:not(.btn-outline-primary-check)+.btn-outline-primary:active{
+    background-color: #212429;
+    border-color: #212429;
+}
+.btn-primary:disabled{
+    background-color: #D63384;
+    border-color: #D63384;
+    
+}
+.btn-outline-primary{
+    border-color: #D63384;
+    color: #D63384;
+    border-width: 0.1em;
+    font-weight: bold;
+}
+.btn-outline-primary:hover{
+    background-color: #D63384;
+    border-color: #D63384; 
+}
+
+/* Colores de Tabs */
+.nav-underline .nav-link {
+    color: #212429; /* Color del texto de las tabs */
+}
+.nav-underline .nav-link.active {
+    color: #D63384; 
+    border-bottom-color: #D63384; /* Color de la línea debajo de la tab activa */
+}
+.nav-underline .nav-link:hover {
+    color: #212429; /* Color del texto al pasar el ratón sobre la tab */
+}
+
+/* Colores de Forms */
+.form-control,  .form-control:focus{
+    border-color: #dc3545;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form .form-control:invalid {
+    border-color: #dc3545;
+}
+form .form-control:valid {
+    border-color: #28a745;
+}
+
+
 /* Body */
 body{
     background-color: #F8F9FB;
+    display: flex;
+    flex-direction: column;
 }
-
 
 /* Header */
 header, header .navbar-nav a {
@@ -93,10 +149,5 @@ main {
     flex: 1;
 }
 
-/* Hacer que el body sea un contenedor flex */
-body {
-    display: flex;
-    flex-direction: column;
-}
 
 

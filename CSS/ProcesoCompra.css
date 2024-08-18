@@ -1,41 +1,8 @@
-/* Tabs colores  */
-.nav-underline .nav-link {
-    color: #212429; /* Color del texto de las tabs */
-}
-.nav-underline .nav-link.active {
-    color: #D63384; 
-    border-bottom-color: #D63384; /* Color de la línea debajo de la tab activa */
-}
-.nav-underline .nav-link:hover {
-    color: #212429; /* Color del texto al pasar el ratón sobre la tab */
-}
-
-
-/* Bóton Eliminar y Vaciar Carrito */
-.btn-outline-primary{
-    border-color: #D63384;
-    color: #D63384;
-}
-.btn-outline-primary:hover{
-    background-color: #D63384;
-    border-color: #D63384;
-    
-}
-
-.btn-primary{
-    background-color: #D63384;
-    border-color: #D63384;
-}
-/*PRUEBAAA*/
-.btn-primary:hover{
-    background-color: #751c48;
-    border-color: #751c48;
-}
-
 /* Cantidad */
 .form-control-fucsia {
     border-color: #D63384;
 }
+
 .form-control-fucsia:focus {
     border-color: #D63384;
 }
@@ -44,86 +11,37 @@
     background-color: #D63384;
     border-color: #D63384;
 }
-
+.custom-radio:focus {
+    box-shadow: 0 0 0 0.2rem rgba(214, 51, 132, 0.25);
+}
 
 /* Tablas */
 .table {
-    border-color: #D63384; 
+    border-color: #D63384;
 }
 
-/* metodo de pago formu  */
+/* Form Medios de pago */
 form {
-    background-color: #F8F9FB; 
-    padding: 20px;
-    border-radius: 8px;
+    background-color: #F8F9FB;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  form h4 {
-    color: #D63384; 
-  }
-
-  form .form-control {
-    border-color: #D63384; 
-  }
-  
-  form .form-control:focus {
-    border-color: #D63384; 
-    box-shadow: 0 0 0 0.2rem rgba(214, 51, 132, 0.25); 
-  }
-  
-  
-  form .btn-primary {
-    background-color: #D63384; 
-    border-color: #D63384; 
-  }
-  
-  form .btn-primary:hover {
-    background-color: #c51e74; 
-    border-color: #c51e74; 
-  }
-  
-  form .invalid-feedback {
-    color: #d9534f; /*  mensajes de error */
-  }
-
-
-/* Finalizar Compra */
-/*REVISAR*/
-.table-hover tr:hover {
-    background-color: #D63384;
-    color: white; 
+}
+form h3 {
+    color: #D63384;
+}
+form .form-control {
+    border-color: #D63384;
+}
+form .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(214, 51, 132, 0.25);
+}
+form .invalid-feedback {
+    color: #d9534f;
+    /*  mensajes de error */
 }
 
-/*HTML*/
-.table td, .table th {
+/* Finalizar compra factura */
+.table td,
+.table th {
     vertical-align: middle;
     text-align: center;
-}
-
-/*HTML*/
-.table td:first-child {
-    width: 80px;
-    border-right: 2px/* Línea  entre la imagen y la info*/
-}
-
-/*HTML*/
-/* Aplicar el alineamiento a las celdas específicas */
-.table td:nth-child(2),
-.table td:nth-of-type(4),
-.table td:nth-of-type(6),
-.table td:nth-of-type(8) {
-    text-align: right;
-}
-
-
-
-
-.form-control:invalid {
-    border-color: #dc3545; 
-}
-
-.form-control:valid {
-    border-color: #28a745; 
 }

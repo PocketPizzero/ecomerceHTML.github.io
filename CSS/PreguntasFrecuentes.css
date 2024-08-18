@@ -8,23 +8,20 @@ Negro: #212429
 .accordion-button {
     background-color: #F8F9FB;
     color: #212429;
-    border: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
-.accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed), .accordion-button:hover {
     background-color: #D63384;
-    color: #F8F9FB;
+    color: #F8F9FB;   
+}
+.accordion-button:focus { 
+    box-shadow: 0 0 0 0.2rem rgba(214, 51, 132, 0.25);
 }
 
-.accordion-button:hover {
-    background-color: #D63384;
-    color: #F8F9FB;
-}
 .accordion-body {
     background-color: #F8F9FB;
     color: #212429;
     border: 1px solid #D63384;
-    border-top: none;
 }

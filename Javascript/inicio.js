@@ -1,6 +1,7 @@
 productosCarrusel(productos)
 productosRecientes(productos)
 
+/* CARRUSEL */
 function productosCarrusel(data){
     //Auxiliares
     const categorias = [];
@@ -30,9 +31,10 @@ function productosCarrusel(data){
                 item.classList.add('active')
             }
 
+            //style="width: 35%; padding-top:2.5%;"
             item.innerHTML =
             `
-                <img src="${producto.imagenes[0]}" class="d-block mx-auto pb-5" alt="...">
+                <img src="${producto.imagenes[0]}" class="d-block mx-auto py-5 mw-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="fs-2">${producto.nombre}</h5>
                 </div>
@@ -43,7 +45,8 @@ function productosCarrusel(data){
     });
 }
 
-/*Agregados Recientemente*/
+
+/* Agregados Recientemente */
 function detalleProducto(id) {
     window.location.href = `/HTML/Detalle Producto.html?id=${id}`;
 }
@@ -89,7 +92,6 @@ function productosRecientes(data){
 
 
 /*Gráfico*/
-
 document.addEventListener('DOMContentLoaded', function() {
     // Cargar los datos del archivo JSON
     fetch('Json/grafico.json')
