@@ -64,10 +64,10 @@
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Carrito de compra  </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="medios-tab" data-bs-toggle="tab" data-bs-target="#medios-tab-pane" type="button" role="tab" aria-controls="medios-tab-pane" aria-selected="false">Medios de pago</button>
+                <button class="nav-link disabled" id="medios-tab" data-bs-toggle="tab" data-bs-target="#medios-tab-pane" type="button" role="tab" aria-controls="medios-tab-pane" aria-selected="false">Medios de pago</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="finalizar-tab" data-bs-toggle="tab" data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="finalizar-tab-pane" aria-selected="false">Finalizar compra</button>
+                <button class="nav-link disabled" id="finalizar-tab" data-bs-toggle="tab" data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="finalizar-tab-pane" aria-selected="false">Finalizar compra</button>
             </li>
         </ul>
 
@@ -159,7 +159,8 @@
 
                                 <!-- Botón Ir a pagar -->
                                 <div class="col-md-6 text-center ">
-                                    <button id="pagar" type="button" class="btn btn-primary fs-1 px-5" disabled>Ir a pagar</button>
+                                    <button id="continuar" type="button" class="btn btn-primary fs-1 px-5"
+                                    disabled>Continuar</button>
                                 </div>
                             </div>
                     </div>
@@ -203,8 +204,21 @@
                         </div>
                     
                         <div class="col-12">
-                            <button class="btn btn-primary" type="button" disabled>Pagar</button>
+                            <button id="pago" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#confirmacionPago" disabled>Procesar pago</button>
                         </div>
+
+                        <div class="modal fade" id="confirmacionPago" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Pago realizado con éxito
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button id="aceptar" type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
                     </form>
                     
                 </div>
@@ -326,6 +340,8 @@
     <script src="../Javascript/alert.js">
     </script>
     <script src="../Javascript/carrito.js">
+    </script>
+    <script src="../Javascript/proceso-compra.js">
     </script>
     <script src="../Javascript/tarjeta.js">
     </script>
