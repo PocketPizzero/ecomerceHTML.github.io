@@ -1,6 +1,5 @@
 mostrarCarrito();
 
-
 function añadirArticulo(id) {
     //Obtener Elemento
     const producto = productos.find((p) => p.id === id)
@@ -43,8 +42,6 @@ function añadirArticulo(id) {
 
     console.log(JSON.parse(localStorage.getItem('compra')))
 
-	//////Notificar Guardar
-	/////$.notify("Libro agregado: "+name,"sucess")
 }
 
 function eliminarArticulo(id) {
@@ -62,8 +59,6 @@ function eliminarArticulo(id) {
 		localStorage.setItem('compra',  JSON.stringify(cartArray))
 		mostrarCarrito()
 	}
-
-	//////$.notify("Libro Eliminado de la Compra", "warn");
 	
 } 
 
@@ -183,66 +178,23 @@ function validar(){
 		if (cart) {
 			postal.disabled = false
 			tienda.disabled = false
+			document.getElementById('medios-tab').classList.add('disabled')
 			if(postal.checked || tienda.checked){
-				document.getElementById('pagar').disabled = false
+				document.getElementById('continuar').disabled = false
 			}else{
-				document.getElementById('pagar').disabled = true
+				document.getElementById('continuar').disabled = true
+				document.getElementById('medios-tab').classList.add('disabled')
 			}
 		}else{
 			postal.disabled = true
 			tienda.disabled = true
 			postal.checked = false
 			tienda.checked = false
-			document.getElementById('pagar').disabled = true
+			document.getElementById('continuar').disabled = true
+			document.getElementById('medios-tab').classList.add('disabled')
 		}
 }
 
-//Esta parte es la que obtiene la informacion del carrito en consola 
-document.getElementById('pagar').addEventListener('click', () => {
-
-	
-	//tipo del envio
-if (!document.querySelector('input[name="shippingOptions"]:checked').value){
-
-return 
-
-}
-let tipoEnvio= document.querySelector('input[name="shippingOptions"]:checked').value;
 
 
-	//total y el subtotal 
-	let subtotal = parseFloat((document.getElementById('subtotal').textContent).substring(2)) ;
-	let costoEnvio= parseFloat((document.getElementById('costoEnvio').textContent).substring(2));
-	let total= parseFloat((document.getElementById('total').textContent).substring(2)) ;
-
-	//consola
-	var objeto = 
-	{
-		subtotal: subtotal, 
-		costoEnvio: costoEnvio, 
-		total : total
-	}
-	localStorage.setItem('objeto', JSON.stringify(objeto))
-
-}) 
-
-
-//tab de la tarjeta
-document.querySelector('button[type="button"]').addEventListener('click',() => {
-
-//valores de la tarjeta
-let numeroTarjeta = document.getElementById('numeroTarjeta').value;
-let fechaExpiracion = document.getElementById('fechaExpiracion').value;
-let cvv = document.getElementById('cvv').value;
-
-//consola
-var medioPago = 
-{
-	numeroTarjeta: numeroTarjeta, 
-	fechaExpiracion: fechaExpiracion, 
-	cvv : cvv
-}
-localStorage.setItem('medioPago', JSON.stringify(medioPago))
- 
-})
 
