@@ -152,6 +152,9 @@ function mostrarFactura() {
 	const facturaCarrito = document.getElementById("factura-carrito")
 	const facturaCobro = document.getElementById("factura-cobro")
 	const facturaPago = document.getElementById("factura-pago")
+	facturaCarrito.innerHTML = ``
+	facturaCobro.innerHTML = ``
+	facturaPago.innerHTML = ``
 
 	var infoCarrito = JSON.parse(localStorage.getItem('compra'))
 	var infoCobro = JSON.parse(localStorage.getItem('cobro'))
@@ -234,6 +237,16 @@ function mostrarFactura() {
 
 	facturaPago.appendChild(rowTarjeta)
 
+	reiniciarProcesoCompra()
 }
 
-//limpio el form de pago 
+// Limpir el proceso
+function reiniciarProcesoCompra(){
+	localStorage.removeItem('compra')
+	localStorage.removeItem('cobro')
+	localStorage.removeItem('medioPago')
+	actualizarSubtotal()
+	mostrarCarrito()
+	
+	document.getElementById("cardForm").reset()
+}

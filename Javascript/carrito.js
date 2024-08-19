@@ -190,6 +190,7 @@ function validar(){
 			tienda.disabled = true
 			postal.checked = false
 			tienda.checked = false
+			document.getElementById('costoEnvio').textContent = "₡ "+0
 			document.getElementById('continuar').disabled = true
 			document.getElementById('medios-tab').classList.add('disabled')
 		}

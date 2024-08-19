@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         // Prevenir el comportamiento por defecto de envío del formulario
         event.preventDefault();
+        form.classList.remove('was-validated'); 
         
         // Verifica si el formulario es válido
         if (form.checkValidity() === false) {
@@ -20,11 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
             //  datos en la consola
             console.log('Formulario enviado con éxito:', data);
+            
+            // y esto elimina la clase de validacion
+            //O sea que si el usuario intenta enviar el form otra vez, la validacion funcione 
+            form.reset();//esto restablece el form 
+        }
 
-
-          }
-
-        form.reset();//esto restablece el form 
+        // Agregar la clase de validación al formulario
+        form.classList.add('was-validated');
     });
     
 });
