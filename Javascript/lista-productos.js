@@ -73,7 +73,7 @@ function mostrarProductos(categoria){
         const rowCategoria =
         `
             <h2 class="text-center">${categoria}</h2>
-            <div class="row justify-content-center mx-5">
+            <div class="row justify-content-center mx-4">
             
             </div>
         `
@@ -92,7 +92,7 @@ function mostrarProductos(categoria){
                     <div class="card-body text-center">
                         <h5 class="card-title">${producto.nombre}</h5>
                         <p class="card-text">&#8353; ${producto.precio}</p>
-                        <button type="button" class="btn btn-fucsia-full btn-lg" onclick="detalleProducto(${producto.id})">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="detalleProducto(${producto.id})">
                             Más Información
                         </button>             
                     </div>
