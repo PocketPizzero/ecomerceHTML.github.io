@@ -96,9 +96,9 @@ $(document).ready(function() {
                 // Al <li> le añade un <button> para cambiar la imagen
                 $('<div>').addClass('container mt-3').append
                 (
-                    $('<div>').addClass('mb-4 p-3 border rounded shadow-sm').append
+                    $('<div>').addClass('row w-100 mb-4 p-3 border rounded shadow-sm').append
                     (
-                        $('<div>').addClass('d-flex flex-column flex-md-row align-items-start').append
+                        $('<div>').addClass(' d-flex flex-column flex-md-row align-items-start').append
                         (
                             $('<div>').addClass('me-3 mb-3 mb-md-0').append
                             (
