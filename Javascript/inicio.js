@@ -48,7 +48,7 @@ function productosCarrusel(data){
 
 /* Agregados Recientemente */
 function detalleProducto(id) {
-    window.location.href = `/HTML/Detalle Producto.html?id=${id}`;
+    window.location.href = `HTML/Detalle Producto.html?id=${id}`;
 }
 
 function productosRecientes(data){
