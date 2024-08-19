@@ -52,7 +52,7 @@ const productos =
 		],
 		"reseñas":
 		 [
-			["Andrea M", "★★★☆☆", "Me gustó mucho cómo la página muestra las especificaciones de cada producto de manera clara. Compré el Aywey Tempura para mi  madre y aunque es un buen celuar, creo que la calidad de construcción podría mejorar. Aun así, estoy satisfecho con la compra."],
+			["Andrea M", "★★★☆☆", "Me gustó mucho cómo la página muestra las especificaciones de cada producto de manera clara. Compré el Aywey Tempura para mi  madre y aunque es un buen celular, creo que la calidad de los materiales podría mejorar. Aun así, estoy satisfecho con la compra."],
 			["Valeria B","★★★★★","Pocketshop hizo que la compra de mi nuevo teléfono fuera sencilla y rápida. Compré un Aywey Tempura, y hasta ahora, no he tenido ningún problema. El seguimiento del pedido en la página fue muy claro y me mantuvieron informado en todo momento. "],
 			["Messi C","★☆☆☆☆","Aunque la página tiene un diseño bonito, experimenté algunos problemas al filtrar los productos. Finalmente, compré un Aywey Tempura, pero no estoy completamente satisfecho con la velocidad del dispositivo. La entrega fue rápida, pero creo que el producto podría ser mejor. "]
 		]
