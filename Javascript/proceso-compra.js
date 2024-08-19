@@ -236,3 +236,4 @@ function mostrarFactura() {
 
 }
 
+//limpio el form de pago 
