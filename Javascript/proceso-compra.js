@@ -49,25 +49,13 @@ document.getElementById('numeroTarjeta').addEventListener('input', function () {
 const form = document.getElementById('cardForm');
 // Agregar un evento de envío al formulario
 form.addEventListener('submit', function (event) {
-	const numeroTarjeta = document.getElementById('numeroTarjeta').value
-	const fechaExpiracion = document.getElementById('fechaExpiracion').value
-	const cvv = document.getElementById('cvv').value
 
 	// Prevenir el comportamiento por defecto de envío del formulario
 	event.preventDefault();
-	// Validar tarjeta
-	if (!numeroTarjeta.length == 16) {
-		document.querySelector('#numeroTarjeta').classList.add('is-invalid');
-		document.querySelector('.invalidad-feedback').textContent = 'Numero de tarjeta inválido';
-	}
-	/*if(fechaExpiracion){
-		document.querySelector('#cvv').classList.add('is-invalid');			document.querySelector('.invalidad-feedback').textContent= 'Código de seguridad inválido';
-	}*/
-	if (cvv.length != 3) {
-		document.querySelector('#cvv').classList.add('is-invalid'); document.querySelector('.invalidad-feedback').textContent = 'Código de seguridad inválido';
-	}
+
 	// Verifica si el formulario es válido
-	if (form.checkValidity() === false) {            // errores de validación
+	if (form.checkValidity() === false) {
+		// errores de validación
 		event.stopPropagation()
 	} else {
 		// datos del formulario
@@ -76,6 +64,7 @@ form.addEventListener('submit', function (event) {
 
 		//  datos en la consola
 		console.log('Formulario enviado con éxito:', data);
+		$('#confirmacionPago').modal('show')
 	}
 
 	// Agregar la clase de validación al formulario

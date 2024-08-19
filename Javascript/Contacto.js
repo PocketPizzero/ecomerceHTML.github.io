@@ -8,11 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         // Prevenir el comportamiento por defecto de envío del formulario
         event.preventDefault();
-        
-        const numero = document.getElementById('phoneNumber').value
-        if (!numero.length == 8){
-            numero.classList.add('is-invalid');
-        }
 
         // Verifica si el formulario es válido
         if (form.checkValidity() === false) {
