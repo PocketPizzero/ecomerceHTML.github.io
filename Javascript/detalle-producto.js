@@ -80,7 +80,7 @@ $(document).ready(function() {
 
         //Tabla Envío
         $('#entrega').text(producto.entrega_aproximada)
-        $('#costo').text(producto.costo_envio)
+        $('#costo').text("₡ " + producto.costo_envio)
 
         //Evento botón
         $("#añadir").attr('onclick', "añadirArticulo("+producto.id+")")
