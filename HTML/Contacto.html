@@ -61,7 +61,7 @@
         <h1 class="my-5 text-center">¡Estamos para <span class="palabra-relevante">servirle</span>!</h1>
 
         <section id="contacto">
-            <div class="container fs-3 ">
+            <div class="container fs-3">
                 <div class="row mb-5 justify-content-between">
                     <div class="col-12 col-lg-6 mb-5">
                         <p><span class="palabra-relevante">Teléfono:</span> 7878-5454 </p>
@@ -69,13 +69,16 @@
                         <p><span class="palabra-relevante">Horarios:</span> De lunes a sábado de 10:00 am hasta las 5:00 pm</p>
                     </div>
                     <div class="col-12 col-lg-6">
-                            <p><span class="palabra-relevante">Ubicación:</span></p>
-                            <!-- Contenedor para el mapa -->
-                            <div id="map" style="height: 100%; width: 100%"></div>
+                        <p><span class="palabra-relevante">Ubicación:</span></p>
+                        <!-- ratio viene de bostrap 5 que es una clase implementada -->
+                        <div class="ratio ratio-16x9">
+                            <div id="map" class="border"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
 
         <!-- Formulario de contacto -->
         <section id="formulario">

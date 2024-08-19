@@ -71,3 +71,7 @@
     background-color: #D63384;
     color:#F8F9FB;
 }
+
+#map {
+    border: 1px solid #F8F9FB ; 
+}
