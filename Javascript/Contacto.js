@@ -22,14 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Formulario enviado con éxito:', data);
 
 
-            form.reset();//esto restablece el form 
-            form.classList.remove('was-validated'); // y esto elimina la clase de validacion
-            //O sea que si el usuario intenta enviar el form otra vez, la validacion funcione 
-        }
+          }
 
-        // Agregar la clase de validación al formulario
-        form.classList.add('was-validated');
+        form.reset();//esto restablece el form 
     });
+    
 });
 
 
