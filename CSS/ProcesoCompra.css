@@ -36,12 +36,4 @@ form .form-control:focus {
 }
 form .invalid-feedback {
     color: #d9534f;
-    /*  mensajes de error */
-}
-
-/* Finalizar compra factura */
-.table td,
-.table th {
-    vertical-align: middle;
-    text-align: center;
 }

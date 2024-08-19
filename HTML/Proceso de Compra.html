@@ -64,23 +64,23 @@
         </div>
 
         <!-- Tabla  -->
-        <ul class="nav nav-underline  my-5 fs-1 justify-content-around" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Carrito de compra
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link disabled" id="medios-tab" data-bs-toggle="tab" data-bs-target="#medios-tab-pane"
-                    type="button" role="tab" aria-controls="medios-tab-pane" aria-selected="false">Medios de
-                    pago</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link disabled" id="finalizar-tab" data-bs-toggle="tab"
-                    data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="finalizar-tab-pane"
-                    aria-selected="false">Finalizar compra</button>
-            </li>
-        </ul>
+            <ul class="nav nav-underline flex-md-row flex-sm-column justify-content-around text-center m-5 fs-1 " id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Carrito de compra
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link disabled" id="medios-tab" data-bs-toggle="tab" data-bs-target="#medios-tab-pane"
+                        type="button" role="tab" aria-controls="medios-tab-pane" aria-selected="false">Medios de
+                        pago</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link disabled" id="finalizar-tab" data-bs-toggle="tab"
+                        data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="finalizar-tab-pane"
+                        aria-selected="false">Finalizar compra</button>
+                </li>
+            </ul>
 
 
         <!-- Aqui estan las tabs  -->
@@ -189,7 +189,7 @@
             </div>
 
             <!--Tab de los medios de pago-->
-            <div class="tab-pane fade" id="medios-tab-pane" role="tabpanel" aria-labelledby="medios-tab" tabindex="0">
+            <div class="tab-pane" id="medios-tab-pane" role="tabpanel" aria-labelledby="medios-tab" tabindex="0">
 
                 <form id="cardForm" class="row m-5 g-3 needs-validation rounded-3 p-5" novalidate>
                     <div class="mb-5 d-flex justify-content-around">
@@ -209,7 +209,8 @@
 
                     <div class="col-md-6">
                         <label for="fechaExpiracion" class="form-label">Fecha de expiración</label>
-                        <input type="text" class="form-control" id="fechaExpiracion" placeholder="MM/AA" pattern="(0[1-9]|1[0-2])/[0-9]{2}" required>
+                        <input type="text" class="form-control" id="fechaExpiracion" placeholder="MM/AA"
+                            pattern="(0[1-9]|1[0-2])/[0-9]{2}" required>
                         <small>Formato: MM/AA</small>
                         <div class="invalid-feedback">
                             Por favor, ingrese una fecha de expiración válida.
@@ -218,13 +219,13 @@
 
                     <div class="col-md-6">
                         <label for="cvv" class="form-label">Codigo de seguridad</label>
-                        <input type="text" class="form-control" id="cvv" placeholder="123"  pattern="\d{3,3}" required>
+                        <input type="text" class="form-control" id="cvv" placeholder="123" pattern="\d{3,3}" required>
                         <div class="invalid-feedback">
                             Por favor, ingrese un CVV válido.
                         </div>
                     </div>
                     <div class="col-12">
-                        <button id="pago" class="btn btn-primary" type="submit" >Procesar pago</button>
+                        <button id="pago" class="btn btn-primary" type="submit">Procesar pago</button>
                     </div>
 
                     <div class="modal fade" id="confirmacionPago" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -252,31 +253,31 @@
             <div class="tab-pane fade" id="Finalizar-tab-pane" role="tabpanel" aria-labelledby="Finalizar-tab"
                 tabindex="0">
                 <div class="container">
-                    <h2 class="text-center"><span class="palabra-relevante">Pocket</span>Shop</h2>
+
                     <div class="table-responsive">
-                        <table class="table table-bordered table-striped table-hover">
+                        <table class="table table-stripped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="w-100 text-center fs-2 pt-3">PocketShop</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="w-100 text-center fs-4">Teléfono 7878-5454</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="w-100 text-center fs-4">Visitános en https://pocketpizzero.github.io/ecomerceHTML.github.io/
+                                    </td>
+                                </tr>
+                            </thead>
                             <tbody id="factura-carrito">
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped table-hover">
-                            <tbody id="factura-cobro">
 
                             </tbody>
                         </table>
                     </div>
 
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped table-hover">
-                            <tbody id="factura-pago">
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
-
             </div>
+
+        </div>
         </div>
 
     </main>

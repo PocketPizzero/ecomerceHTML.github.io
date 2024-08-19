@@ -138,12 +138,10 @@ document.getElementById('pago').addEventListener('click', () => {
 
 /* MOSTRAR FACTURA */
 function mostrarFactura() {
-	const facturaCarrito = document.getElementById("factura-carrito")
-	const facturaCobro = document.getElementById("factura-cobro")
-	const facturaPago = document.getElementById("factura-pago")
-	facturaCarrito.innerHTML = ``
-	facturaCobro.innerHTML = ``
-	facturaPago.innerHTML = ``
+	const factura = document.getElementById("factura-carrito")
+	factura.innerHTML = 
+	`
+	`
 
 	var infoCarrito = JSON.parse(localStorage.getItem('compra'))
 	var infoCobro = JSON.parse(localStorage.getItem('cobro'))
@@ -156,14 +154,14 @@ function mostrarFactura() {
 
 		const row = document.createElement('tr')
 		row.innerHTML =
-			`<td class="imagen-articulo">
+			`<td class="col-1">
             	<img src=".${articulo.imagen}" alt="" width="80">
             </td>
-            <td class="info-articulo right-align">
-                ${articulo.nombre}.....x${articulo.cantidad}.....${articulo.subtotal}
+            <td class="text-end col-11 align-middle">
+                ${articulo.nombre} . . . . . . x${articulo.cantidad} . . . . . . ₡ ${articulo.subtotal}
             </td>`
 
-		facturaCarrito.appendChild(row)
+		factura.appendChild(row)
 	});
 
 	tipoEnvio = infoCobro.tipoEnvio
@@ -173,43 +171,43 @@ function mostrarFactura() {
 
 	const rowTipoEnvio = document.createElement('tr')
 	rowTipoEnvio.innerHTML =
-		`<td>
+			`<td class="col-1">
 				Tipo de envío
 			</td>
-            <td class="td-costo-envio right-align">
+            <td class="text-end col-11 align-middle">
 				${tipoEnvio}
 			</td>`
 	const rowCostoEnvio = document.createElement('tr')
 	rowCostoEnvio.innerHTML =
-		`<td>
+		`<td class="col-1">
 				Costo de envío
 			</td>
-            <td class="td-costo-envio right-align">
-				${costoEnvio}
+            <td class="text-end col-11 align-middle">
+				₡ ${costoEnvio}
 			</td>`
 
 	const rowSubtotal = document.createElement('tr')
 	rowSubtotal.innerHTML =
-		`<td>
+		`<td class="col-1">
 				Subtotal
 			</td>
-			<td class="td-subtotal right-align">
-				${subtotal}
+			<td class="text-end col-11 align-middle">
+				₡ ${subtotal}
 			</td>`
 
 	const rowTotal = document.createElement('tr')
 	rowTotal.innerHTML =
-		`<td>
+		`<td class="col-1">
 				Total
 			</td>
-			<td class="td-total right-align">
-				${total}
+			<td class="text-end col-11 align-middle">
+				₡ ${total}
 			</td>`
 
-	facturaCobro.appendChild(rowTipoEnvio)
-	facturaCobro.appendChild(rowCostoEnvio)
-	facturaCobro.appendChild(rowSubtotal)
-	facturaCobro.appendChild(rowTotal)
+	factura.appendChild(rowTipoEnvio)
+	factura.appendChild(rowCostoEnvio)
+	factura.appendChild(rowSubtotal)
+	factura.appendChild(rowTotal)
 
 	precio = parseFloat(infoPago.precio) | 0;
 	cantidad = parseInt(infoPago.cantidad) | 0;
@@ -217,14 +215,14 @@ function mostrarFactura() {
 
 	const rowTarjeta = document.createElement('tr')
 	rowTarjeta.innerHTML =
-		`<td>
+		`<td class="col-1">
 				Medio de pago
 			</td>
-			<td class="td-total right-align">
+			<td class="text-end col-11 align-middle">
 				${tipoTajeta}
 			</td>`
 
-	facturaPago.appendChild(rowTarjeta)
+	factura.appendChild(rowTarjeta)
 
 	reiniciarProcesoCompra()
 }
