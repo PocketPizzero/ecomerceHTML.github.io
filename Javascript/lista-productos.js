@@ -42,7 +42,7 @@ function mostrarProductos(categoria){
                     colProducto.classList.add("mb-4")
                         const cardProducto =
                         `<div class="card mb-5 fs-1 slideDown">
-                            <img src=".${p.imagenes[0]}" class="card-img-top" alt="">
+                            <img src=".${p.imagenes[0]}" class="card-img-top" alt="${p.alt}">
                             <div class="card-body text-center">
                                 <h5 class="card-title">${p.nombre}</h5>
                                 <p id="precio" class="card-text">&#8353; ${p.precio}</p>
@@ -88,7 +88,7 @@ function mostrarProductos(categoria){
             colProducto.classList.add("mb-4")
                 const cardProducto =
                 `<div class="card mb-5 fs-1 slideDown">
-                    <img src=".${producto.imagenes[0]}" class="card-img-top" alt="">
+                    <img src=".${producto.imagenes[0]}" class="card-img-top" alt="${producto.alt}">
                     <div class="card-body text-center">
                         <h5 class="card-title">${producto.nombre}</h5>
                         <p class="card-text">&#8353; ${producto.precio}</p>
