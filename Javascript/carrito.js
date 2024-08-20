@@ -66,7 +66,7 @@ function actualizarCantidadArticulo(articulo) {
 	var id = articulo.dataset.id
 	var cantidad = articulo.value
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
-	if(cantidad==='0' && cantidad.trim()!=''){
+	if(cantidad<='0' && cantidad.trim()!=''){
 		eliminarArticulo(id)
 		return;
 	}
