@@ -1,3 +1,19 @@
+/* ALERTA FORMULARIO */
+const notificacionForm = document.getElementById('notificacionForm')
+
+const appendNotificacionForm = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  notificacionForm.append(wrapper)
+}
+
+
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -14,18 +30,21 @@ document.addEventListener('DOMContentLoaded', function() {
             // errores de validación
             event.stopPropagation();
         } else {
+            
             // datos del formulario
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
 
             //  datos en la consola
             console.log('Formulario enviado con éxito:', data);
-            
+
             // y esto elimina la clase de validacion
             //O sea que si el usuario intenta enviar el form otra vez, la validacion funcione 
             form.reset();//esto restablece el form
             
-        form.classList.remove('was-validated'); 
+            form.classList.remove('was-validated'); 
+            appendNotificacionForm('Datos y solicitud enviados con éxito', 'success')
+
         }
 
         // Agregar la clase de validación al formulario
@@ -53,5 +72,4 @@ document.addEventListener('DOMContentLoaded', () => {
         .bindPopup('<b>Universidad Técnica de Costa Rica</b><br>Sede Central de Alajuela en Villa Bonita.')
         .openPopup();
 });
-
 
