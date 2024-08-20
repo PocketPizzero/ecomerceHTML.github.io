@@ -45,6 +45,7 @@ const productos =
 		"entrega_aproximada": "2 días",
 		"costo_envio": "7,500",
 		"fecha_agregado": "2024-08-05",
+		"alt": "Celular Aywey Tempura",
 		"imagenes": 
 		[
 			"./Images/Productos/Aywey_Tempura_-_Black-removebg-preview.png",
@@ -74,6 +75,7 @@ const productos =
 		"entrega_aproximada": "2 días",
 		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-06",
+		"alt": "Celular Aywey Noa",
 		"imagenes": 
 		[
 			"./Images/Productos/Aywey_Noa_-_Black-removebg-preview.png", 
@@ -102,6 +104,7 @@ const productos =
 		"entrega_aproximada": "3 días",
 		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-08",
+		"alt": "Celular UNIVERSE XYZ Flip Colors",
 		"imagenes": 
 		[
 			"./Images/Productos/UNIVERSE_XYZ_Flip_Colors_-_Cyan-removebg-preview.png", 
@@ -132,6 +135,7 @@ const productos =
 		"entrega_aproximada": "3 días",
 		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-07",
+		"alt": "Celular UNIVERSE XYZ Fall",
 		"imagenes":
 		[
 			"./Images/Productos/UNIVERSE_XYZ_Fall_-_Blue-removebg-preview.png", 
@@ -161,6 +165,7 @@ const productos =
 		"entrega_aproximada": "3 días",
 		"costo_envio": "6,000",
 		"fecha_agregado": "2024-08-09",
+		"alt": "Celular UNIVERSE F24",
 		"imagenes":
 		[
 			"./Images/Productos/UNIVERSE_F24_-_Gold-removebg-preview.png", 
@@ -191,6 +196,7 @@ const productos =
 		"entrega_aproximada": "1 días",
 		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-03",
+		"alt": "Celular Shaomay Remid",
 		"imagenes":
 		[
 			"./Images/Productos/Shaomay_Remid_-_Blue-removebg-preview.png", 
@@ -219,6 +225,7 @@ const productos =
 		"entrega_aproximada": "1 días",
 		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-06",
+		"alt": "Celular Shaomay XLR8",
 		"imagenes":
 		[
 			"./Images/Productos/Shaomay_XLR8_-_Black-removebg-preview.png", 
@@ -248,6 +255,7 @@ const productos =
 		"entrega_aproximada": "1 días",
 		"costo_envio": "5,000",
 		"fecha_agregado": "2024-08-05",
+		"alt": "Celular Shaomay Envy",
 		"imagenes":
 		[
 			"./Images/Productos/Shaomay_Envy_-_Blue-removebg-preview.png", 
@@ -277,6 +285,7 @@ const productos =
 		"entrega_aproximada": "5 días",
 		"costo_envio": "6,000",
 		"fecha_agregado": "2024-08-07",
+		"alt": "Celular Peraphone 13",
 		"imagenes":
 		[
 			"./Images/Productos/Peraphone_13_-_Blue-removebg-preview.png",
@@ -306,6 +315,7 @@ const productos =
 		"entrega_aproximada": "5 días",
 		"costo_envio": "6,000",
 		"fecha_agregado": "2024-08-09",
+		"alt": "Celular Peraphone 14",
 		"imagenes":
 		[
 			"./Images/Productos/Peraphone_14_-_Red-removebg-preview.png",
@@ -335,6 +345,7 @@ const productos =
 		"entrega_aproximadaa": "5 días",
 		"costo_envio": "7,000",
 		"fecha_agregado": "2024-08-06",
+		"alt": "Celular Peraphone 15",
 		"imagenes":
 		[
 			"./Images/Productos/Peraphone_15_-_Black-removebg-preview.png", 
