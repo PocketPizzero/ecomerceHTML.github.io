@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 
         //Info producto
-        $("#id-producto").text(producto.id)
+        $("#id-producto").text("Código: " + producto.id)
         $("#nombre").text(producto.nombre)
         $("#precio").text("₡ " + producto.precio)
 
