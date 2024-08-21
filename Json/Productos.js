@@ -342,7 +342,7 @@ const productos =
 		"RAM": "6 GB",
 		"almacenamiento": "128 GB",
 		"bateria": "4912 mAh",
-		"entrega_aproximadaa": "5 días",
+		"entrega_aproximada": "5 días",
 		"costo_envio": "7,000",
 		"fecha_agregado": "2024-08-06",
 		"alt": "Celular Peraphone 15",
