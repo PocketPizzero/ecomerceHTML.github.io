@@ -140,8 +140,7 @@ document.getElementById('pago').addEventListener('click', () => {
 function mostrarFactura() {
 	const factura = document.getElementById("factura-carrito")
 	factura.innerHTML =
-		`
-	`
+	``
 
 	var infoCarrito = JSON.parse(localStorage.getItem('compra'))
 	var infoCobro = cobro
