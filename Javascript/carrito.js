@@ -1,6 +1,5 @@
 mostrarCarrito();
 
-
 function añadirArticulo(id) {
     //Obtener Elemento
     const producto = productos.find((p) => p.id === id)
@@ -40,9 +39,6 @@ function añadirArticulo(id) {
 	}
 	
 	localStorage.setItem('compra',JSON.stringify(cartArray))
-
-    console.log(JSON.parse(localStorage.getItem('compra')))
-
 }
 
 function eliminarArticulo(id) {
@@ -156,14 +152,15 @@ document.querySelectorAll('input[name="shippingOptions"]').forEach(radio => {
 });
 
 /* DESCUENTO */
-
-document.getElementById('codigo-descuento').addEventListener('input', function () {
-	if(this.value.trim() != ''){
-		document.getElementById('boton-descuento').removeAttribute('disabled')
-	}else{
-		document.getElementById('boton-descuento').setAttribute('disabled', 'disabled')
-	}
-});
+if(document.getElementById('codigo-descuento')){
+	document.getElementById('codigo-descuento').addEventListener('input', function () {
+		if(this.value.trim() != ''){
+			document.getElementById('boton-descuento').removeAttribute('disabled')
+		}else{
+			document.getElementById('boton-descuento').setAttribute('disabled', 'disabled')
+		}
+	});
+}
 
 function aplicarDescuento(){
 	let codigo = document.getElementById('codigo-descuento')
