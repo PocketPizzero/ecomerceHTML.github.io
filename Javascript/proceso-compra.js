@@ -103,6 +103,7 @@ document.getElementById('continuar').addEventListener('click', () => {
 	
 	let tipoEnvio = document.querySelector('input[name="shippingOptions"]:checked').value;
 	let subtotal = parseFloat((document.getElementById('subtotal').textContent).substring(2));
+	let descuento = parseFloat((document.getElementById('descuento').textContent).substring(2));
 	let costoEnvio = parseFloat((document.getElementById('costoEnvio').textContent).substring(2));
 	let total = parseFloat((document.getElementById('total').textContent).substring(2));
 
@@ -167,6 +168,7 @@ function mostrarFactura() {
 
 	tipoEnvio = infoCobro.tipoEnvio
 	subtotal = parseFloat(infoCobro.subtotal) | 0;
+	descuento = parseFloat(infoCobro.descuento) | 0;
 	costoEnvio = parseInt(infoCobro.costoEnvio) | 0;
 	total = parseFloat(infoCobro.total) | 0;
 
@@ -178,6 +180,25 @@ function mostrarFactura() {
             <td class="text-end col-11 align-middle">
 				${tipoEnvio}
 			</td>`
+			
+	const rowSubtotal = document.createElement('tr')
+	rowSubtotal.innerHTML =
+		`<td class="col-1">
+				Subtotal
+			</td>
+			<td class="text-end col-11 align-middle">
+				₡ ${subtotal}
+			</td>`
+		const rowDescuento = document.createElement('tr')
+	rowDescuento.innerHTML =
+		`<td class="col-1">
+				Descuento
+			</td>
+			<td class="text-end col-11 align-middle">
+				₡ ${descuento}
+			</td>`
+			
+
 	const rowCostoEnvio = document.createElement('tr')
 	rowCostoEnvio.innerHTML =
 		`<td class="col-1">
@@ -187,14 +208,6 @@ function mostrarFactura() {
 				₡ ${costoEnvio}
 			</td>`
 
-	const rowSubtotal = document.createElement('tr')
-	rowSubtotal.innerHTML =
-		`<td class="col-1">
-				Subtotal
-			</td>
-			<td class="text-end col-11 align-middle">
-				₡ ${subtotal}
-			</td>`
 
 	const rowTotal = document.createElement('tr')
 	rowTotal.innerHTML =
@@ -206,8 +219,9 @@ function mostrarFactura() {
 			</td>`
 
 	factura.appendChild(rowTipoEnvio)
-	factura.appendChild(rowCostoEnvio)
 	factura.appendChild(rowSubtotal)
+	factura.appendChild(rowDescuento)
+	factura.appendChild(rowCostoEnvio)
 	factura.appendChild(rowTotal)
 
 	precio = parseFloat(infoPago.precio) | 0;
