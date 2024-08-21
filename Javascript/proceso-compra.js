@@ -62,8 +62,6 @@ form.addEventListener('submit', function (event) {
 		const formData = new FormData(form);
 		const data = Object.fromEntries(formData.entries());
 
-		//  datos en la consola
-		console.log('Formulario enviado con éxito:', data);
 		$('#confirmacionPago').modal('show')
 	}
 
