@@ -100,7 +100,7 @@ document.getElementById('continuar').addEventListener('click', () => {
 		return
 
 	}
-	
+
 	let tipoEnvio = document.querySelector('input[name="shippingOptions"]:checked').value;
 	let subtotal = parseFloat((document.getElementById('subtotal').textContent).substring(2));
 	let descuento = parseFloat((document.getElementById('descuento').textContent).substring(2));
@@ -141,8 +141,8 @@ document.getElementById('pago').addEventListener('click', () => {
 /* MOSTRAR FACTURA */
 function mostrarFactura() {
 	const factura = document.getElementById("factura-carrito")
-	factura.innerHTML = 
-	`
+	factura.innerHTML =
+		`
 	`
 
 	var infoCarrito = JSON.parse(localStorage.getItem('compra'))
@@ -174,13 +174,13 @@ function mostrarFactura() {
 
 	const rowTipoEnvio = document.createElement('tr')
 	rowTipoEnvio.innerHTML =
-			`<td class="col-1">
+		`<td class="col-1">
 				Tipo de envío
 			</td>
             <td class="text-end col-11 align-middle">
 				${tipoEnvio}
 			</td>`
-			
+
 	const rowSubtotal = document.createElement('tr')
 	rowSubtotal.innerHTML =
 		`<td class="col-1">
@@ -189,7 +189,7 @@ function mostrarFactura() {
 			<td class="text-end col-11 align-middle">
 				₡ ${subtotal}
 			</td>`
-		const rowDescuento = document.createElement('tr')
+	const rowDescuento = document.createElement('tr')
 	rowDescuento.innerHTML =
 		`<td class="col-1">
 				Descuento
@@ -197,7 +197,7 @@ function mostrarFactura() {
 			<td class="text-end col-11 align-middle">
 				₡ ${descuento}
 			</td>`
-			
+
 
 	const rowCostoEnvio = document.createElement('tr')
 	rowCostoEnvio.innerHTML =
@@ -243,13 +243,13 @@ function mostrarFactura() {
 }
 
 // Limpir el proceso
-function reiniciarProcesoCompra(){
+function reiniciarProcesoCompra() {
 	localStorage.removeItem('compra')
 	localStorage.removeItem('cobro')
 	localStorage.removeItem('medioPago')
 	actualizarSubtotal()
 	mostrarCarrito()
-	
+
 	document.getElementById("cardForm").reset()
 }
 

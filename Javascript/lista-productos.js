@@ -4,17 +4,17 @@ function detalleProducto(id) {
     window.location.href = `Detalle Producto.html?id=${id}`;
 }
 
-function mostrarProductos(categoria){
+function mostrarProductos(categoria) {
     // Limpiar
     document.getElementById("lista-productos").innerHTML = ""
 
-    if(categoria === ""){
+    if (categoria === "") {
         const categorias = []
         let productosFiltrados = productos
         let productosCategoria = []
 
         productosFiltrados.forEach((producto) => {
-            if(categorias.includes(producto.categoria)==false){
+            if (categorias.includes(producto.categoria) == false) {
                 // Crea la categoria
                 categorias.push(producto.categoria)
 
@@ -23,7 +23,7 @@ function mostrarProductos(categoria){
                 divCategoria.classList.add("mb-5")
 
                 const rowCategoria =
-                `
+                    `
                     <h2 class="text-center slideDown">${producto.categoria}</h2>
                     <div class="row justify-content-center mx-5 slideDown">
                     
@@ -40,7 +40,7 @@ function mostrarProductos(categoria){
                     const colProducto = document.createElement("div")
                     colProducto.classList.add("col-md-4")
                     colProducto.classList.add("mb-4")
-                        const cardProducto =
+                    const cardProducto =
                         `<div class="card mb-5 fs-1 slideDown">
                             <img src=".${p.imagenes[0]}" class="card-img-top" alt="${p.alt}">
                             <div class="card-body text-center">
@@ -55,7 +55,7 @@ function mostrarProductos(categoria){
                     colProducto.innerHTML = cardProducto
                     divCategoria.children[1].appendChild(colProducto)
 
-                    
+
                 })
 
                 productosFiltrados = productosFiltrados.filter(p => !productosCategoria.includes(p))
@@ -71,7 +71,7 @@ function mostrarProductos(categoria){
         divCategoria.classList.add("mb-5")
 
         const rowCategoria =
-        `
+            `
             <h2 class="text-center">${categoria}</h2>
             <div class="row justify-content-center mx-4">
             
@@ -79,14 +79,14 @@ function mostrarProductos(categoria){
         `
         divCategoria.innerHTML = rowCategoria
         document.getElementById("lista-productos").appendChild(divCategoria)
-        
+
         // Agregar productos fltrados
         productosFiltrados.forEach(producto => {
 
             const colProducto = document.createElement("div")
             colProducto.classList.add("col-md-4")
             colProducto.classList.add("mb-4")
-                const cardProducto =
+            const cardProducto =
                 `<div class="card mb-5 fs-1 slideDown">
                     <img src=".${producto.imagenes[0]}" class="card-img-top" alt="${producto.alt}">
                     <div class="card-body text-center">
@@ -97,42 +97,42 @@ function mostrarProductos(categoria){
                         </button>             
                     </div>
                 </div>`
-                    
+
             colProducto.innerHTML = cardProducto
             divCategoria.children[1].appendChild(colProducto)
         })
     }
 }
 
-function mostrarProductosAlmacenamiento(almacenamiento){
+function mostrarProductosAlmacenamiento(almacenamiento) {
     // Limpiar
     document.getElementById("lista-productos").innerHTML = ""
 
-        // Filtrar por categoria
-        const productosFiltrados = productos.filter(producto => producto.almacenamiento === almacenamiento)
+    // Filtrar por categoria
+    const productosFiltrados = productos.filter(producto => producto.almacenamiento === almacenamiento)
 
-        // Crear espacio de la categoria
-        const divCategoria = document.createElement("div")
-        divCategoria.classList.add("categoria")
-        divCategoria.classList.add("mb-5")
+    // Crear espacio de la categoria
+    const divCategoria = document.createElement("div")
+    divCategoria.classList.add("categoria")
+    divCategoria.classList.add("mb-5")
 
-        divCategoria.innerHTML =
+    divCategoria.innerHTML =
         `
             <h2 class="text-center">${almacenamiento}</h2>
             <div class="row justify-content-center mx-4">
             
             </div>
         `
-        document.getElementById("lista-productos").appendChild(divCategoria)
-        
-        // Agregar productos fltrados
-        productosFiltrados.forEach(producto => {
+    document.getElementById("lista-productos").appendChild(divCategoria)
 
-            const colProducto = document.createElement("div")
-            colProducto.classList.add("col-md-4")
-            colProducto.classList.add("mb-4")
-                const cardProducto =
-                `<div class="card mb-5 fs-1 slideDown">
+    // Agregar productos fltrados
+    productosFiltrados.forEach(producto => {
+
+        const colProducto = document.createElement("div")
+        colProducto.classList.add("col-md-4")
+        colProducto.classList.add("mb-4")
+        const cardProducto =
+            `<div class="card mb-5 fs-1 slideDown">
                     <img src=".${producto.imagenes[0]}" class="card-img-top" alt="${producto.alt}">
                     <div class="card-body text-center">
                         <h5 class="card-title">${producto.nombre}</h5>
@@ -142,42 +142,42 @@ function mostrarProductosAlmacenamiento(almacenamiento){
                         </button>             
                     </div>
                 </div>`
-                    
-            colProducto.innerHTML = cardProducto
-            divCategoria.children[1].appendChild(colProducto)
-        })
-    
+
+        colProducto.innerHTML = cardProducto
+        divCategoria.children[1].appendChild(colProducto)
+    })
+
 }
 
-function mostrarProductosRam(ram){
+function mostrarProductosRam(ram) {
     // Limpiar
     document.getElementById("lista-productos").innerHTML = ""
 
-        // Filtrar por categoria
-        const productosFiltrados = productos.filter(producto => producto.RAM === ram)
+    // Filtrar por categoria
+    const productosFiltrados = productos.filter(producto => producto.RAM === ram)
 
-        // Crear espacio de la categoria
-        const divCategoria = document.createElement("div")
-        divCategoria.classList.add("categoria")
-        divCategoria.classList.add("mb-5")
+    // Crear espacio de la categoria
+    const divCategoria = document.createElement("div")
+    divCategoria.classList.add("categoria")
+    divCategoria.classList.add("mb-5")
 
-        divCategoria.innerHTML =
+    divCategoria.innerHTML =
         `
             <h2 class="text-center">${ram}</h2>
             <div class="row justify-content-center mx-4">
             
             </div>
         `
-        document.getElementById("lista-productos").appendChild(divCategoria)
-        
-        // Agregar productos fltrados
-        productosFiltrados.forEach(producto => {
+    document.getElementById("lista-productos").appendChild(divCategoria)
 
-            const colProducto = document.createElement("div")
-            colProducto.classList.add("col-md-4")
-            colProducto.classList.add("mb-4")
-                const cardProducto =
-                `<div class="card mb-5 fs-1 slideDown">
+    // Agregar productos fltrados
+    productosFiltrados.forEach(producto => {
+
+        const colProducto = document.createElement("div")
+        colProducto.classList.add("col-md-4")
+        colProducto.classList.add("mb-4")
+        const cardProducto =
+            `<div class="card mb-5 fs-1 slideDown">
                     <img src=".${producto.imagenes[0]}" class="card-img-top" alt="${producto.alt}">
                     <div class="card-body text-center">
                         <h5 class="card-title">${producto.nombre}</h5>
@@ -187,9 +187,9 @@ function mostrarProductosRam(ram){
                         </button>             
                     </div>
                 </div>`
-                    
-            colProducto.innerHTML = cardProducto
-            divCategoria.children[1].appendChild(colProducto)
-        })
-    
+
+        colProducto.innerHTML = cardProducto
+        divCategoria.children[1].appendChild(colProducto)
+    })
+
 }

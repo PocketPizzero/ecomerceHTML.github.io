@@ -2,38 +2,38 @@ productosCarrusel(productos)
 productosRecientes(productos)
 
 /* CARRUSEL */
-function productosCarrusel(data){
+function productosCarrusel(data) {
     //Auxiliares
     const categorias = [];
     let contador = 0;
-    
+
     //Listas
     const indicadoresCarrusel = document.getElementById("indicadoresCarrusel")
     const listaCarrusel = document.getElementById("listaCarrusel")
 
     data.forEach(producto => {
-        if(!categorias.includes(producto.categoria)){
+        if (!categorias.includes(producto.categoria)) {
             categorias.push(producto.categoria)
-            
+
             const indicador = document.createElement('button')
             indicador.type = 'button'
             indicador.setAttribute("data-bs-target", "#carouselExampleCaptions")
             indicador.setAttribute("data-bs-slide-to", "" + contador)
-            indicador.setAttribute("aria-label", "Slide " + contador )
+            indicador.setAttribute("aria-label", "Slide " + contador)
             contador = contador + 1
 
             const item = document.createElement('div')
             item.classList.add('carousel-item')
             item.classList.add('pb-5')
 
-            if(contador<=1){
+            if (contador <= 1) {
                 indicador.classList.add('active')
                 item.classList.add('active')
             }
 
             //style="width: 35%; padding-top:2.5%;"
             item.innerHTML =
-            `
+                `
                 <button onclick="detalleProducto(${producto.id})" class="boton-carrusel px-5 mx-5 mx-lg-auto d-lg-block"><img src="${producto.imagenes[0]}" class="d-block mx-auto py-5 mw-100" alt="${producto.alt}"></button>
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="fs-2">${producto.nombre}</h5>
@@ -51,21 +51,21 @@ function detalleProducto(id) {
     window.location.href = `HTML/Detalle Producto.html?id=${id}`;
 }
 
-function productosRecientes(data){
+function productosRecientes(data) {
     const agregados_recientemente = document.getElementById('agregados-recientemente')
 
-    const ordenados = data.sort((p1,p2) => {
+    const ordenados = data.sort((p1, p2) => {
         const fecha1 = new Date(p1.fecha_agregado)
         const fecha2 = new Date(p2.fecha_agregado)
         return fecha2 - fecha1
-    }) 
-    
-    ordenados.slice(0, 3).forEach( producto => {
+    })
+
+    ordenados.slice(0, 3).forEach(producto => {
         const elemento = document.createElement('div')
         elemento.classList.add('col')
         elemento.classList.add('m-3')
         elemento.innerHTML =
-        `<div class="card">
+            `<div class="card">
             <button type="button" onclick="detalleProducto(${producto.id})">
                 <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.alt}">
                 <h5>${producto.nombre}</h5>
@@ -75,12 +75,12 @@ function productosRecientes(data){
 
         agregados_recientemente.appendChild(elemento)
     })
-    
+
     const elemento = document.createElement('div')
     elemento.classList.add('col')
     elemento.classList.add('m-3')
     elemento.classList.add('text-center')
-    elemento.innerHTML = 
+    elemento.innerHTML =
         `<div class="card">
             <h5 class="card-title">
                 <a class="nav-link" href="HTML/Productos.html">Ver más</a>
@@ -92,7 +92,7 @@ function productosRecientes(data){
 
 
 /*Gráfico*/
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Cargar los datos del archivo JSON
     fetch('Json/grafico.json')
         .then(response => response.json())
@@ -109,13 +109,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     labels: labels, // Etiquetas del gráfico
                     datasets: [{
                         label: 'Número de Usuarios',
-                        data: usuarios, 
+                        data: usuarios,
                         backgroundColor: [
                             'rgba(214, 51, 132)', // Color para Aywey
                             'rgba(230, 112, 171)', // Color para Shaomay
                             'rgba(148, 3, 75)', // Color para Peraphone
                             'rgba(168, 61, 114)' // Color para Universe
-                             
+
                         ],
                         borderWidth: 2 // Grosor del borde
                     }]
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         },
                         tooltip: {
                             callbacks: {
-                                label: function(tooltipItem) {
+                                label: function (tooltipItem) {
                                     return `${tooltipItem.label}: ${tooltipItem.raw} usuarios`;
                                 }
                             }
