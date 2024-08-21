@@ -67,7 +67,7 @@ function productosRecientes(data){
         elemento.innerHTML =
         `<div class="card">
             <button type="button" onclick="detalleProducto(${producto.id})">
-                <img src="${producto.imagenes[0]}" class="card-img-top" alt="Producto">
+                <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.alt}">
                 <h5>${producto.nombre}</h5>
             </button>
             
