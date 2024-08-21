@@ -34,7 +34,7 @@ function productosCarrusel(data){
             //style="width: 35%; padding-top:2.5%;"
             item.innerHTML =
             `
-                <img src="${producto.imagenes[0]}" class="d-block mx-auto py-5 mw-100" alt="${producto.alt}">
+                <button onclick="detalleProducto(${producto.id})" class="boton-carrusel px-5 mx-5 mx-lg-auto d-lg-block"><img src="${producto.imagenes[0]}" class="d-block mx-auto py-5 mw-100" alt="${producto.alt}"></button>
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="fs-2">${producto.nombre}</h5>
                 </div>

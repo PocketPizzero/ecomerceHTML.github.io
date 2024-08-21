@@ -6,9 +6,11 @@
     font-size: 2.7vw;
 }
 
-#carrusel .carousel-item{
+#carrusel .carousel-item, #carrusel .boton-carrusel{
+    border: none;
     background-color: #212429;
 }
+
 
 #resumen-productos .container-titulo{
     background-color: #D63384;
