@@ -1,65 +1,22 @@
-
-/* 
-Fucsia: #D63384
-Blanco: #F8F9FB
-Negro: #212429
-*/
-
-
 #garantias {
     background-color: #F8F9FB;
-    border-radius: 0.5rem; 
-    padding: 2.5rem 1.875rem; 
-   
 }
 
 #garantias h1 {
-    color: #F8F9FB; 
-    text-transform: uppercase;
-    margin-bottom: 1.875rem; 
-    border-bottom: 2px solid #212429; 
-    padding-bottom: 0.5rem;
+    color: #F8F9FB;
     background-color: #D63384;
 }
 
-
-#garantias h3 {
-    color: #D63384; 
-    font-weight: 600;
-}
-
-
-#garantias p, #garantias ul {
-    color: #212429; 
-    font-size: 1.25rem; 
-    line-height: 1.8; 
-}
-
-
-#garantias ul {
-    margin-left: 1.25rem; 
+#garantias h3, #garantias h4{
+    color: #D63384;
 }
 
 #garantias ul li {
-    margin-bottom: 0.625rem; 
-}
-
-
-#garantias .text-center h4 {
-    color: #D63384; 
-}
-
-
-#garantias .text-center p {
-    color: #212429; 
-}
-
-
-#garantias .text-center {
-    padding: 0.9375rem; 
-    border: 2px solid transparent;    
+    margin-bottom: 1rem; 
 }
 
 #garantias .text-center {
-    border-color: #D63384; /
+    padding: 1rem; 
+    border: 2px solid #D63384;  
 }
+

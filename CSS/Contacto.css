@@ -1,77 +1,32 @@
-.palabra-relevante{
-    color: #D63384;
-}
-
 /* formulario  */
 
 #contactForm {
     background-color: #f8f9fa; 
-    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
-
-
-.btn-fucsia-full {
-    background-color: #D63384; 
-    border-color: #D63384; 
-    color: white; 
-    font-size: 1.25rem; 
-    font-weight: bold; 
-}
-
-.btn-fucsia-full:hover {
-    background-color: #c8236c; 
-    border-color: #bd2130; 
-}
-
-
 
 .form-control:invalid {
     border-color: #dc3545; 
 }
-
 .form-control:valid {
     border-color: #28a745; 
 }
-
 
 .invalid-feedback {
     color: #dc3545; 
 }
 
-
 .valid-feedback {
     color: #28a745; 
 }
-
-.row.g-3 {
-    margin-bottom: 15px; /* Espacio entre columnas */
-}
-
-
-.form-label {
-    font-weight: bold;
-}
-
 
 .form-check-input:checked {
     background-color: #D63384;
     border-color: #D63384;
 }
 
-
 /* Estilo del conteiner del map */
 .btn-fucsia-full {
     background-color: #D63384;
     color: #F8F9FB;
-    border: 2px solid #D63384;
-}
-
-.btn-fucsia-full:hover {
-    background-color: #D63384;
-    color:#F8F9FB;
-}
-
-#map {
-    border: 1px solid #F8F9FB ; 
 }

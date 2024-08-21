@@ -1,4 +1,5 @@
 /*
+PALETA DE COLORES
 Fucsia: #D63384
 Blanco: #F8F9FB
 Negro: #212429
@@ -69,6 +70,7 @@ form .form-control:valid {
 
 /* Body */
 body{
+    color: #212429;
     background-color: #F8F9FB;
     display: flex;
     flex-direction: column;
