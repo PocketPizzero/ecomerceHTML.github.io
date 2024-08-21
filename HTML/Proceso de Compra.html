@@ -64,23 +64,24 @@
         </div>
 
         <!-- Tabla  -->
-            <ul class="nav nav-underline flex-md-row flex-sm-column justify-content-around text-center m-5 fs-1 " id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Carrito de compra
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link disabled" id="medios-tab" data-bs-toggle="tab" data-bs-target="#medios-tab-pane"
-                        type="button" role="tab" aria-controls="medios-tab-pane" aria-selected="false">Medios de
-                        pago</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link disabled" id="finalizar-tab" data-bs-toggle="tab"
-                        data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="finalizar-tab-pane"
-                        aria-selected="false">Finalizar compra</button>
-                </li>
-            </ul>
+        <ul class="nav nav-underline flex-md-row flex-sm-column justify-content-around text-center m-5 fs-1 " id="myTab"
+            role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Carrito de compra
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link disabled" id="medios-tab" data-bs-toggle="tab" data-bs-target="#medios-tab-pane"
+                    type="button" role="tab" aria-controls="medios-tab-pane" aria-selected="false">Medios de
+                    pago</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link disabled" id="finalizar-tab" data-bs-toggle="tab"
+                    data-bs-target="#Finalizar-tab-pane" type="button" role="tab" aria-controls="finalizar-tab-pane"
+                    aria-selected="false">Finalizar compra</button>
+            </li>
+        </ul>
 
 
         <!-- Aqui estan las tabs  -->
@@ -108,10 +109,23 @@
                     </div>
 
                     <!-- Btn Vaciar Carrito -->
-                    <button type="button" class="btn btn-outline-primary btn-lg my-3" data-bs-toggle="modal"
-                        data-bs-target="#confirmarVaciar">
-                        Vaciar carrito
-                    </button>
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-primary btn-lg my-3" data-bs-toggle="modal"
+                                data-bs-target="#confirmarVaciar">
+                                Vaciar carrito
+                            </button>
+                        </div>
+
+                        <div class="col d-flex text-end my-3 gap-3 py-2">
+                            <input type="text" class="form-control w-50" id="codigo-descuento" name="codigo-descuento">
+                            
+                                <button id="boton-descuento" type="button" class="btn btn-primary" onclick="aplicarDescuento()" disabled>
+                                    Aplicar cupón
+                                </button>
+                                
+                        </div>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="confirmarVaciar" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -165,6 +179,10 @@
                                             <td id="subtotal">₡ 0</td>
                                         </tr>
                                         <tr>
+                                            <th scope="row">Descuento</th>
+                                            <td id="descuento">₡ 0</td>
+                                        </tr>
+                                        <tr>
                                             <th scope="row">Envío</th>
                                             <td id="costoEnvio">₡ 0</td>
                                         </tr>
@@ -177,6 +195,7 @@
                             </div>
 
                             <!-- Botón Ir a pagar -->
+
                             <div class="col-md-6 text-center ">
                                 <button id="continuar" type="button" class="btn btn-primary fs-1 px-5"
                                     disabled>Continuar</button>
@@ -264,7 +283,8 @@
                                     <td colspan="2" class="w-100 text-center fs-4">Teléfono 7878-5454</th>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="w-100 text-center fs-4">Visitános en https://pocketpizzero.github.io/ecomerceHTML.github.io/
+                                    <td colspan="2" class="w-100 text-center fs-4">Visitános en
+                                        https://pocketpizzero.github.io/ecomerceHTML.github.io/
                                     </td>
                                 </tr>
                             </thead>
@@ -307,9 +327,12 @@
             <div class="footer-line"></div>
 
             <div class="text-center d-flex mt-5 g-1 ">
-                <a href="https://www.facebook.com/?locale=es_LA"><img class="w-25" src="../Images/facebook.png" alt="facebook"/></a> 
-                <a href="https://www.instagram.com/accounts/login/"><img class="w-25" src="../Images/instagram.png" alt="instagram"/></a>
-                <a href="https://www.waze.com/es/live-map/directions?navigate=yes&to=ll.10.00707489%2C-84.21644628"><img class="w-25" src="../Images/waze.png" alt="waze"/></a>
+                <a href="https://www.facebook.com/?locale=es_LA"><img class="w-25" src="../Images/facebook.png"
+                        alt="facebook" /></a>
+                <a href="https://www.instagram.com/accounts/login/"><img class="w-25" src="../Images/instagram.png"
+                        alt="instagram" /></a>
+                <a href="https://www.waze.com/es/live-map/directions?navigate=yes&to=ll.10.00707489%2C-84.21644628"><img
+                        class="w-25" src="../Images/waze.png" alt="waze" /></a>
             </div>
         </div>
     </footer>

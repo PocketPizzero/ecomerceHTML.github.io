@@ -91,6 +91,7 @@ document.getElementById('aceptar').addEventListener('click', function () {
 });
 
 
+var cobro
 /* OBTENER COBRO */
 document.getElementById('continuar').addEventListener('click', () => {
 
@@ -105,18 +106,19 @@ document.getElementById('continuar').addEventListener('click', () => {
 	let costoEnvio = parseFloat((document.getElementById('costoEnvio').textContent).substring(2));
 	let total = parseFloat((document.getElementById('total').textContent).substring(2));
 
-	var cobro =
+	cobro =
 	{
 		tipoEnvio: tipoEnvio,
 		subtotal: subtotal,
 		costoEnvio: costoEnvio,
+		descuento: descuento,
 		total: total
 	}
-	localStorage.setItem('cobro', JSON.stringify(cobro))
 
 })
 
 
+var medioPago
 /* OBTENER MEDIO PAGO */
 document.getElementById('pago').addEventListener('click', () => {
 	//valores de la tarjeta
@@ -124,14 +126,13 @@ document.getElementById('pago').addEventListener('click', () => {
 	let fechaExpiracion = document.getElementById('fechaExpiracion').value;
 	let cvv = document.getElementById('cvv').value;
 
-	var medioPago =
+	medioPago =
 	{
 		tipoTajeta: tipoTajeta,
 		numeroTarjeta: numeroTarjeta,
 		fechaExpiracion: fechaExpiracion,
 		cvv: cvv
 	}
-	localStorage.setItem('medioPago', JSON.stringify(medioPago))
 
 })
 
@@ -144,8 +145,8 @@ function mostrarFactura() {
 	`
 
 	var infoCarrito = JSON.parse(localStorage.getItem('compra'))
-	var infoCobro = JSON.parse(localStorage.getItem('cobro'))
-	var infoPago = JSON.parse(localStorage.getItem('medioPago'))
+	var infoCobro = cobro
+	var infoPago = medioPago
 
 	infoCarrito.forEach(function (articulo) {
 		precio = parseFloat(infoCarrito.precio) | 0;
@@ -237,3 +238,5 @@ function reiniciarProcesoCompra(){
 	
 	document.getElementById("cardForm").reset()
 }
+
+

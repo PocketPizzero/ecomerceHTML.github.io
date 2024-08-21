@@ -1,5 +1,6 @@
 mostrarCarrito();
 
+
 function añadirArticulo(id) {
     //Obtener Elemento
     const producto = productos.find((p) => p.id === id)
@@ -125,6 +126,7 @@ function mostrarCarrito() {
 				total += subTotal;
 			});
 		}
+		aplicarDescuento()
 		actualizarSubtotal()
 		validar()
 	}
@@ -153,8 +155,38 @@ document.querySelectorAll('input[name="shippingOptions"]').forEach(radio => {
 	});
 });
 
+/* DESCUENTO */
+
+document.getElementById('codigo-descuento').addEventListener('input', function () {
+	if(this.value.trim() != ''){
+		document.getElementById('boton-descuento').removeAttribute('disabled')
+	}else{
+		document.getElementById('boton-descuento').setAttribute('disabled', 'disabled')
+	}
+});
+
+function aplicarDescuento(){
+	let codigo = document.getElementById('codigo-descuento')
+	let subtotal = parseFloat(document.getElementById('subtotal').textContent.substring(2))
+	if(codigo.value === 'Placeholder'){
+		$('#descuento').text("₡ "+ subtotal * 0.05)
+		actualizarSubtotal()
+	}
+	else if(codigo.value === 'ISW'){
+		$('#descuento').text("₡ "+ subtotal * 0.10)
+		actualizarSubtotal()
+	}
+	else {
+		$('#descuento').text("₡ "+ 0)
+		actualizarSubtotal()
+	}
+	codigo.value = ""
+}
+
 function actualizarSubtotal() {
+	
 	let subtotal = 0
+	let descuento = parseFloat(document.getElementById('descuento').textContent.substring(2))
 	let costoEnvio = parseFloat((document.getElementById('costoEnvio').textContent).substring(2))
 	let total = 0
 
@@ -162,9 +194,10 @@ function actualizarSubtotal() {
 	subtotales.forEach(subtotalArticulo => {
 		subtotal += parseFloat(subtotalArticulo.textContent.substring(2))
 	})
-
+	
+	
 	$('#subtotal').text("₡ "+subtotal)
-	total = subtotal + costoEnvio
+	total = subtotal - descuento + costoEnvio
 	$('#total').text("₡ "+ total)
 
 	validar()
