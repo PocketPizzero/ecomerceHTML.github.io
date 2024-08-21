@@ -48,7 +48,7 @@ $(document).ready(function() {
         $("#precio").text("₡ " + producto.precio)
 
         if(producto.unidades > 0){
-            $("#disponibilidad").text("Disponible")
+            $("#disponibilidad").text("Unidades disponibles: " + producto.unidades)
         }else{
             $("#disponibilidad").text("Agotado")
         }
